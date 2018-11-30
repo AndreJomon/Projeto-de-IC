@@ -9,8 +9,13 @@ public class VideoManager : MonoBehaviour {
     public static VideoManager instance = null;
     private bool alreadyInstatiate = false;
     public VideoPlayer videoPlayer;
-    private GameObject videoBox;
+    private GameObject videoBox = null;
     private GameObject videoScreen;
+
+    public void SetAlreadyInstatiate (bool alreadyInstatiate)
+    {
+        this.alreadyInstatiate = alreadyInstatiate;
+    }
 
 
     void Awake()
@@ -27,8 +32,9 @@ public class VideoManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayVideo(Vector3 ballonTextPosition)
+    public void PlayVideo(Vector3 ballonTextPosition, VideoClip video)
     {
+        videoPlayer.clip = video;
         if (!alreadyInstatiate)
         {
             videoBox = Instantiate(videoBox);
@@ -47,4 +53,6 @@ public class VideoManager : MonoBehaviour {
         videoPlayer.Stop();
         videoBox.SetActive(false);
     }
+
+    
 }

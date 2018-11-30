@@ -11,11 +11,16 @@ public class LearningText : MonoBehaviour {
     Text currentText;
     GameObject nextButton;
     GameObject backButton;
-    GameObject helpButton;
     GameManager gameManager;
 
-    public float letterPause;
-    private int counter;
+    private bool stillTyping = false;
+    private float letterPause;
+    private int counter = 0;
+
+    public bool GetStillTyping()
+    {
+        return stillTyping;
+    }
 
     private void Awake()
     {
@@ -31,8 +36,6 @@ public class LearningText : MonoBehaviour {
         currentText = GameObject.Find("LearningText").GetComponent<UnityEngine.UI.Text>();
         nextButton = GameObject.Find("SkipButton");
         backButton = GameObject.Find("BackButton");
-        helpButton = GameObject.Find("HandButton");
-        counter = 0;
         ButtonsDisable();
     }
 
@@ -40,6 +43,7 @@ public class LearningText : MonoBehaviour {
     {
         gameManager = GameManager.instance;
         StartLetterByLetter(learningText[counter]);
+        letterPause = gameManager.GetLetterPause();
     }
 
     private void StartLetterByLetter(string message)
@@ -51,12 +55,19 @@ public class LearningText : MonoBehaviour {
     
     IEnumerator TypeText(string message)
     {
+        stillTyping = true;
         foreach (char letter in message.ToCharArray())
         {
             currentText.text += letter;
             yield return new WaitForSeconds(letterPause);
         }
+        stillTyping = false;
         ButtonsAbleChecker();
+    }
+
+    public void TypeEverything()
+    {
+        currentText.text = learningText[counter];
     }
 
     public void NextText()
@@ -73,6 +84,7 @@ public class LearningText : MonoBehaviour {
         ButtonsDisable();
     }
 
+
     public void ButtonsAbleChecker()
     {
         if (counter > 0)
@@ -84,13 +96,11 @@ public class LearningText : MonoBehaviour {
         {
             nextButton.SetActive(true);
         }
-        //helpButton.SetActive(true);
     }
 
     private void ButtonsDisable()
     {
         backButton.SetActive(false);
         nextButton.SetActive(false);
-        //helpButton.SetActive(false);
     }
 }
