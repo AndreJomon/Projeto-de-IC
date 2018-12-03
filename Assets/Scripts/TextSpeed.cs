@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class TextSpeed : MonoBehaviour {
 
-    GameManager gameManager;
     Button slowText;
     Button mediumText;
     Button fastText;
     Button instantText;
+    GameManager gameManager;
 
     private void Awake()
     {
@@ -21,13 +21,32 @@ public class TextSpeed : MonoBehaviour {
 
     private void Start()
     {
+
+        float currentLetterPause = PlayerPrefs.GetFloat("letterPause", 0.03f);
+
+        if (PlayerPrefs.GetInt("instantText", 0) == 1)
+        {
+            instantText.interactable = false;
+        }
+
+        else if (currentLetterPause == 0.1f) {
+            slowText.interactable = false;
+        }
+        else if (currentLetterPause == 0.03f)
+        {
+            mediumText.interactable = false;
+        }
+        else if (currentLetterPause == 0f)
+        {
+            fastText.interactable = false;
+        }
         gameManager = GameManager.instance;
-        mediumText.interactable = false;
     }
 
     public void SlowClicked()
     {
-        gameManager.SetLetterPause(0.1f);
+        PlayerPrefs.SetFloat("letterPause", 0.1f);
+        SetInstantTexToZero();
         slowText.interactable = false;
         mediumText.interactable = true;
         fastText.interactable = true;
@@ -37,7 +56,8 @@ public class TextSpeed : MonoBehaviour {
 
     public void MediumClicked()
     {
-        gameManager.SetLetterPause(0.03f);
+        PlayerPrefs.SetFloat("letterPause", 0.03f);
+        SetInstantTexToZero();
         slowText.interactable = true;
         mediumText.interactable = false;
         fastText.interactable = true;
@@ -47,7 +67,8 @@ public class TextSpeed : MonoBehaviour {
 
     public void FastClicked()
     {
-        gameManager.SetLetterPause(0f);
+        PlayerPrefs.SetFloat("letterPause", 0f);
+        SetInstantTexToZero();
         slowText.interactable = true;
         mediumText.interactable = true;
         fastText.interactable = false;
@@ -57,10 +78,16 @@ public class TextSpeed : MonoBehaviour {
 
     public void InstantClicked()
     {
+        PlayerPrefs.SetInt("instantText", 1);
         slowText.interactable = true;
         mediumText.interactable = true;
         fastText.interactable = true;
         instantText.interactable = false;
         gameManager.SetInstantText(true);
+    }
+
+    private void SetInstantTexToZero()
+    {
+        PlayerPrefs.SetInt("instantText", 0);
     }
 }

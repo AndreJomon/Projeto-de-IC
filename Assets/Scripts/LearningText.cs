@@ -11,7 +11,6 @@ public class LearningText : MonoBehaviour {
     Text currentText;
     GameObject nextButton;
     GameObject backButton;
-    GameManager gameManager;
 
     private bool stillTyping = false;
     private float letterPause;
@@ -41,27 +40,33 @@ public class LearningText : MonoBehaviour {
 
     private void Start()
     {
-        gameManager = GameManager.instance;
         StartLetterByLetter(learningText[counter]);
-        letterPause = gameManager.GetLetterPause();
+        letterPause = PlayerPrefs.GetFloat("letterPause", 0.03f);
     }
 
     private void StartLetterByLetter(string message)
     {
         currentText.text = "";
         StartCoroutine(TypeText(message));
-        ButtonsDisable();
     }
-    
+
     IEnumerator TypeText(string message)
     {
-        stillTyping = true;
-        foreach (char letter in message.ToCharArray())
+        if (PlayerPrefs.GetInt("instantText", 0) == 1)
         {
-            currentText.text += letter;
-            yield return new WaitForSeconds(letterPause);
+            currentText.text = message;
         }
-        stillTyping = false;
+
+        else
+        {
+            stillTyping = true;
+            foreach (char letter in message.ToCharArray())
+            {
+                currentText.text += letter;
+                yield return new WaitForSeconds(letterPause);
+            }
+            stillTyping = false;
+        }
         ButtonsAbleChecker();
     }
 
@@ -72,16 +77,16 @@ public class LearningText : MonoBehaviour {
 
     public void NextText()
     {
+        ButtonsDisable();
         counter++;
         StartLetterByLetter(learningText[counter]);
-        ButtonsDisable();
     }
 
     public void BackText()
     {
+        ButtonsDisable();
         counter--;
         StartLetterByLetter(learningText[counter]);
-        ButtonsDisable();
     }
 
 
@@ -103,4 +108,5 @@ public class LearningText : MonoBehaviour {
         backButton.SetActive(false);
         nextButton.SetActive(false);
     }
+
 }

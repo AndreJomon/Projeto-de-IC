@@ -6,7 +6,6 @@ using UnityEngine;
 public class StyleChoicer : MonoBehaviour {
     Button librasEAudio;
     Button librasOuAudio;
-    GameManager gameManager;
 
     private void Awake()
     {
@@ -16,21 +15,30 @@ public class StyleChoicer : MonoBehaviour {
 
     private void Start()
     {
-        gameManager = GameManager.instance;
-        librasEAudio.interactable = false;
+        if (PlayerPrefs.GetString("Style", "Alpha").Equals("Alpha")) {
+            librasEAudio.interactable = false;
+        }
+        else
+        {
+            librasOuAudio.interactable = false;
+        }
     }
 
     public void ClickedAlpha()
     {
         librasEAudio.interactable = false;
         librasOuAudio.interactable = true;
-        gameManager.SetStyleManager("Alpha");
+        PlayerPrefs.SetString("Style", "Alpha");
+        PlayerPrefs.Save();
+        //gameManager.SetStyleManager("Alpha");
     }
 
     public void ClickedBeta()
     {
         librasEAudio.interactable = true;
         librasOuAudio.interactable = false;
-        gameManager.SetStyleManager("Beta");
+        PlayerPrefs.SetString("Style", "Beta");
+        PlayerPrefs.Save();
+        //gameManager.SetStyleManager("Beta");
     }
 }

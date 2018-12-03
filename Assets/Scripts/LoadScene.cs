@@ -7,12 +7,10 @@ public class LoadScene : MonoBehaviour {
 
     public bool temVersoes;
     public string sceneName;
-    GameManager gameManager;
     VideoManager videoManager;
 
     private void Awake()
     {
-        gameManager = GameManager.instance;
         videoManager = VideoManager.instance;
     }
 
@@ -20,11 +18,11 @@ public class LoadScene : MonoBehaviour {
     {
         if (temVersoes)
         {
-            if (gameManager.GetStyleManager().Equals("Alpha"))
+            if (PlayerPrefs.GetString("Style", "Alpha").Equals("Alpha"))
             {
                 SceneManager.LoadScene(sceneName + "Alpha", LoadSceneMode.Single);
             }
-            else if (gameManager.GetStyleManager().Equals("Beta"))
+            else if (PlayerPrefs.GetString("Style", "Alpha").Equals("Beta"))
             {
                 SceneManager.LoadScene(sceneName + "Beta", LoadSceneMode.Single);
             }

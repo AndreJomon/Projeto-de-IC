@@ -8,17 +8,6 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     private float letterPause = 0.03f;
     private bool instantText = false;
-    private string styleManager = "Alpha";
-
-    public void SetStyleManager (string styleManager)
-    {
-        this.styleManager = styleManager;
-    }
-
-    public string GetStyleManager()
-    {
-        return styleManager;
-    }
 
     public void SetLetterPause(float letterPause)
     {
