@@ -113,7 +113,6 @@ MonoBehaviour:
   - Eu sou a Carla! Estou aqui para te auxiliar nas atividades. Vamos juntos  preparar
     tudo! Essa festa vai ser de arrebentar!
   - Pepepepepe pepepe pepepepe
-  letterPause: 0.03
 --- !u!114 &114240546301936240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,8 +336,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -639413157
+  m_SortingLayer: 4
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d67a8036e022c2f48ba23be2f555a541, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
