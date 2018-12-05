@@ -21,7 +21,7 @@ TagManager:
   - Sprites
   - TextBallon
   - Video
-  - 
+  - Text
   - 
   - 
   - 
@@ -59,4 +59,7 @@ TagManager:
     locked: 0
   - name: Video
     uniqueID: 3342424113
+    locked: 0
+  - name: Text
+    uniqueID: 3921935531
     locked: 0

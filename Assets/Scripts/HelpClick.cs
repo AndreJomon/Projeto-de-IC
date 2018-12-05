@@ -24,7 +24,8 @@ public class HelpClick : MonoBehaviour {
 
     private void Awake()
     {
-        handButton = GameObject.FindGameObjectWithTag("HandButton").GetComponent<Button>();
+        //handButton = GameObject.FindGameObjectWithTag("HandButton").GetComponent<Button>();
+        handButton = GetComponent<Button>();
         //imagemBotaoOuvinte = (Resources.Load("Sprites/BotaoAjudaOuvinte") as Sprite);
         //imagemBotaoSurdo = (Resources.Load("Sprites/BotaoAjudaSurdo") as Sprite);
         learnText = GameObject.FindGameObjectWithTag("LearnText").GetComponent<Text>();
