@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4022294157799842}
   - component: {fileID: 212458211327124146}
+  - component: {fileID: 95742109056593004}
   m_Layer: 10
   m_Name: LearningTextBox
   m_TagString: BallonText
@@ -39,7 +40,7 @@ GameObject:
   - component: {fileID: 114240546301936240}
   - component: {fileID: 212504307968889396}
   - component: {fileID: 114113613479852050}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: LearningText
   m_TagString: LearnText
   m_Icon: {fileID: 0}
@@ -89,8 +90,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1189646688676826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -297, y: 4, z: 0}
-  m_LocalScale: {x: 81.44272, y: 134.13435, z: 60.799973}
+  m_LocalPosition: {x: 0, y: -230, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 224192199671948990}
   - {fileID: 224250214095372226}
@@ -98,6 +99,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95742109056593004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189646688676826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e8c03a826b80164591627c1cb92aef7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114113613479852050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,9 +129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   learningText:
-  - Eu sou a Carla! Estou aqui para te auxiliar nas atividades. Vamos juntos  preparar
-    tudo! Essa festa vai ser de arrebentar!
-  - Pepepepepe pepepe pepepepe
+  - "Ol\xE1! Voc\xEA foi convidado para participar da \"Festa na Surdina\". "
+  - "Vamos organizar o ambiente da festa preparar tudo para quando o Caio chegar!!
+    \xC9 s\xF3 entrar! "
+  liberaParaProxTela: 1
 --- !u!114 &114240546301936240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,9 +356,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1144032295
-  m_SortingLayer: 3
-  m_SortingOrder: -1
+  m_SortingLayerID: -639413157
+  m_SortingLayer: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d67a8036e022c2f48ba23be2f555a541, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -382,9 +402,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -639413157
-  m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingLayerID: -373031765
+  m_SortingLayer: 6
+  m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

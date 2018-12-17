@@ -225,11 +225,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4022294157799842, guid: fe0ea0151a4658c40b5927434d82e679, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -297
+      value: -266
       objectReference: {fileID: 0}
     - target: {fileID: 4022294157799842, guid: fe0ea0151a4658c40b5927434d82e679, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4022294157799842, guid: fe0ea0151a4658c40b5927434d82e679, type: 2}
       propertyPath: m_LocalPosition.z
@@ -258,6 +258,24 @@ Prefab:
     - target: {fileID: 224192199671948990, guid: fe0ea0151a4658c40b5927434d82e679,
         type: 2}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113613479852050, guid: fe0ea0151a4658c40b5927434d82e679,
+        type: 2}
+      propertyPath: liberaParaProxTela
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022294157799842, guid: fe0ea0151a4658c40b5927434d82e679, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 71.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022294157799842, guid: fe0ea0151a4658c40b5927434d82e679, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 126.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 212458211327124146, guid: fe0ea0151a4658c40b5927434d82e679,
+        type: 2}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

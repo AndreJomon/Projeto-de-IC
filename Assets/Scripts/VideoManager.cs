@@ -10,6 +10,7 @@ public class VideoManager : MonoBehaviour {
     private bool alreadyInstatiate = false;
     public VideoPlayer videoPlayer;
     private GameObject videoBox = null;
+    private GameObject videoBoxTemp;
     private GameObject videoScreen;
 
     public void SetAlreadyInstatiate (bool alreadyInstatiate)
@@ -32,17 +33,27 @@ public class VideoManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+    public void PlayVideo(VideoClip video)
+    {
+        videoPlayer.clip = video;
+        videoBoxTemp = GameObject.Find("VideoBox") as GameObject;
+        videoScreen = videoBoxTemp.transform.GetChild(0).gameObject;
+        videoPlayer.targetMaterialRenderer = videoScreen.GetComponent<Renderer>();
+        videoPlayer.Prepare();
+        videoPlayer.Play();
+    }
+
     public void PlayVideo(Vector3 ballonTextPosition, VideoClip video)
     {
         videoPlayer.clip = video;
         if (!alreadyInstatiate)
         {
-            videoBox = Instantiate(videoBox);
+            videoBoxTemp = Instantiate(videoBox);
             alreadyInstatiate = true; //Não vai funcionar quando mudar de scene, melhor procurar se já existe o videoBox
         }
-        videoBox.SetActive(true);
-        videoBox.transform.position = ballonTextPosition;
-        videoScreen = videoBox.transform.GetChild(0).gameObject;
+        videoBoxTemp.SetActive(true);
+        videoBoxTemp.transform.position = ballonTextPosition;
+        videoScreen = videoBoxTemp.transform.GetChild(0).gameObject;
         videoPlayer.targetMaterialRenderer = videoScreen.GetComponent<Renderer>();
         videoPlayer.Prepare();
         videoPlayer.Play();
@@ -51,7 +62,7 @@ public class VideoManager : MonoBehaviour {
     public void StopVideo()
     {
         videoPlayer.Stop();
-        videoBox.SetActive(false);
+        videoBoxTemp.SetActive(false);
     }
 
     

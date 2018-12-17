@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Video;
 using UnityEngine;
 
 public class LetterScript : MonoBehaviour {
@@ -9,6 +10,9 @@ public class LetterScript : MonoBehaviour {
     private Button butt;
     private GameObject handButton;
     private GameObject learningText;
+    public VideoClip videoClip;
+
+    private VideoManager videoManager;
 
     private void Awake()
     {
@@ -20,9 +24,9 @@ public class LetterScript : MonoBehaviour {
 
     void Start()
     {
-        anim.Play("LetterComing");
         butt.interactable = false;
         StartCoroutine(waitForAnimation());
+        videoManager = VideoManager.instance;
     }
 
     private IEnumerator waitForAnimation()
@@ -31,13 +35,33 @@ public class LetterScript : MonoBehaviour {
         butt.interactable = true;
     }
 
-    public void ClickOnLetter()
+    public void ClickOnLetterWrapper()
+    {
+        StartCoroutine(ClickOnLetter());
+    }
+
+    private IEnumerator ClickOnLetter()
     {
         anim.Play("LetterFailing");
-        anim = learningText.GetComponent<Animator>();
-        anim.Play("TextBoxAnimation");
-        anim = handButton.GetComponent<Animator>();
-        anim.Play("HandButtonAnimation");
-        //this.gameObject.SetActive(false);
+
+        if (PlayerPrefs.GetString("Style").Equals("Alpha")) //Verificar se é alpha
+        {
+            anim = learningText.GetComponent<Animator>();
+            anim.Play("TextBoxAnimation");
+            anim = handButton.GetComponent<Animator>();
+            anim.Play("HandButtonAnimation");
+            //this.gameObject.SetActive(false);
+            yield return new WaitForSeconds(0);
+        }
+
+        else if (PlayerPrefs.GetString("Style").Equals("Beta"))
+        {
+            anim = learningText.GetComponent<Animator>();
+            anim.Play("TextBoxAnimationBeta");
+            anim = GameObject.Find("VideoBox").GetComponent<Animator>();
+            anim.Play("VideoBoxAnimation");
+            yield return new WaitForSeconds(2);
+            videoManager.PlayVideo(videoClip);
+        }
     }
 }
