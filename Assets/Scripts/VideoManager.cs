@@ -43,7 +43,7 @@ public class VideoManager : MonoBehaviour {
         videoPlayer.Play();
     }
 
-    public void PlayVideo(Vector3 ballonTextPosition, VideoClip video)
+    public void PlayVideo(Vector3 objectPosition, VideoClip video)
     {
         videoPlayer.clip = video;
         if (!alreadyInstatiate)
@@ -52,7 +52,7 @@ public class VideoManager : MonoBehaviour {
             alreadyInstatiate = true; //Não vai funcionar quando mudar de scene, melhor procurar se já existe o videoBox
         }
         videoBoxTemp.SetActive(true);
-        videoBoxTemp.transform.position = ballonTextPosition;
+        videoBoxTemp.transform.position = objectPosition;
         videoScreen = videoBoxTemp.transform.GetChild(0).gameObject;
         videoPlayer.targetMaterialRenderer = videoScreen.GetComponent<Renderer>();
         videoPlayer.Prepare();
