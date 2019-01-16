@@ -43,25 +43,11 @@ public class LetterScript : MonoBehaviour {
     private IEnumerator ClickOnLetter()
     {
         anim.Play("LetterFailing");
-
-        if (PlayerPrefs.GetString("Style").Equals("Alpha")) //Verificar se é alpha
-        {
-            anim = learningText.GetComponent<Animator>();
-            anim.Play("TextBoxAnimation");
-            anim = handButton.GetComponent<Animator>();
-            anim.Play("HandButtonAnimation");
-            //this.gameObject.SetActive(false);
-            yield return new WaitForSeconds(0);
-        }
-
-        else if (PlayerPrefs.GetString("Style").Equals("Beta"))
-        {
-            anim = learningText.GetComponent<Animator>();
-            anim.Play("TextBoxAnimationBeta");
-            anim = GameObject.Find("VideoBox").GetComponent<Animator>();
-            anim.Play("VideoBoxAnimation");
-            yield return new WaitForSeconds(2);
-            videoManager.PlayVideo(videoClip);
-        }
+        anim = learningText.GetComponent<Animator>();
+        anim.Play("TextBoxAnimationBeta");
+        anim = GameObject.Find("VideoBox").GetComponent<Animator>();
+        anim.Play("VideoBoxAnimation");
+        yield return new WaitForSeconds(1);
+        videoManager.PlayVideo(videoClip);
     }
 }
