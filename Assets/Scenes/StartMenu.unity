@@ -509,7 +509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a863aee0f044d94e98e854bcec2b312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temVersoes: 0
   sceneName: Configuracao
 --- !u!1 &1113990523
 GameObject:
@@ -761,7 +760,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 783867138}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1003,5 +1002,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a863aee0f044d94e98e854bcec2b312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temVersoes: 1
   sceneName: RecebimentoCarta
