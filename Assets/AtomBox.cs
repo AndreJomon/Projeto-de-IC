@@ -6,10 +6,11 @@ public class AtomBox : MonoBehaviour {
 
     public GameObject atomo;
     public GameObject newAtomo;
+    private int distance;
 
     void OnMouseDown()
     {
-        newAtomo = Instantiate(atomo, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        newAtomo = Instantiate(atomo, new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance), Quaternion.identity);
     }
 
     private void OnMouseDrag()
