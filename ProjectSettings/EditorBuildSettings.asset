@@ -14,16 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Configuracao.unity
     guid: 7140fa1c3fc30454bbcffd7e37a3bccd
-  - enabled: 1
-    path: Assets/Scenes/RecebimentoCartaAlpha.unity
-    guid: 54d35f09f3db568458dbc52075467dda
-  - enabled: 1
-    path: Assets/Scenes/RecebimentoCartaBeta.unity
-    guid: 689f8cd86ceb9ff4e8e68a276b2939ff
-  - enabled: 1
-    path: Assets/Scenes/SerRecebidoAlpha.unity
-    guid: 89f2c7cfc05c0b64bbd5de7a0a12c248
-  - enabled: 1
-    path: Assets/Scenes/SerRecebidoBeta.unity
-    guid: 07885d6bde6a30146a2ae47a407d3189
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

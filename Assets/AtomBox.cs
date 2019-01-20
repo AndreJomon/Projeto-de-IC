@@ -5,12 +5,12 @@ using UnityEngine;
 public class AtomBox : MonoBehaviour {
 
     public GameObject atomo;
-    public GameObject newAtomo;
+    private GameObject newAtomo;
     private int distance;
 
     void OnMouseDown()
     {
-        newAtomo = Instantiate(atomo, new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance), Quaternion.identity);
+        newAtomo = Instantiate(atomo, new Vector3(Input.mousePosition.x, Input.mousePosition.y/*gameObject.transform.position.x, gameObject.transform.position.y*/ , distance), Quaternion.identity);
     }
 
     private void OnMouseDrag()
