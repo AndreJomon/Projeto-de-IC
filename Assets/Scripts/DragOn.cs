@@ -28,31 +28,11 @@ public class DragOn : MonoBehaviour {
     */
 
     float distance = 10;
-    private bool destroy = true;
 
     public void OnMouseDrag()
     {
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
         Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPosition;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Mesa"))
-        {
-            Debug.Log("Destroy off");
-            destroy = false;
-        }
-    }
-
-    public void OnMouseUp()
-    {
-        Debug.Log("Verificará destroy");
-        if (destroy)
-        {
-            Debug.Log("Vai destruir");
-            Destroy(gameObject);
-        }
     }
 }
