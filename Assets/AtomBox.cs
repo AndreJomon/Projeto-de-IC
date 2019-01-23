@@ -5,7 +5,7 @@ using UnityEngine;
 public class AtomBox : MonoBehaviour {
 
     public GameObject atomo;
-    public GameObject newAtomo;
+    private GameObject newAtomo;
     private int distance;
 
     void OnMouseDown()
@@ -18,9 +18,8 @@ public class AtomBox : MonoBehaviour {
         newAtomo.GetComponent<DragOn>().OnMouseDrag();
     }
 
-    ///Fazer ontrigger no objeto instanciado
-    ///Triggar quando entra um booleano para não se autodestruir
-
-
-
+    private void OnMouseUp()
+    {
+        newAtomo.GetComponent<DragOn>().OnMouseUp();
+    }
 }

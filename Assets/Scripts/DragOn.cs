@@ -5,34 +5,45 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 
 public class DragOn : MonoBehaviour {
-    /*
-    private Vector3 screenPoint;
-    private Vector3 offset;
 
-    void OnMouseDown()
-    {
-        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-
-        offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-
-    }
-
-    void OnMouseDrag()
-    {
-        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
-
-        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
-        transform.position = curPosition;
-
-    }
-    */
-
+    public bool destroy = true;
     float distance = 10;
+
+    public void OnMouseDown()
+    {
+        OnMouseDrag();
+    }
 
     public void OnMouseDrag()
     {
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
         Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPosition;
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Colidiu");
+
+        if (collision.CompareTag("Mesa"))
+        {
+            destroy = false;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Mesa"))
+        {
+            destroy = true;
+        }
+    }
+
+    public void OnMouseUp()
+    {
+        if (destroy)
+        {
+            Destroy(gameObject);
+        }
     }
 }
