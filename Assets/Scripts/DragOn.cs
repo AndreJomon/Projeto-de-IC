@@ -23,8 +23,6 @@ public class DragOn : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Colidiu");
-
         if (collision.CompareTag("Mesa"))
         {
             destroy = false;
