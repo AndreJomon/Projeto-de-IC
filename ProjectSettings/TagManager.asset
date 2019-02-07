@@ -9,6 +9,8 @@ TagManager:
   - BallonText
   - Screen
   - Mesa
+  - Carbono
+  - "Hidrog\xEAnio"
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - TextBallon
   - Video
   - Text
-  - 
+  - Mesa
   - 
   - 
   - 

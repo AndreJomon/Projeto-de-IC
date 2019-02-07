@@ -6,6 +6,7 @@ public class AtomBox : MonoBehaviour {
 
     public GameObject atomo;
     private GameObject newAtomo;
+    private int numAtomos;
     private int distance;
 
     void OnMouseDown()
@@ -15,11 +16,11 @@ public class AtomBox : MonoBehaviour {
 
     private void OnMouseDrag()
     {
-        newAtomo.GetComponent<DragOn>().OnMouseDrag();
+        newAtomo.GetComponent<Atomo>().OnMouseDrag();
     }
 
     private void OnMouseUp()
     {
-        newAtomo.GetComponent<DragOn>().OnMouseUp();
+        newAtomo.GetComponent<Atomo>().OnMouseUp();
     }
 }

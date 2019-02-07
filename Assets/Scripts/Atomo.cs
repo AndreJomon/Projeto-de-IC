@@ -4,11 +4,18 @@ using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 
-public class DragOn : MonoBehaviour {
+public class Atomo : MonoBehaviour {
 
+    public string nome;
     public bool destroy = true;
-    float distance = 10;
+    private float distance = 10;
+    private GameObject mesa;
 
+    public void Awake()
+    {
+        nome = nome.ToUpper();
+        mesa = GameObject.Find("Mesa");
+    }
     public void OnMouseDown()
     {
         OnMouseDrag();
@@ -26,6 +33,8 @@ public class DragOn : MonoBehaviour {
         if (collision.CompareTag("Mesa"))
         {
             destroy = false;
+            mesa.GetComponent<MesaScript>().resposta.Add(nome);
+            Debug.Log(mesa.GetComponent<MesaScript>().resposta.Count);
         }
     }
 
@@ -34,6 +43,8 @@ public class DragOn : MonoBehaviour {
         if (collision.CompareTag("Mesa"))
         {
             destroy = true;
+            mesa.GetComponent<MesaScript>().resposta.Remove(nome);
+            Debug.Log(mesa.GetComponent<MesaScript>().resposta.Count);
         }
     }
 
