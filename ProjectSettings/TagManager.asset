@@ -9,8 +9,10 @@ TagManager:
   - BallonText
   - Screen
   - Mesa
-  - Carbono
+  - Atomo
+  - Molecula
   - "Hidrog\xEAnio"
+  - Carbono
   layers:
   - Default
   - TransparentFX
@@ -65,4 +67,7 @@ TagManager:
     locked: 0
   - name: Text
     uniqueID: 3921935531
+    locked: 0
+  - name: TopLayer
+    uniqueID: 4105581583
     locked: 0

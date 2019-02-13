@@ -48,6 +48,7 @@ public class LetterScript : MonoBehaviour {
         anim = GameObject.Find("VideoBox").GetComponent<Animator>();
         anim.Play("VideoBoxAnimation");
         yield return new WaitForSeconds(1);
-        videoManager.PlayVideo(videoClip);
+        RawImage image = GameObject.Find("Tela").GetComponent<RawImage>();
+        videoManager.PlayVideo(image, videoClip);
     }
 }

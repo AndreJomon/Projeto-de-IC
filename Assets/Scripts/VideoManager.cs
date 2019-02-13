@@ -7,63 +7,49 @@ using UnityEngine;
 public class VideoManager : MonoBehaviour {
 
     public static VideoManager instance = null;
-    private bool alreadyInstatiate = false;
     public VideoPlayer videoPlayer;
-    private GameObject videoBox = null;
-    private GameObject videoBoxTemp;
-    private GameObject videoScreen;
 
-    public void SetAlreadyInstatiate (bool alreadyInstatiate)
+    private void Awake()
     {
-        this.alreadyInstatiate = alreadyInstatiate;
-    }
-
-
-    void Awake()
-    {
-        if (instance == null)
+        if(instance == null)
         {
             instance = this;
-            videoBox = Resources.Load("Prefabs/VideoBox") as GameObject;
         }
-        else if (instance != this)
+        else if(this != instance)
         {
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayVideo(VideoClip video)
+    public IEnumerator PlayVideo (RawImage image)
     {
-        videoPlayer.clip = video;
-        videoBoxTemp = GameObject.Find("VideoBox") as GameObject;
-        videoScreen = videoBoxTemp.transform.GetChild(0).gameObject;
-        videoPlayer.targetMaterialRenderer = videoScreen.GetComponent<Renderer>();
+        image.texture = videoPlayer.texture;
         videoPlayer.Prepare();
+        yield return new WaitUntil (()=> videoPlayer.isPrepared);
         videoPlayer.Play();
     }
 
-    public void PlayVideo(Vector3 objectPosition, VideoClip video)
+    public IEnumerator PlayVideo(RawImage image, VideoClip video)
     {
         videoPlayer.clip = video;
-        if (!alreadyInstatiate)
-        {
-            videoBoxTemp = Instantiate(videoBox);
-            alreadyInstatiate = true; //Não vai funcionar quando mudar de scene, melhor procurar se já existe o videoBox
-        }
-        videoBoxTemp.SetActive(true);
-        videoBoxTemp.transform.position = objectPosition;
-        videoScreen = videoBoxTemp.transform.GetChild(0).gameObject;
-        videoPlayer.targetMaterialRenderer = videoScreen.GetComponent<Renderer>();
         videoPlayer.Prepare();
+        yield return new WaitUntil(() => videoPlayer.isPrepared);
+        image.texture = videoPlayer.texture;
         videoPlayer.Play();
     }
 
     public void StopVideo()
     {
         videoPlayer.Stop();
-        videoBoxTemp.SetActive(false);
     }
 
-    
+    public void ReplayVideo()
+    {
+        videoPlayer.Stop();
+        videoPlayer.Play();
+    }
+
+
+
 }

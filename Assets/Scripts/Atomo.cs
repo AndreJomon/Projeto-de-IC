@@ -10,9 +10,11 @@ public class Atomo : MonoBehaviour {
     public bool destroy = true;
     private float distance = 10;
     private GameObject mesa;
+    public static int nAtomos = 0;
 
     public void Awake()
     {
+        nAtomos++;
         nome = nome.ToUpper();
         mesa = GameObject.Find("Mesa");
     }
@@ -20,6 +22,7 @@ public class Atomo : MonoBehaviour {
     {
         OnMouseDrag();
     }
+
 
     public void OnMouseDrag()
     {
@@ -54,5 +57,10 @@ public class Atomo : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
+
+    public void OnDestroy()
+    {
+        nAtomos--;
     }
 }

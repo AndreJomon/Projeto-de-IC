@@ -16,6 +16,5 @@ public class LoadScene : MonoBehaviour {
     public void SceneLoad()
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-        videoManager.SetAlreadyInstatiate(false);
     }
 }
