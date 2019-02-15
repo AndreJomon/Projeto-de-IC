@@ -274,8 +274,9 @@ RectTransform:
   - {fileID: 1149495801}
   - {fileID: 188590770}
   - {fileID: 574862422}
-  - {fileID: 1267490877}
   - {fileID: 1881210157}
+  - {fileID: 1267490877}
+  - {fileID: 1749290942}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -916,7 +917,7 @@ RectTransform:
   m_Children:
   - {fileID: 674573291}
   m_Father: {fileID: 178051761}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -957,7 +958,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1267490879}
   m_OnClick:
     m_PersistentCalls:
@@ -1067,6 +1068,7 @@ MonoBehaviour:
   - Br Br
   - He
   resposta: []
+  errouString: "N\xE3o \xE9 poss\xEDvel montar essa mol\xE9cula para o bal\xE3o."
 --- !u!1001 &1598352030
 Prefab:
   m_ObjectHideFlags: 0
@@ -1287,6 +1289,39 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f5709a0a746d9d48ba8ffae78644a2d, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1749290941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749290942}
+  m_Layer: 5
+  m_Name: PontoParaAviso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1749290942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749290941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178051761}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 3.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1812175199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1427,7 @@ RectTransform:
   m_Children:
   - {fileID: 2019838667}
   m_Father: {fileID: 178051761}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -39,6 +39,15 @@ public class VideoManager : MonoBehaviour {
         videoPlayer.Play();
     }
 
+    public IEnumerator PlayVideo(VideoClip video)
+    {
+        videoPlayer.clip = video;
+        videoPlayer.Prepare();
+        yield return new WaitUntil(() => videoPlayer.isPrepared);
+        GameObject.Find("Tela").GetComponent<RawImage>().texture = videoPlayer.texture;
+        videoPlayer.Play();
+    }
+
     public void StopVideo()
     {
         videoPlayer.Stop();

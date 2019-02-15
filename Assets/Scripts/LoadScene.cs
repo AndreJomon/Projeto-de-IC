@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class LoadScene : MonoBehaviour {
 
-    public string sceneName;
     VideoManager videoManager;
 
     private void Awake()
@@ -13,8 +12,9 @@ public class LoadScene : MonoBehaviour {
         videoManager = VideoManager.instance;
     }
 
-    public void SceneLoad()
+    public static void SceneLoad(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        //Fazer função para parar o video manager =p
     }
 }
