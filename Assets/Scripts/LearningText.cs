@@ -35,7 +35,7 @@ public class LearningText : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        currentText = GameObject.Find("LearningText").GetComponent<UnityEngine.UI.Text>();
+        currentText = GameObject.Find("LearningText").GetComponent<Text>();
         nextButton = GameObject.Find("SkipButton");
         backButton = GameObject.Find("BackButton");
 

@@ -34,7 +34,7 @@ public class TextBox : MonoBehaviour {
     {
         GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
         textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
-        textBox.GetComponentInChildren<Text>().text = text;
+        textBox.GetComponentInChildren<Text>().text= text;
         return textBox;
     }
 
