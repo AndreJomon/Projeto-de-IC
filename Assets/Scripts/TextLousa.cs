@@ -11,11 +11,13 @@ public class TextLousa : MonoBehaviour
     private TextMeshProUGUI tmp;
     private int wordIndex = -2;
     private int currentWordIndex;
+    KeyWords kw;
 
     public void Awake()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmpT = this.GetComponent<TMP_Text>();
+        kw = this.GetComponent<KeyWords>();
     }
 
     void LateUpdate()
@@ -24,8 +26,10 @@ public class TextLousa : MonoBehaviour
 
         if(currentWordIndex != -1 && !(currentWordIndex == wordIndex))
         {
-            Debug.Log(currentWordIndex);
-            Debug.Log(tmp.textInfo.wordInfo[currentWordIndex].GetWord());
+            kw.DestroyWordText();
+            kw.ShowKeyWordText(tmp.textInfo.wordInfo[currentWordIndex].GetWord(), Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            //Debug.Log(currentWordIndex);
+            //Debug.Log(tmp.textInfo.wordInfo[currentWordIndex].GetWord());
             wordIndex = currentWordIndex;
         }
     }
