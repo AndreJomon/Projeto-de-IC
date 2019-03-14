@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 568927820}
+  offset: 0.5
 --- !u!114 &464124292
 MonoBehaviour:
   m_ObjectHideFlags: 0

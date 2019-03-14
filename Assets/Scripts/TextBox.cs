@@ -11,6 +11,7 @@ public class TextBox : MonoBehaviour {
     private int lineWidth = 33; //Numero de caracters em uma linha
     private float finalHeight; //Altura que será calculada
     private int secondsUntilDestroy = 5;
+    public bool dontAutomaticDestroy = false;
     public VideoClip videoClip;
 
     #region Initializers
@@ -24,36 +25,55 @@ public class TextBox : MonoBehaviour {
     public static GameObject CreateTextBox(string text, int time, Vector3 position)
     {
         GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
-        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         textBox.GetComponentInChildren<Text>().text = text;
         textBox.GetComponent<TextBox>().SetAutoDestroyTime(time);
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         return textBox;
     }
 
     public static GameObject CreateTextBox(string text, Vector3 position)
     {
         GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
-        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         textBox.GetComponentInChildren<Text>().text= text;
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         return textBox;
     }
 
     public static GameObject CreateTextBox(string text, Vector3 position, VideoClip clip)
     {
         GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
-        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         textBox.GetComponentInChildren<Text>().text = text;
         textBox.GetComponent<TextBox>().videoClip = clip;
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         return textBox;
     }
 
     public static GameObject CreateTextBox(string text, int time, Vector3 position, VideoClip clip)
     {
         GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
-        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         textBox.GetComponentInChildren<Text>().text = text;
         textBox.GetComponent<TextBox>().SetAutoDestroyTime(time);
         textBox.GetComponent<TextBox>().videoClip = clip;
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
+        return textBox;
+    }
+
+    public static GameObject CreateTextBox(string text, Vector3 position, bool dontAutomaticDestroy)
+    {
+        GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
+        textBox.GetComponentInChildren<Text>().text = text;
+        textBox.GetComponent<TextBox>().dontAutomaticDestroy = dontAutomaticDestroy;
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
+        return textBox;
+    }
+
+    public static GameObject CreateTextBox(string text, Vector3 position, VideoClip clip, bool dontAutomaticDestroy)
+    {
+        GameObject textBox = Resources.Load("Prefabs/TextBox") as GameObject;
+        textBox.GetComponentInChildren<Text>().text = text;
+        textBox.GetComponent<TextBox>().videoClip = clip;
+        textBox.GetComponent<TextBox>().dontAutomaticDestroy = dontAutomaticDestroy;
+        textBox = Instantiate(textBox, position, Quaternion.identity, GameObject.Find("Canvas").transform);
         return textBox;
     }
 
@@ -78,7 +98,10 @@ public class TextBox : MonoBehaviour {
         int numberOfLines = NecessaryLines(textString.Length);
         finalHeight = numberOfLines * lineHeight;
         FixHeight();
-        StartCoroutine(DestroyTextBox());
+        if (!dontAutomaticDestroy)
+        {
+            StartCoroutine(DestroyTextBox());
+        }
     }
 
     #region AwakeHelpFunctions
@@ -147,6 +170,11 @@ public class TextBox : MonoBehaviour {
         Debug.Log(secondsUntilDestroy - 1);
         animator.Play("TextBoxDisappearing");
         yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+    }
+
+    public void DestroyObject()
+    {
         Destroy(gameObject);
     }
     #endregion

@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeyWords : MonoBehaviour
 {
     public List<KeyWord> keyWords;
+    private GameObject currentTextBox;
+    private bool textBoxInstatiated;
 
     public void ShowKeyWordText(string text, Vector3 position)
     {
@@ -19,11 +21,16 @@ public class KeyWords : MonoBehaviour
 
     private void InstatiateKeyWord(KeyWord kw, Vector3 position)
     {
-        TextBox.CreateTextBox(kw.text, position);
+        currentTextBox = TextBox.CreateTextBox(kw.text, position, true);
+        textBoxInstatiated = true;
     }
 
     public void DestroyWordText()
     {
-        //If find...
+        if (textBoxInstatiated)
+        {
+            currentTextBox.GetComponent<TextBox>().DestroyObject();
+            textBoxInstatiated = false;
+        }
     }
 }

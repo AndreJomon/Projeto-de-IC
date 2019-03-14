@@ -1,31 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+
 
 public class Loader : MonoBehaviour {
-
-    private GameObject videoManager, gameManager;
-
-    private void Awake()
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    public static void InitializeManagers()
     {
+        GameObject videoManager, gameManager;
+
         videoManager = Resources.Load("Prefabs/VideoManager") as GameObject;
+        gameManager = Resources.Load("Prefabs/GameManager") as GameObject;
 
         if (VideoManager.instance == null)
         {
             Instantiate(videoManager);
         }
 
-        gameManager = Resources.Load("Prefabs/GameManager") as GameObject;
-
         if (GameManager.instance == null)
         {
             Instantiate(gameManager);
         }
-    }
-
-    private void Start()
-    {
-        GameManager gameManager;
-        gameManager = GameManager.instance;
     }
 }

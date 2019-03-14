@@ -5,5 +5,5 @@ using UnityEngine;
 [System.Serializable]
 public class KeyWord : DeafText
 {
-    public string name;
+    public string name; 
 }

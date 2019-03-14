@@ -77,7 +77,7 @@ public class MesaScript : MonoBehaviour {
         }
         else //Errou a resposta
         {
-           /* TextBox.CreateTextBox(errouString, GameObject.Find("PontoParaAviso").transform.position); //Cria um aviso de erro*/
+           TextBox.CreateTextBox(errouString, GameObject.Find("PontoParaAviso").transform.position); //Cria um aviso de erro*/
         }
     }
 
