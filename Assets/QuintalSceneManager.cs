@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class QuintalSceneManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] screen;
-    private int currentScreen;
+    public Animator anim;
+    private int numberOfScreens = 4;
 
-    public void ResetScreenPosition(GameObject screen)
+    public void ChangeToScreen(int nextScreen)
     {
-        screen.transform.position = new Vector3(0, 0, 0);
+        string screenName;
+
+        for (int i = 1; numberOfScreens >= i; i++)
+        {
+            screenName = "Screen" + i.ToString();
+            anim.SetBool(screenName, false);
+        }
+
+        screenName = "Screen" + nextScreen.ToString();
+        anim.SetBool(screenName, true);
     }
 }
