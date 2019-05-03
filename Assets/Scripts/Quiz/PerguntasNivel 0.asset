@@ -27,119 +27,15 @@ MonoBehaviour:
       video: {fileID: 0}
     correctAnswer: 1
   - question:
-      text: Batata
+      text: Britz
       video: {fileID: 0}
     alternative:
-    - text: Frita
+    - text: Fritz
       video: {fileID: 0}
-    - text: Molho
+    - text: Gritz
       video: {fileID: 0}
-    - text: Arroz
+    - text: Dritz
       video: {fileID: 0}
-    - text: Alface
+    - text: Gors
       video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
-  - question:
-      text: Batata
-      video: {fileID: 0}
-    alternative:
-    - text: Frita
-      video: {fileID: 0}
-    - text: Molho
-      video: {fileID: 0}
-    - text: Arroz
-      video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 1
+    correctAnswer: 4

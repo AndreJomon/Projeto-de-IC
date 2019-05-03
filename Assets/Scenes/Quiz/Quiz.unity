@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 353703363}
   - component: {fileID: 353703362}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Hugo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,14 +624,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b75bf8eb4b7047c4faeda16db71a8841, type: 2}
   - {fileID: 11400000, guid: 1310d26301e5d68428a3ad504b5517d3, type: 2}
   instance: {fileID: 0}
-  questionAndAnwsers: []
+  questionAndAnswer: []
   numbersList: 
-  questionMeshText: {fileID: 1336934974}
-  anwserMeshText:
-  - {fileID: 1907176843}
-  - {fileID: 1418038391}
-  - {fileID: 189238240}
-  - {fileID: 807094556}
+  questionMeshText: {fileID: 1336934976}
+  answerMeshText:
+  - {fileID: 1907176845}
+  - {fileID: 1418038393}
+  - {fileID: 189238242}
+  - {fileID: 807094557}
 --- !u!4 &844414301
 Transform:
   m_ObjectHideFlags: 0
