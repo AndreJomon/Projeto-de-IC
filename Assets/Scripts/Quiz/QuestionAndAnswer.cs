@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe que armazena as informações de uma pergunta realizada
+/// </summary>
 [System.Serializable]
 public class QuestionAndAnswer
 {
@@ -10,8 +13,12 @@ public class QuestionAndAnswer
     [SerializeField] private int answerSelected = -1;
     [SerializeField] private bool isCorrect = false;
 
+    /// <summary>
+    /// Cosntrutor básico
+    /// </summary>
     public QuestionAndAnswer() { }
 
+    #region Set/Get das variáveis
     public void SetDificultyLevel(int value)
     {
         dificultyLevel = value;
@@ -36,4 +43,6 @@ public class QuestionAndAnswer
     {
         isCorrect = value;
     }
+
+    #endregion
 }

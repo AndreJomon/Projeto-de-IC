@@ -25,7 +25,7 @@ MonoBehaviour:
       video: {fileID: 0}
     - text: Alface
       video: {fileID: 0}
-    correctAnswer: 1
+    correctAnswer: 0
   - question:
       text: Britz
       video: {fileID: 0}
@@ -36,6 +36,6 @@ MonoBehaviour:
       video: {fileID: 0}
     - text: Dritz
       video: {fileID: 0}
-    - text: Gors
+    - text: Gons
       video: {fileID: 0}
-    correctAnswer: 4
+    correctAnswer: 3

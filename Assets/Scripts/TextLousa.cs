@@ -24,7 +24,7 @@ public class TextLousa : MonoBehaviour
     void LateUpdate()
     {
         currentWordIndex = TMP_TextUtilities.FindIntersectingWord(tmpT, Input.mousePosition, camera);
-
+        
         if(currentWordIndex != -1 && !(currentWordIndex == wordIndex))
         {
             kw.DestroyWordText();
