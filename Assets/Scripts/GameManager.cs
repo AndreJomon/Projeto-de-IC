@@ -9,6 +9,35 @@ public class GameManager : MonoBehaviour {
     private float letterPause = 0.03f;
     private bool instantText = false;
 
+    #region Loader
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    public static void InitializeManagers()
+    {
+        GameObject gameManager, saveManager, videoManager;
+
+        gameManager = Resources.Load("Prefabs/Managers/GameManager") as GameObject;
+
+        if (GameManager.instance == null)
+        {
+            Instantiate(gameManager);
+        }
+
+        saveManager = Resources.Load("Prefabs/Managers/SaveManager") as GameObject;
+
+        if (SaveManager.instance == null)
+        {
+            Instantiate(saveManager);
+        }
+
+        videoManager = Resources.Load("Prefabs/Managers/VideoManager") as GameObject;
+
+        if (VideoManager.instance == null)
+        {
+            Instantiate(videoManager);
+        }
+    }
+    #endregion
+
     public void SetLetterPause(float letterPause)
     {
         this.letterPause = letterPause;
@@ -40,5 +69,10 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
+
+    public void OnApplicationQuit()
+    {
+        SaveManager.instance.Save();
     }
 }

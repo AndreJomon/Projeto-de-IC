@@ -11,13 +11,13 @@ public class QuintalSceneManager : MonoBehaviour
     {
         string screenName;
 
-        for (int i = 1; numberOfScreens >= i; i++)
+        for (int i = 1; numberOfScreens >= i; i++) ///Seta todos os booleanos do animator relacionados para false.
         {
             screenName = "Screen" + i.ToString();
             anim.SetBool(screenName, false);
         }
 
         screenName = "Screen" + nextScreen.ToString();
-        anim.SetBool(screenName, true);
+        anim.SetBool(screenName, true); ///Seta o correto para true
     }
 }

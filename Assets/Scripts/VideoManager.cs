@@ -48,9 +48,9 @@ public class VideoManager : MonoBehaviour {
         videoPlayer.Play();
     }
 
-    public void StopVideo()
+    public void PauseVideo()
     {
-        videoPlayer.Stop();
+        videoPlayer.Pause();
     }
 
     public void ReplayVideo()
