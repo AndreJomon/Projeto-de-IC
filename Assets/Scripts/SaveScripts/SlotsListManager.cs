@@ -93,7 +93,7 @@ public class SlotsListManager : MonoBehaviour {
 
         else
         {
-            for (int i = 0; i<SaveManager.instance.slotsListSize; i++)
+            for (int i = 0; i<SaveManager.slotsListSize; i++)
             {
                 list.slotsList.Add(i);
             }

@@ -15,6 +15,12 @@ public class Player
     [Tooltip("Classe escolar que o aluno pertence ")]
     [SerializeField]
     private string classroom = "";
+    [Tooltip("Ranking do aluno")]
+    [SerializeField]
+    private int rankingPosition = -1;
+    [Tooltip("Pontuação total do aluno")]
+    [SerializeField]
+    private int score = 0;
 
     #region Getter & Setters
     public void SetNome(string nome)
@@ -45,6 +51,26 @@ public class Player
     public string GetClassroom()
     {
         return classroom;
+    }
+
+    public void SetRanking(int position)
+    {
+        rankingPosition = position;
+    }
+
+    public int GetRankingPosition()
+    {
+        return rankingPosition;
+    }
+
+    public void SetScore(int score)
+    {
+        this.score = score;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
     #endregion
 }

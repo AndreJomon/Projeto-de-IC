@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class SaveManager : MonoBehaviour {
 
     public static SaveManager instance;
-    public int slotsListSize = 50; //Quantidade de saves permitidos
+    public static int slotsListSize = 50; //Quantidade de saves permitidos
     public string dataPath; //Caminho onde será salvo os arquivos
     public string slotsDataPath; //Caminho onde será salvo os arquivo concatenado com "listaDeSlots.json"
     public SlotsList list;
@@ -77,7 +77,7 @@ public class SaveManager : MonoBehaviour {
     public void Load(int i)
     {
         string tempPath = i.ToString();
-        LoadPlayerData(tempPath + ".json");
+        player = LoadPlayerData(tempPath + ".json");
     }
 
     /// <summary>
@@ -86,6 +86,11 @@ public class SaveManager : MonoBehaviour {
     public void Load()
     {
         Load(0);
+    }
+
+    public Player LoadPlayer(int i)
+    {
+        return LoadPlayerData(i.ToString() + ".json");
     }
 
     #endregion
@@ -119,7 +124,7 @@ public class SaveManager : MonoBehaviour {
     /// Recebe o nome do arquivo que deve ser carregado
     /// </summary>
     /// <param name="path"></param>
-    private void LoadPlayerData(string path)
+    private Player LoadPlayerData(string path)
     {
         // Completa o caminho com o nome do arquivo
         string newDataPath = Path.Combine(dataPath, path);
@@ -128,12 +133,14 @@ public class SaveManager : MonoBehaviour {
         {
             // Se existe, carrega o arquivo no SaveManager
             string dataAsJson = File.ReadAllText(newDataPath);
-            player = JsonUtility.FromJson<Player>(dataAsJson);
+            //player = JsonUtility.FromJson<Player>(dataAsJson);
+            return JsonUtility.FromJson<Player>(dataAsJson);
         }
         // Se não existe, avisa
         else
         {
             Debug.LogError("Não foi possível carregar o save!");
+            return null;
         }
     }
 
