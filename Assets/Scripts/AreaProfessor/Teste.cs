@@ -8,7 +8,10 @@ public class Teste : MonoBehaviour
     
     void Start()
     {
-        PlayerPrefs.SetString("Senha", "SenhaTeste01");
+        if (!PlayerPrefs.HasKey("Senha"))
+        {
+            PlayerPrefs.SetString("Senha", "SenhaTeste01");
+        }
     }
 
     public void CheckPassword()
@@ -23,5 +26,12 @@ public class Teste : MonoBehaviour
         {
             text.text = "HaHaHa, vc não disse a palavra mágica!!!";
         }
+    }
+
+    public void ChangePassword(UnityEngine.UI.InputField newPswr)
+    {
+        string psw = newPswr.text;
+        PlayerPrefs.SetString("Senha", psw);
+        text.text = "Senha alterada com sucesso!";
     }
 }

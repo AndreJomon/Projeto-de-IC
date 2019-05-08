@@ -13,6 +13,7 @@ TagManager:
   - Molecula
   - "Hidrog\xEAnio"
   - Carbono
+  - Panel
   layers:
   - Default
   - TransparentFX
