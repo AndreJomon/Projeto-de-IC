@@ -12,9 +12,14 @@ public class LoadScene : MonoBehaviour {
         videoManager = VideoManager.instance;
     }
 
-    public static void SceneLoad(string sceneName)
+    public static void SceneLoader(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         //Fazer função para parar o video manager =p
+    }
+
+    public void SceneLoaderForButtons(string sceneName)
+    {
+        SceneLoader(sceneName);
     }
 }

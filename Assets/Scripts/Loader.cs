@@ -8,10 +8,11 @@ public class Loader : MonoBehaviour {
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void InitializeManagers()
     {
-        GameObject videoManager, gameManager;
+        GameObject videoManager, gameManager, saveManager;
 
-        videoManager = Resources.Load("Prefabs/VideoManager") as GameObject;
-        gameManager = Resources.Load("Prefabs/GameManager") as GameObject;
+        videoManager = Resources.Load("Prefabs/Managers/VideoManager") as GameObject;
+        gameManager = Resources.Load("Prefabs/Managers/GameManager") as GameObject;
+        saveManager = Resources.Load("Prefabs/Managers/SaveManager") as GameObject;
 
         if (VideoManager.instance == null)
         {
@@ -21,6 +22,11 @@ public class Loader : MonoBehaviour {
         if (GameManager.instance == null)
         {
             Instantiate(gameManager);
+        }
+
+        if (SaveManager.instance == null)
+        {
+            Instantiate(saveManager);
         }
     }
 }

@@ -72,5 +72,13 @@ public class Player
     {
         return score;
     }
+
+    public void SetAll(int slot, string nome, string classroom, int score)
+    {
+        SetSlot(slot);
+        SetNome(nome);
+        SetClassroom(classroom);
+        SetScore(score);
+    }
     #endregion
 }

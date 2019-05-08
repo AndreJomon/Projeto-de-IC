@@ -172,7 +172,7 @@ public class MesaScript : MonoBehaviour {
     public void MandarResposta()
     {
         Pot.PutOnPot(moleculaAtual, Pot.currentPot);
-        LoadScene.SceneLoad("Encher Balões");
+        LoadScene.SceneLoader("Encher Balões");
     }
 
     /// <summary>

@@ -28,6 +28,7 @@ public class RegisterConfirmButton : MonoBehaviour
 
     public void InputConfirm()
     {
+        SaveManager.instance.CreateNewPlayer();
         SaveManager.instance.player.SetNome(nameText.GetComponent<Text>().text);
         SaveManager.instance.player.SetClassroom(classText.GetComponent<Text>().text);
     }

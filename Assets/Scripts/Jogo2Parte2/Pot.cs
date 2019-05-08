@@ -39,7 +39,7 @@ public class Pot : MonoBehaviour {
     public void Click()
     {
         currentPot = potNumber;
-        LoadScene.SceneLoad("Ligando atomos");
+        LoadScene.SceneLoader("Ligando atomos");
     }
 
 }
