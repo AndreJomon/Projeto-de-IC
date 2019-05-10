@@ -13,6 +13,6 @@ public class VideoToPlayOnStart : MonoBehaviour {
     private void Start()
     {
         videoManager = VideoManager.instance;
-        videoManager.PlayVideo(tela, video);
+        StartCoroutine(videoManager.PlayVideo(tela, video));
     }
 }

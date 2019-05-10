@@ -59,6 +59,12 @@ public class VideoManager : MonoBehaviour {
         videoPlayer.Play();
     }
 
+    public bool VideoIsPlaying()
+    {
+        ///loopEnd
+        return videoPlayer.isPlaying;
+    }
+
 
 
 }
