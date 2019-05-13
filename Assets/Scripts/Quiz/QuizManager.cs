@@ -5,7 +5,7 @@ using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
-    [SerializeField] private int score = 0;
+    [SerializeField] private int correctAnswers = 0;
     [SerializeField] private int scoreIncrease = 50;
     [SerializeField] private int dificulty;
     [Tooltip("Quantidade total de perguntas que serão realizadas (máximo igual ao total de perguntas)")]
@@ -26,6 +26,9 @@ public class QuizManager : MonoBehaviour
     private int index;
     private int questionSelected;
     private int numberOfAnswers;
+
+    public GameObject correctFeedback;
+    public GameObject wrongFeedback;
 
     #region Set/Get das variáveis
     public void SetDificulty(int value)
@@ -75,6 +78,8 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void PrepareNewQuestion()
     {
+        UnblockButtons();
+
         /// Pega o indice da última posição da lista de perguntas e respostas já realizadas
         index = questionAndAnswer.Count;
 
@@ -117,6 +122,13 @@ public class QuizManager : MonoBehaviour
     /// <param name="value"></param>
     public void CheckAnswer(int value)
     {
+        BlockButtons();
+        
+        StartCoroutine(VerifyAnswer(value));
+    }
+
+    private IEnumerator VerifyAnswer(int value)
+    {
         /// Incrementa o contador de perguntas feitas
         qtyQuestionsDone++;
         /// Salva a alternativa escolhida
@@ -127,8 +139,21 @@ public class QuizManager : MonoBehaviour
         /// Se for correta, incrementa a pontuação
         if (isCorrect)
         {
-            score += scoreIncrease;
+            correctAnswers++;
+            questionAndAnswer[index].SetIsCorrect(true);
+            GameObject tempCorrectFeedback = Instantiate(correctFeedback, answerMeshText[value].transform.parent);
+            yield return new WaitForSeconds(3f);
+            Destroy(tempCorrectFeedback);
         }
+        else
+        {
+            questionAndAnswer[index].SetIsCorrect(false);
+            GameObject tempCorrectFeedback = Instantiate(wrongFeedback, answerMeshText[value].transform.parent);
+            yield return new WaitForSeconds(3f);
+            Destroy(tempCorrectFeedback);
+        }
+
+        Debug.Log(answerMeshText[value].transform.parent);
 
         /// Verifica se há mais questões a serem feitas
         if (qtyQuestionsDone != qtyQuestionsToDo)
@@ -148,7 +173,9 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void EndQuiz()
     {
+        SaveManager.instance.player.SetQnA(questionAndAnswer);
         Debug.Log("Quiz Cabo !!!!");
+        Debug.Log("Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "!");
     }
 
     #region Funções Auxiliares
@@ -178,6 +205,22 @@ public class QuizManager : MonoBehaviour
         for (int i = 0; i < questionGroup[dificulty].GetLenght(); i++)
         {
             numbersList.Add(i);
+        }
+    }
+
+    private void BlockButtons()
+    {
+        foreach (TextMeshProUGUI buttonText in answerMeshText)
+        {
+            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().enabled = false;
+        }
+    }
+
+    private void UnblockButtons()
+    {
+        foreach (TextMeshProUGUI buttonText in answerMeshText)
+        {
+            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().enabled = true;
         }
     }
 

@@ -8,35 +8,14 @@ public class ButtonsController : ScriptableObject
     private int selectedButton = -1;
 
     /// <summary>
-    /// Função que marca a alternativa selecionada para posterior verificação
-    /// </summary>
-    /// <param name="value"></param>
-    public void ButtonPressed(int value)
-    {
-        selectedButton = value;
-
-        UnselectAllButtons();
-        GameObject.Find("Button Answer " + value).GetComponent<UnityEngine.UI.Button>().interactable = false;
-    }
-
-    /// <summary>
-    /// Função que verifica se a resposta selecionada está correta
-    /// </summary>
-    public void ConfirmSelection()
-    {
-        UnselectAllButtons();
-        QuizManager.instance.CheckAnswer(selectedButton);
-    }
-
-    /// <summary>
     /// Função que verifica automáticamente se a alternativa selecionada é a correta
     /// </summary>
     /// <param name="value"></param>
     public void AnswerSelected(int value)
     {
-        UnselectAllButtons();
         GameObject.Find("Button Answer " + value).GetComponent<UnityEngine.UI.Button>().interactable = false;
         QuizManager.instance.CheckAnswer(value);
+        UnselectAllButtons();
     }
 
     #region Funções auxiliares

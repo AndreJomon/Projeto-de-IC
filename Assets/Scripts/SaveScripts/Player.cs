@@ -21,6 +21,7 @@ public class Player
     [Tooltip("Pontuação total do aluno")]
     [SerializeField]
     private int score = 0;
+    private List<QuestionAndAnswer> questionAndAnswers = new List<QuestionAndAnswer>();
 
     #region Getter & Setters
     public void SetNome(string nome)
@@ -79,6 +80,21 @@ public class Player
         SetNome(nome);
         SetClassroom(classroom);
         SetScore(score);
+    }
+
+    public void SetQnA(List<QuestionAndAnswer> list)
+    {
+        questionAndAnswers = list;
+    }
+
+    public List<QuestionAndAnswer> GetQnA()
+    {
+        return questionAndAnswers;
+    }
+
+    public void ShowAll()
+    {
+        Debug.Log(rankingPosition + " " + score + " " + nome + " " + classroom);
     }
     #endregion
 }

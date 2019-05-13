@@ -92,6 +92,6 @@ public class ProfessorManager : MonoBehaviour
 
     public void ResetSenha()
     {
-        PlayerPrefs.DeleteKey("Senha");
+        PlayerPrefs.SetString("Senha", "SenhaPadrao");
     }
 }
