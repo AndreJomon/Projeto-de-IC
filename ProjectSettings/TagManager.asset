@@ -15,6 +15,7 @@ TagManager:
   - Carbono
   - Panel
   - ButtonMenu
+  - Lamp
   layers:
   - Default
   - TransparentFX
