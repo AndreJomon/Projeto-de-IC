@@ -313,9 +313,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 803450755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e0431df86fc9ea418d5e340cdffb4c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 22404a8dcee46a54cbc97f152a43c729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  videoClip: {fileID: 0}
+  pauseScreen: {fileID: 2800000, guid: ba0d25f4cd6485149be9c6971f011e19, type: 3}
+  replayScreen: {fileID: 2800000, guid: ab566defa1a6f524c862dfde886daaf7, type: 3}
 --- !u!1 &904526435
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,5 +736,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 843038344758262367, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf176ef1b50c6ca4cb3d28a9aefec9a2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f5709a0a746d9d48ba8ffae78644a2d, type: 3}
