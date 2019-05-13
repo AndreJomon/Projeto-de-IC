@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     private float letterPause = 0.03f;
     private bool instantText = false;
+    public GameObject ballonTips;
 
     #region Loader
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

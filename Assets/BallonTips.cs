@@ -7,15 +7,21 @@ public class BallonTips : MonoBehaviour
 {
     [SerializeField]
     public static GameObject ballonTips;
-    public static GameObject queijo;
     private static Vector2 lampPositionModifier = new Vector2(90,90); //Criado arbitrariamente a partir de testes
 
     public static GameObject CreateBallonText(string text, Vector3 lampPosition)
     {
-        GameObject tempBallonTips;
+        Debug.Log(RectTransformUtility.WorldToScreenPoint(Camera.main, lampPositionModifier));
+        Debug.Log(lampPositionModifier);
+        ballonTips = GameManager.instance.ballonTips;
+        GameObject tempBallonTips = null;
+        //lampPosition = Camera.main.WorldToScreenPoint(lampPosition);
+        Debug.Log(lampPosition);
+        Debug.Log(Camera.main.WorldToViewportPoint(lampPosition));
+        Debug.Log(Camera.main.ScreenToWorldPoint(lampPosition));
         lampPosition.x += lampPositionModifier.x;
         lampPosition.y += lampPositionModifier.y;
-        tempBallonTips = Instantiate(ballonTips, lampPosition, Quaternion.identity, GameObject.Find("Canvas").transform);
+        tempBallonTips = Instantiate(ballonTips, lampPosition, Quaternion.identity, GameObject.Find("Lampada").transform);
         tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
         return tempBallonTips;
     }
