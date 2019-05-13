@@ -13,9 +13,7 @@ public class ButtonsController : ScriptableObject
     /// <param name="value"></param>
     public void AnswerSelected(int value)
     {
-        GameObject.Find("Button Answer " + value).GetComponent<UnityEngine.UI.Button>().interactable = false;
         QuizManager.instance.CheckAnswer(value);
-        UnselectAllButtons();
     }
 
     #region Funções auxiliares

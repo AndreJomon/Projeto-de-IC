@@ -30,6 +30,8 @@ public class QuizManager : MonoBehaviour
     public GameObject correctFeedback;
     public GameObject wrongFeedback;
 
+    private TimeManager timeManager;
+
     #region Set/Get das variáveis
     public void SetDificulty(int value)
     {
@@ -48,6 +50,8 @@ public class QuizManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        timeManager = GameObject.Find("TimeManager").GetComponent<TimeManager>();
 
         /// Cria uma lista de perguntas realizadas e respostas dadas pelo player
         questionAndAnswer = new List<QuestionAndAnswer>();
@@ -78,25 +82,31 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void PrepareNewQuestion()
     {
-        UnblockButtons();
+        /// Verifica se há mais questões a serem feitas ou se o quiz acabou
+        if (qtyQuestionsDone < qtyQuestionsToDo)
+        {
+            /// Pega o indice da última posição da lista de perguntas e respostas já realizadas
+            index = questionAndAnswer.Count;
 
-        /// Pega o indice da última posição da lista de perguntas e respostas já realizadas
-        index = questionAndAnswer.Count;
+            /// Adiciona uma nova posição na lista
+            questionAndAnswer.Add(new QuestionAndAnswer());
+            /// Salva a dificuldade da pergunta a ser feita
+            questionAndAnswer[index].SetDificultyLevel(dificulty);
 
-        /// Adiciona uma nova posição na lista
-        questionAndAnswer.Add(new QuestionAndAnswer());
-        /// Salva a dificuldade da pergunta a ser feita
-        questionAndAnswer[index].SetDificultyLevel(dificulty);
+            /// Sorteia a pergunta dentre as possíveis da lista
+            questionSelected = RandomQuestionNumber();
+            /// Salva qual a pergunta que será realizada
+            questionAndAnswer[index].SetQuestionNumber(questionSelected);
 
-        /// Sorteia a pergunta dentre as possíveis da lista
-        questionSelected = RandomQuestionNumber();
-        /// Salva qual a pergunta que será realizada
-        questionAndAnswer[index].SetQuestionNumber(questionSelected);
+            //Debug.Log("Questão selecionada foi: " + questionSelected);
 
-        Debug.Log("Questão selecionada foi: " + questionSelected);
-
-        /// Mostra a pergunta na tela
-        ShowNewQuestion();
+            /// Mostra a pergunta na tela
+            ShowNewQuestion();
+        }
+        else
+        {
+            EndQuiz();
+        }
     }
 
     /// <summary>
@@ -114,6 +124,10 @@ public class QuizManager : MonoBehaviour
         {
             answerMeshText[i].text = selectedQuestion.GetAlternative(i).text;
         }
+
+        UnblockButtons();
+        
+        timeManager.StartTimer();
     }
 
     /// <summary>
@@ -123,10 +137,17 @@ public class QuizManager : MonoBehaviour
     public void CheckAnswer(int value)
     {
         BlockButtons();
-        
+
+        timeManager.EndTimer();
+
         StartCoroutine(VerifyAnswer(value));
     }
 
+    /// <summary>
+    /// Função que verifica a resposta e mostra o feedback
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
     private IEnumerator VerifyAnswer(int value)
     {
         /// Incrementa o contador de perguntas feitas
@@ -136,36 +157,30 @@ public class QuizManager : MonoBehaviour
         /// Verifica se a alternativa é a correta
         bool isCorrect = questionGroup[dificulty].GetQuestion(questionSelected).VerifyAnswer(value);
 
-        /// Se for correta, incrementa a pontuação
+        /// Se for correta
         if (isCorrect)
         {
+            /// Incrementa a pontuação e mostra o feedback positivo
             correctAnswers++;
             questionAndAnswer[index].SetIsCorrect(true);
             GameObject tempCorrectFeedback = Instantiate(correctFeedback, answerMeshText[value].transform.parent);
             yield return new WaitForSeconds(3f);
             Destroy(tempCorrectFeedback);
         }
-        else
+        else /// Caso contrário
         {
+            /// Mostra o feedback "negativo"
             questionAndAnswer[index].SetIsCorrect(false);
-            GameObject tempCorrectFeedback = Instantiate(wrongFeedback, answerMeshText[value].transform.parent);
-            yield return new WaitForSeconds(3f);
-            Destroy(tempCorrectFeedback);
+            if (value != -1)
+            {
+                GameObject tempCorrectFeedback = Instantiate(wrongFeedback, answerMeshText[value].transform.parent);
+                yield return new WaitForSeconds(3f);
+                Destroy(tempCorrectFeedback);
+            }
         }
 
-        Debug.Log(answerMeshText[value].transform.parent);
-
-        /// Verifica se há mais questões a serem feitas
-        if (qtyQuestionsDone != qtyQuestionsToDo)
-        {
-            /// Se existem, prepara uma nova
-            PrepareNewQuestion();
-        }
-        else
-        {
-            /// Caso contrário, informa que o quiz acabou
-            EndQuiz();
-        }
+        Debug.Log("Resposta verificada");
+        PrepareNewQuestion();
     }
 
     /// <summary>
@@ -174,8 +189,16 @@ public class QuizManager : MonoBehaviour
     public void EndQuiz()
     {
         SaveManager.instance.player.SetQnA(questionAndAnswer);
-        Debug.Log("Quiz Cabo !!!!");
+        //Debug.Log("Quiz Cabo !!!!");
         Debug.Log("Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "!");
+    }
+
+    public static IEnumerator TimeOver()
+    {
+        instance.BlockButtons();
+        Debug.Log("Informar de algum jeito SEM TEXTOS que o tempo acabou...");
+        yield return new WaitForSeconds(5);
+        instance.StartCoroutine(instance.VerifyAnswer(-1));
     }
 
     #region Funções Auxiliares
@@ -212,7 +235,7 @@ public class QuizManager : MonoBehaviour
     {
         foreach (TextMeshProUGUI buttonText in answerMeshText)
         {
-            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().enabled = false;
+            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().interactable = false;
         }
     }
 
@@ -220,7 +243,7 @@ public class QuizManager : MonoBehaviour
     {
         foreach (TextMeshProUGUI buttonText in answerMeshText)
         {
-            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().enabled = true;
+            buttonText.transform.parent.GetComponent<UnityEngine.UI.Button>().interactable = true;
         }
     }
 
