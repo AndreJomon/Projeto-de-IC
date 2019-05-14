@@ -11,17 +11,10 @@ public class BallonTips : MonoBehaviour
 
     public static GameObject CreateBallonText(string text, Vector3 lampPosition)
     {
-        Debug.Log(RectTransformUtility.WorldToScreenPoint(Camera.main, lampPositionModifier));
-        Debug.Log(lampPositionModifier);
         ballonTips = GameManager.instance.ballonTips;
-        GameObject tempBallonTips = null;
-        //lampPosition = Camera.main.WorldToScreenPoint(lampPosition);
-        Debug.Log(lampPosition);
-        Debug.Log(Camera.main.WorldToViewportPoint(lampPosition));
-        Debug.Log(Camera.main.ScreenToWorldPoint(lampPosition));
-        lampPosition.x += lampPositionModifier.x;
-        lampPosition.y += lampPositionModifier.y;
-        tempBallonTips = Instantiate(ballonTips, lampPosition, Quaternion.identity, GameObject.Find("Lampada").transform);
+        GameObject tempBallonTips;
+        tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
+        tempBallonTips.transform.localPosition += new Vector3(lampPositionModifier.x, lampPositionModifier.y, 0);
         tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
         return tempBallonTips;
     }
@@ -30,4 +23,6 @@ public class BallonTips : MonoBehaviour
     {
         GetComponentInChildren<Text>().text = text;
     }
+
+
 }

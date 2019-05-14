@@ -9,6 +9,8 @@ public class TesteLamp : MonoBehaviour
 
     public void Text()
     {
-        BallonTips.CreateBallonText("Aiaiaiaii que delicia", GameObject.Find("Lampada").transform.position);
+        Debug.Log(GameObject.Find("Lampada").GetComponent<RectTransform>().localPosition);
+        Debug.Log(GameObject.Find("Lampada").transform.position);
+        BallonTips.CreateBallonText("Aiaiaiaii que delicia", GameObject.Find("Lampada").GetComponent<RectTransform>().position);
     }
 }
