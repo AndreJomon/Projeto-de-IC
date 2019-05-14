@@ -984,7 +984,7 @@ MonoBehaviour:
   correctAnswers: 0
   scoreIncrease: 50
   dificulty: 0
-  qtyQuestionsToDo: 5
+  qtyQuestionsToDo: 20
   qtyQuestionsDone: 0
   questionGroup:
   - {fileID: 11400000, guid: 83c9e8029e99a85458f16bfa607eac41, type: 2}
@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instance: {fileID: 0}
-  timeToWait: 0.5
+  timeToWait: 1
   repeatInstances: 8
   timerAnimation: {fileID: 168156161}
 --- !u!4 &1410761612

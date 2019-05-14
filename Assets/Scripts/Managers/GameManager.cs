@@ -39,6 +39,24 @@ public class GameManager : MonoBehaviour {
     }
     #endregion
 
+    /// <summary>
+    /// Instancia um balão de fala. Serve para mostrar as dicas.
+    /// </summary>
+    /// <param name="text">Texto que será exibido dentro do balão</param>
+    /// <returns></returns>
+    public GameObject CreateBallonText(string text)
+    {
+        GameObject tempBallonTips;
+        Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
+
+        tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
+        tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
+
+        tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
+
+        return tempBallonTips;
+    }
+
     public void SetLetterPause(float letterPause)
     {
         this.letterPause = letterPause;

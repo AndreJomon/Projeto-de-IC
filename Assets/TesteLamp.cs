@@ -11,6 +11,6 @@ public class TesteLamp : MonoBehaviour
     {
         Debug.Log(GameObject.Find("Lampada").GetComponent<RectTransform>().localPosition);
         Debug.Log(GameObject.Find("Lampada").transform.position);
-        BallonTips.CreateBallonText("Aiaiaiaii que delicia", GameObject.Find("Lampada").GetComponent<RectTransform>().position);
+        GameManager.instance.CreateBallonText("Aiaiaiaii que delicia");
     }
 }

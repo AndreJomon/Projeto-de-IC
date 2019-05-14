@@ -7,7 +7,7 @@ public class TimeManager : MonoBehaviour
     public TimeManager instance;
     public float timeToWait;
     public int repeatInstances;
-    private int savedRepeatInstances;
+    private int count;
 
     // Variável usada para armazenar uma referencia a corrotina (que deve ser interrompida caso necessário)
     private Coroutine timerCoroutineInstance = null;
@@ -24,24 +24,22 @@ public class TimeManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        savedRepeatInstances = repeatInstances;
     }
     
     public void StartTimer()
     {
         timerAnimation.RestarAnimation();
-        repeatInstances = savedRepeatInstances;
+        count = repeatInstances;
         StartCoroutine(Timer());
     }
 
     public IEnumerator Timer()
     {
         //Debug.Log("Timer round " + repeatInstances + " " + Time.time);
-        if (repeatInstances > 0)
+        if (count > 0)
         {
             yield return new WaitForSeconds(timeToWait);
-            repeatInstances--;
+            count--;
             timerAnimation.NextTransition();
             timerCoroutineInstance = StartCoroutine(Timer());
         }

@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8369872633649725424}
   - component: {fileID: 2128798380523341763}
+  - component: {fileID: 1866082443}
   m_Layer: 5
   m_Name: BalaoDeFala
   m_TagString: Untagged
@@ -124,6 +125,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7deb11dd43ba064c9ff2237b3e55538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionModifier: {x: 90, y: 90}
+  timeToDisappear: 10
+  anim: {fileID: 1866082443}
+--- !u!95 &1866082443
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8369872633649725431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af121690508f1584fb456dc98d09b45a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8369872635001629964
 GameObject:
   m_ObjectHideFlags: 0
