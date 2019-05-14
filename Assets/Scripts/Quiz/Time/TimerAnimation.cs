@@ -10,15 +10,7 @@ public class TimerAnimation : MonoBehaviour
     private int count = 0;
     public GameObject movingObject;
 
-    private void Start()
-    {
-        //Debug.Log("seno de 0° = " + Mathf.Sin(0));
-        //Debug.Log("seno de 45° = " + Mathf.Sin(45));
-        //Debug.Log("seno de 45° = " + Mathf.Sin(Mathf.PI/4));
-        //Debug.Log("seno de 90° = " + Mathf.Sin(90));
-        //Debug.Log("seno de 90° = " + Mathf.Sin(Mathf.PI/2));
-        //StartCoroutine(Animation());
-    }
+    private float barProgression;
 
     private void Equation(float x)
     {
@@ -27,17 +19,20 @@ public class TimerAnimation : MonoBehaviour
             Mathf.Sin(x * Mathf.PI / 4) * (posFinal.y - posInicial.y) / 2;
     }
 
-    private IEnumerator Animation()
+    private IEnumerator Animation_MovingEletron()
     {
         Equation(count);
         //Debug.Log(pos);
         movingObject.transform.localPosition = new Vector3(pos.x, pos.y);
         count++;
         yield return new WaitForSeconds(0);
-        //if (count <= 8)
-        //{
-        //    StartCoroutine(Animation());
-        //}
+    }
+
+    public IEnumerator Animation()
+    {
+
+
+        yield return new WaitForSeconds(0);
     }
 
     public void RestarAnimation()
