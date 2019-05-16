@@ -73,7 +73,7 @@ public class QuizManager : MonoBehaviour
         RestartNumberList();
 
         /// Prepara uma nova pergunta para ser exibida
-        PrepareNewQuestion();
+        //PrepareNewQuestion();
     }
 
     /// <summary>
@@ -189,7 +189,6 @@ public class QuizManager : MonoBehaviour
     public void EndQuiz()
     {
         SaveManager.instance.player.SetQnA(questionAndAnswer);
-        //Debug.Log("Quiz Cabo !!!!");
         Debug.Log("Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "!");
     }
 

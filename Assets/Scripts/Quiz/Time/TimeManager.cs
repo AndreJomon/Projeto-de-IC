@@ -31,16 +31,16 @@ public class TimeManager : MonoBehaviour
 
     public void StartTimer()
     {
-        progressionBar.fillAmount = 0;
+        progressionBar.fillAmount = 1;
 
         StartCoroutine(Timer());
     }
 
     public IEnumerator Timer()
     {
-        if (progressionBar.fillAmount < 1)
+        if (progressionBar.fillAmount > 0)
         {
-            progressionBar.fillAmount += (Time.deltaTime / totalTime);
+            progressionBar.fillAmount -= (Time.deltaTime / totalTime);
             yield return new WaitForEndOfFrame();
             timerCoroutineInstance = StartCoroutine(Timer());
         }

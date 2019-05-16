@@ -16,6 +16,16 @@ public class ButtonsController : ScriptableObject
         QuizManager.instance.CheckAnswer(value);
     }
 
+    public void FadeOutPanel()
+    {
+        GameObject.Find("StartPanel").GetComponent<Animator>().SetTrigger("FadeOut");
+    }
+
+    public void StartQuiz()
+    {
+        GameObject.Find("QuizManager").GetComponent<QuizManager>().PrepareNewQuestion();
+    }
+
     #region Funções auxiliares
     /// <summary>
     /// Função que desmarca todos os botões da tela
