@@ -9,6 +9,20 @@ public class GameManager : MonoBehaviour {
     private float letterPause = 0.03f;
     private bool instantText = false;
     public GameObject ballonTips;
+    /// <summary>
+    /// Flag que controla se um texto já foi instanciado, ou seja, se já há um balão na tela.
+    /// </summary>
+    private bool textInstantiate = false;
+
+    public bool GetTextInstantiate()
+    {
+        return textInstantiate;
+    }
+
+    public void SetTextInstantiate(bool textInstantiate)
+    {
+        this.textInstantiate = textInstantiate;
+    }
 
     #region Loader
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
@@ -46,8 +60,11 @@ public class GameManager : MonoBehaviour {
     /// <returns></returns>
     public GameObject CreateBallonText(string text)
     {
+        SetInstantText(true);
+
         GameObject tempBallonTips;
         Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
+        Debug.Log(positionModifier);
 
         tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
         tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
