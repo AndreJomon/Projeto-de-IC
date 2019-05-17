@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7deb11dd43ba064c9ff2237b3e55538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionModifier: {x: 90, y: 90}
+  positionModifier: {x: -85, y: -85}
   timeToDisappear: 10
   anim: {fileID: 1866082443}
 --- !u!95 &1866082443

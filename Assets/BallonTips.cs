@@ -10,7 +10,7 @@ public class BallonTips : MonoBehaviour
     /// Criado arbitrariamente a partir de testes, serve para instanciar o objeto a uma distância "boa" do objeto base.
     /// </summary>
     [SerializeField]
-    private Vector2 positionModifier = new Vector2(-85,-85);
+    private Vector2 positionModifier = new Vector2(50,50);
     /// <summary>
     /// Tempo que demorará para o balão desaparecer
     /// </summary>
@@ -25,6 +25,7 @@ public class BallonTips : MonoBehaviour
 
     public Vector2 GetPositionModifier()
     {
+        Debug.Log(positionModifier.ToString());
         return positionModifier;
     }
 
@@ -52,7 +53,7 @@ public class BallonTips : MonoBehaviour
     /// </summary>
     public void AutoDestroy()
     {
-        GameManager.instance.SetTextInstantiate(false);
+        GameManager.instance.SetTextBallonInstantiate(false);
         Destroy(gameObject);
     }
 }
