@@ -24,4 +24,9 @@ public class SavegameLoadButton : MonoBehaviour
     {
         SaveManager.instance.player.SetAll(playerTemp.GetSlot(), playerTemp.GetNome(), playerTemp.GetClassroom(), playerTemp.GetScore());
     }
+
+    public Player GetPlayer()
+    {
+        return playerTemp;
+    }
 }
