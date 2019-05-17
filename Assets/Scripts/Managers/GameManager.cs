@@ -6,22 +6,26 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
-    private float letterPause = 0.03f;
-    private bool instantText = false;
     public GameObject ballonTips;
     /// <summary>
     /// Flag que controla se um texto já foi instanciado, ou seja, se já há um balão na tela.
     /// </summary>
-    private bool textInstantiate = false;
+    private bool textBallonInstantiate = false;
 
-    public bool GetTextInstantiate()
+    public bool GetTextBallonInstantiate()
     {
-        return textInstantiate;
+        return textBallonInstantiate;
     }
 
-    public void SetTextInstantiate(bool textInstantiate)
+    public void SetTextBallonInstantiate(bool textBallonInstantiate)
     {
-        this.textInstantiate = textInstantiate;
+        Debug.Log("Tentou mudar para" + textBallonInstantiate.ToString());
+        this.textBallonInstantiate = textBallonInstantiate;
+    }
+
+    private void Update()
+    {
+        Debug.Log(textBallonInstantiate);
     }
 
     #region Loader
@@ -60,38 +64,22 @@ public class GameManager : MonoBehaviour {
     /// <returns></returns>
     public GameObject CreateBallonText(string text)
     {
-        SetInstantText(true);
+        GameObject tempBallonTips = null;
 
-        GameObject tempBallonTips;
-        Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
-        Debug.Log(positionModifier);
+        if (!textBallonInstantiate)
+        {
+            SetTextBallonInstantiate(true);
 
-        tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
-        tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
+            Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
+            Debug.Log(positionModifier);
 
-        tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
+            tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
+            tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
+
+            tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
+        }
 
         return tempBallonTips;
-    }
-
-    public void SetLetterPause(float letterPause)
-    {
-        this.letterPause = letterPause;
-    }
-
-    public float GetLetterPause()
-    {
-        return letterPause;
-    }
-
-    public void SetInstantText(bool instantText)
-    {
-        this.instantText = instantText;
-    }
-
-    public bool GetInstantText()
-    {
-        return instantText;
     }
 
     private void Awake()

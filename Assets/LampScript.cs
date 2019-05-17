@@ -33,6 +33,10 @@ public class LampScript : MonoBehaviour
         gameManager = GameManager.instance;
     }
 
+    /// <summary>
+    /// Toca a animação de que existe uma curiosidade disponível
+    /// </summary>
+    /// <param name="word">Palavra-chave da curiosidade (nome)</param>
     public void TurnOnLamp(string word)
     {
         int wordIndex = SearchIndexKeyWord(curiosity, word);
@@ -45,6 +49,9 @@ public class LampScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// O que acontece quando se clica na lâmpada após ela estar ativa
+    /// </summary>
     public void ClickOnTurnedOnLamp()
     {
         gameManager.CreateBallonText(currentCuriosity.text);
@@ -61,10 +68,6 @@ public class LampScript : MonoBehaviour
 
         if (wordIndex != -1)
         {
-            if (gameManager.GetTextInstantiate())
-            {
-                GameObject.FindGameObjectWithTag("BallonText").GetComponent<BallonTips>().AutoDestroy();
-            }
             gameManager.CreateBallonText(notoriousWord[wordIndex].text);
         }
     }
@@ -87,4 +90,6 @@ public class LampScript : MonoBehaviour
 
         return -1;
     }
+
+    ///TODO: Funções para dicas sobre palavras estranhas
 }
