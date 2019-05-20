@@ -8,6 +8,7 @@ public class ProfessorManager : MonoBehaviour
     [SerializeField] private GameObject professorArea;
     [SerializeField] private GameObject changePassord;
     [SerializeField] private GameObject messagePanel;
+    [SerializeField] private GameObject confirmPanel;
 
     [SerializeField] private UnityEngine.UI.InputField curPassword;
     [SerializeField] private UnityEngine.UI.InputField newPassword;
@@ -93,5 +94,10 @@ public class ProfessorManager : MonoBehaviour
     public void ResetSenha()
     {
         PlayerPrefs.SetString("Senha", "SenhaPadrao");
+    }
+
+    public void ConfirmPanel()
+    {
+        confirmPanel.SetActive(true);
     }
 }
