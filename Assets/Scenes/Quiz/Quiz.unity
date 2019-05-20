@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posInicial: {x: 0, y: 0}
   posFinal: {x: 0, y: 0}
-  movingObject: {fileID: 0}
+  movingObject: {fileID: 1178361780}
 --- !u!222 &1178361783
 CanvasRenderer:
   m_ObjectHideFlags: 0

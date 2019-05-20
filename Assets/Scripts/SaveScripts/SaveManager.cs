@@ -13,8 +13,6 @@ public class SaveManager : MonoBehaviour {
     public string slotsDataPath; //Caminho onde será salvo os arquivo concatenado com "listaDeSlots.json"
     public SlotsList list;
     public Player player;
-    // Para indicar o slot selecionado (usado no load)
-    public static int selectedSlot;
 
 
     public void Awake()
@@ -152,7 +150,7 @@ public class SaveManager : MonoBehaviour {
 
         System.IO.File.Delete(System.IO.Path.Combine(dataPath, stringSlot));
         //Debug.Log(SaveManager.selectedSlot);
-        SlotsListManager.ReturnSlot(selectedSlot);
+        SlotsListManager.ReturnSlot(slot);
 
     }
 

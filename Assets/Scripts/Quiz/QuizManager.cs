@@ -73,7 +73,7 @@ public class QuizManager : MonoBehaviour
         RestartNumberList();
 
         /// Prepara uma nova pergunta para ser exibida
-        //PrepareNewQuestion();
+        PrepareNewQuestion();
     }
 
     /// <summary>
