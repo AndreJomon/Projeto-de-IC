@@ -5,27 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StartMenu.unity
-    guid: 821bf50be4f37f74b9cd815fd2c315d1
+    guid: f8b1c702896a7574799c1d542853be09
   - enabled: 1
     path: Assets/Scenes/Configuracao.unity
     guid: 7140fa1c3fc30454bbcffd7e37a3bccd
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Minigame2/Ligando atomos.unity
     guid: 410d1df753ed271429adb8509bd36cc0
@@ -38,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TelaDeCarregar.unity
     guid: 72b6a88d73e756f488f56e7e9ebbaca2
+  - enabled: 1
+    path: Assets/Scenes/Lousa.unity
+    guid: 9566c1ac10e826a489d77c9df11cc1ef
   m_configObjects: {}

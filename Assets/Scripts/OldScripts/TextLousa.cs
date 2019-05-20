@@ -12,13 +12,24 @@ public class TextLousa : MonoBehaviour
     private TextMeshProUGUI tmp;
     private int wordIndex = -2;
     private int currentWordIndex;
-    KeyWords kw;
+    private string[] text;
 
     public void Awake()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmpT = this.GetComponent<TMP_Text>();
-        kw = this.GetComponent<KeyWords>();
+        SplitString();
+
+    }
+
+    private void SplitString()
+    {
+        text = tmpT.text.Split(' ');
+        
+        for (int i = 0; i<text.Length; i++)
+        {
+            text[i] = text[i].TrimEnd(new char[] { ',', '.' });
+        }
     }
 
     void LateUpdate()
@@ -27,14 +38,9 @@ public class TextLousa : MonoBehaviour
         
         if(currentWordIndex != -1 && !(currentWordIndex == wordIndex))
         {
-            kw.DestroyWordText();
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3 (0, offset, 0);
-            kw.ShowKeyWordText(tmp.textInfo.wordInfo[currentWordIndex].GetWord(), position);
             wordIndex = currentWordIndex;
+            Debug.Log(wordIndex.ToString() + ": " + text[wordIndex]);
         }
-    }
-
-
-
-    ///Fazer adaptação a multiplos strings e funções para deixar o texto mais bonito.
+    }    ///Fazer adaptação a multiplos strings e funções para deixar o texto mais bonito.
 }

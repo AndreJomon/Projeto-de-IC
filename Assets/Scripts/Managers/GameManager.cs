@@ -19,13 +19,7 @@ public class GameManager : MonoBehaviour {
 
     public void SetTextBallonInstantiate(bool textBallonInstantiate)
     {
-        Debug.Log("Tentou mudar para" + textBallonInstantiate.ToString());
         this.textBallonInstantiate = textBallonInstantiate;
-    }
-
-    private void Update()
-    {
-        //Debug.Log(textBallonInstantiate);
     }
 
     #region Loader
