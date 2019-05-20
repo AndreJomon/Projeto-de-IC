@@ -25,7 +25,6 @@ public class BallonTips : MonoBehaviour
 
     public Vector2 GetPositionModifier()
     {
-        Debug.Log(positionModifier.ToString());
         return positionModifier;
     }
 

@@ -6,6 +6,11 @@ using UnityEngine.UI;
 public class LampScript : MonoBehaviour
 {
     /// <summary>
+    /// Cor utilizada para as dicas.
+    /// </summary>
+    public string colorCode;
+    private string colorCodeEnd = "</color>";
+    /// <summary>
     /// Palavras que possuem alguma dica relacionada a elas.
     /// </summary>
     [Tooltip("Palavras que possuem uma explicação")]
@@ -14,7 +19,6 @@ public class LampScript : MonoBehaviour
     /// <summary>
     /// Curiosidades mostradas após o texto passar.
     /// </summary>
-    [Tooltip("Curiosidades")]
     [SerializeField]
     public List<KeyWord> curiosity;
     /// <summary>
@@ -27,10 +31,23 @@ public class LampScript : MonoBehaviour
 
     public Animator anim;
     private GameManager gameManager;
+    private VideoManager videoManager;
 
     private void Start()
     {
         gameManager = GameManager.instance;
+        AdjustLetters();
+    }
+
+    /// <summary>
+    /// Ajusta as notoriousWord para que elas ganhem o código que mostra a cor do texto.
+    /// </summary>
+    private void AdjustLetters()
+    {
+        foreach (KeyWord kw in notoriousWord)
+        {
+            kw.name = (colorCode + kw.name + colorCodeEnd);
+        }
     }
 
     /// <summary>
@@ -72,6 +89,17 @@ public class LampScript : MonoBehaviour
         }
     }
 
+    public void NotoriousWordAppearOnClick(string word)
+    {
+        int wordIndex = SearchIndexKeyWord(notoriousWord, word);
+
+        if (wordIndex != -1)
+        {
+            videoManager = VideoManager.instance;
+            StartCoroutine(videoManager.PlayVideoHelper(notoriousWord[wordIndex].video));
+        }
+    }
+
     /// <summary>
     /// Procura o index da palavra chama na lista de KeyWord dada
     /// </summary>
@@ -80,9 +108,10 @@ public class LampScript : MonoBehaviour
     /// <returns>Index da palavra dentro da lista</returns>
     public int SearchIndexKeyWord(List<KeyWord> kwList, string searchedWord)
     {
+        searchedWord = searchedWord.ToUpper();
         foreach (KeyWord kw in kwList)
         {
-            if (kw.name.Equals(searchedWord))
+            if (kw.name.ToUpper().Equals(searchedWord))
             {
                 return kwList.IndexOf(kw);
             }

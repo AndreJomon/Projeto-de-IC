@@ -16,7 +16,6 @@ TagManager:
   - Panel
   - ButtonMenu
   - Lamp
-  - BallontText
   layers:
   - Default
   - TransparentFX

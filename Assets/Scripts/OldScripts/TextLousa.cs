@@ -13,13 +13,15 @@ public class TextLousa : MonoBehaviour
     private int wordIndex = -2;
     private int currentWordIndex;
     private string[] text;
+    private VideoManager videoManager;
+
+    public LampScript lampScript;
 
     public void Awake()
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmpT = this.GetComponent<TMP_Text>();
         SplitString();
-
     }
 
     private void SplitString()
@@ -32,6 +34,12 @@ public class TextLousa : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        Debug.Log("Ativou");
+        lampScript.NotoriousWordAppearOnClick(text[wordIndex]);
+    }
+
     void LateUpdate()
     {
         currentWordIndex = TMP_TextUtilities.FindIntersectingWord(tmpT, Input.mousePosition, camera);
@@ -40,7 +48,10 @@ public class TextLousa : MonoBehaviour
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3 (0, offset, 0);
             wordIndex = currentWordIndex;
-            Debug.Log(wordIndex.ToString() + ": " + text[wordIndex]);
+            lampScript.NotoriousWordAppear(text[wordIndex]);
+            Debug.Log(text[wordIndex]);
         }
-    }    ///Fazer adaptação a multiplos strings e funções para deixar o texto mais bonito.
+    }
+
+    ///Fazer função de OnClick e de tocar o video
 }

@@ -8,6 +8,7 @@ public class VideoManager : MonoBehaviour {
 
     public static VideoManager instance = null;
     public VideoPlayer videoPlayer;
+    public VideoClip mainVideo;
     private bool videoEnded;
 
     private void Awake()
@@ -31,24 +32,40 @@ public class VideoManager : MonoBehaviour {
 
     public IEnumerator PlayVideo (RawImage image)
     {
-        PlayVideo(image, videoPlayer.clip);
+        StartCoroutine(PlayVideo(image, videoPlayer.clip, true));
+        yield return new WaitForSeconds(0);
+    }
+
+    public IEnumerator PlayVideo(VideoClip video)
+    {
+        StartCoroutine(PlayVideo(GameObject.Find("Tela").GetComponent<RawImage>(), video, true));
+        yield return new WaitForSeconds(0);
+    }
+
+    public IEnumerator PlayVideoHelper(VideoClip video)
+    {
+        StartCoroutine(PlayVideo(GameObject.Find("Tela").GetComponent<RawImage>(), video, false));
         yield return new WaitForSeconds(0);
     }
 
     public IEnumerator PlayVideo(RawImage image, VideoClip video)
     {
+        StartCoroutine(PlayVideo(image, video, true));
+        yield return new WaitForSeconds(0);
+    }
+
+    public IEnumerator PlayVideo(RawImage image, VideoClip video, bool isMainVideo)
+    {
         videoPlayer.clip = video;
+        if (isMainVideo)
+        {
+            mainVideo = video;
+        }
         videoPlayer.Prepare();
         yield return new WaitUntil(() => videoPlayer.isPrepared);
         image.texture = videoPlayer.texture;
-        videoPlayer.Play();
+        StartCoroutine(PlayVideo());
         WaitVideoEnding();
-    }
-
-    public IEnumerator PlayVideo(VideoClip video)
-    {
-        PlayVideo(GameObject.Find("Tela").GetComponent<RawImage>(), video);
-        yield return new WaitForSeconds(0);
     }
 
     public void PauseVideo()
@@ -59,7 +76,7 @@ public class VideoManager : MonoBehaviour {
     public void ReplayVideo()
     {
         videoPlayer.Stop();
-        videoPlayer.Play();
+        PlayVideo(mainVideo);
         WaitVideoEnding();
     }
 
@@ -85,5 +102,4 @@ public class VideoManager : MonoBehaviour {
         Debug.Log("Video acabou");
         videoPlayer.loopPointReached -= EndReached;
     }
-
 }

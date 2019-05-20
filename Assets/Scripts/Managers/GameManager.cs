@@ -60,17 +60,23 @@ public class GameManager : MonoBehaviour {
     {
         GameObject tempBallonTips = null;
 
-        if (!textBallonInstantiate)
+        if (!textBallonInstantiate) ///Caso o balão não esteja instanciado, instancia um.
         {
             SetTextBallonInstantiate(true);
 
             Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
-            Debug.Log(positionModifier);
 
             tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
             tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
 
             tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
+        }
+
+        else ///Caso ele esteja, deleta o balão que está instanciado e chama a função novamente.
+        {
+            GameObject ballonText = GameObject.FindGameObjectWithTag("BallonText");
+            ballonText.GetComponent<BallonTips>().AutoDestroy();
+            CreateBallonText(text);
         }
 
         return tempBallonTips;
