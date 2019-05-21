@@ -76,7 +76,7 @@ public class VideoManager : MonoBehaviour {
     public void ReplayVideo()
     {
         videoPlayer.Stop();
-        PlayVideo(mainVideo);
+        StartCoroutine(PlayVideo(mainVideo));
         WaitVideoEnding();
     }
 
