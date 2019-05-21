@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ButtonsMainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -32,13 +33,19 @@ public class ButtonsMainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExit
         buttonAnimator.SetBool("mouseon", false);
     }
 
-    public void ButtonClicked()
+    public void ButtonClickedAndLoadScene(string sceneName)
+    {
+        StartCoroutine(LoadScene(sceneName));
+    }
+
+    public IEnumerator LoadScene(string sceneName)
     {
         foreach (GameObject button in menuButtonList)
         {
             button.GetComponent<UnityEngine.UI.Button>().interactable = false;
         }
         buttonAnimator.SetTrigger("selected");
-        //colocar função de loadscene with fade
+        yield return new WaitForSeconds(0.7f);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }
