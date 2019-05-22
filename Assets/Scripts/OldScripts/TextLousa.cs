@@ -21,7 +21,18 @@ public class TextLousa : MonoBehaviour
     {
         tmp = this.GetComponent<TextMeshProUGUI>();
         tmpT = this.GetComponent<TMP_Text>();
+    }
+
+    public void Start()
+    {
+        videoManager = VideoManager.instance;
+    }
+
+    public void InsertMainText(DeafText dT)
+    {
+        tmpT.text = dT.text;
         SplitString();
+        StartCoroutine(videoManager.PlayVideo(dT.video));
     }
 
     private void SplitString()

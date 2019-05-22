@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 941045392}
   - component: {fileID: 941045391}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Retroceder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,7 +631,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 941045392}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1978266393}
+        m_MethodName: BackPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &941045392
@@ -1284,8 +1295,9 @@ GameObject:
   - component: {fileID: 1978266389}
   - component: {fileID: 1978266391}
   - component: {fileID: 1978266392}
+  - component: {fileID: 1978266393}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: TextoLousa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,6 +1491,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 438.2, y: 241.8}
   m_EdgeRadius: 0
+--- !u!114 &1978266393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978266387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 265870e7f4fd53c489727a4c7cc0b825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - text: Lorem <#FF4346>ipsum</color> dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - text: Cursus metus aliquam eleifend mi in nulla posuere sollicitudin.
+    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - text: Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor.
+    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  - text: Nanananna
+    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  textLousa: {fileID: 1978266391}
+  next: {fileID: 2138461742}
+  back: {fileID: 941045391}
 --- !u!1 &2138461740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,7 +1529,7 @@ GameObject:
   - component: {fileID: 2138461743}
   - component: {fileID: 2138461742}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Avancar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1556,7 +1593,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2138461743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1978266393}
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2138461743
