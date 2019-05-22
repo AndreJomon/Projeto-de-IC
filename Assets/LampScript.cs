@@ -72,6 +72,7 @@ public class LampScript : MonoBehaviour
     public void ClickOnTurnedOnLamp()
     {
         gameManager.CreateBallonText(currentCuriosity.text);
+        ///tocar video
         anim.SetBool("lightOn", false);
     }
 
@@ -118,6 +119,11 @@ public class LampScript : MonoBehaviour
         }
 
         return -1;
+    }
+
+    public void CheckText(string s)
+    {
+
     }
 
     ///TODO: Funções para dicas sobre palavras estranhas

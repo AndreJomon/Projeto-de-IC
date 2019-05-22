@@ -10,9 +10,9 @@ public class TextLousa : MonoBehaviour
     public float offset;
     private TMP_Text tmpT;
     private TextMeshProUGUI tmp;
-    private int wordIndex = -2;
-    private int currentWordIndex;
-    private string[] text;
+    private int wordIndex = -2; 
+    private int currentWordIndex; //Index da palavra que o mouse está em cima.
+    private string[] text; //Utilizado para ter a partir da string de texto, uma correspondência do index com a palavras.
     private VideoManager videoManager;
 
     public LampScript lampScript;
