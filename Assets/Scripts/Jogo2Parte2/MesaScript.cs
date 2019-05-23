@@ -136,8 +136,8 @@ public class MesaScript : MonoBehaviour {
         brilho.Play("Brilho");
         yield return new WaitForSeconds(0.4f);
         LimparAtomo();
-        GameObject newMolecula = Instantiate(moleculaAtual, GameObject.Find("Canvas").transform);
-        newMolecula.transform.position = GameObject.Find("Mesa(Sprite)").transform.position;
+        GameObject newMolecula = Instantiate(moleculaAtual/*, GameObject.Find("Canvas").transform*/);
+        newMolecula.transform.position = GameObject.Find("Mesa(Image)").transform.position;
     }
 
     /// <summary>
