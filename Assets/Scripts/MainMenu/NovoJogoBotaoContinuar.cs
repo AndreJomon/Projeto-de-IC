@@ -27,4 +27,11 @@ public class NovoJogoBotaoContinuar : MonoBehaviour
             continuarButton.interactable = true;
         }
     }
+
+    public void InputConfirm()
+    {
+        SaveManager.instance.CreateNewPlayer();
+        SaveManager.instance.player.SetNome(nomeInputText.GetComponent<Text>().text);
+        SaveManager.instance.player.SetClassroom(serieInputText.GetComponent<Text>().text);
+    }
 }
