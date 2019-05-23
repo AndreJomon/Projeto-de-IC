@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 222048101230360744}
   - component: {fileID: 114267947400153302}
   - component: {fileID: 114177975173226980}
+  - component: {fileID: 2813073564256627821}
   m_Layer: 5
   m_Name: ExitGame
   m_TagString: Untagged
@@ -287,6 +288,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2813073564256627821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582961914579834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0748cb9ba9b8fb1498402835e4a05815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1622136154235856
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +392,7 @@ GameObject:
   - component: {fileID: 114045757142809000}
   - component: {fileID: 114543539043813014}
   - component: {fileID: 7672281053027923833}
+  - component: {fileID: 3697376304081963060}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -507,6 +521,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a93405a3803634f8b35b5635a0e611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3697376304081963060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736339266664326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0748cb9ba9b8fb1498402835e4a05815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1912142814594138
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +545,7 @@ GameObject:
   - component: {fileID: 222946077958609242}
   - component: {fileID: 114152255652821658}
   - component: {fileID: 114904539483852098}
+  - component: {fileID: 7268461075209389246}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -636,6 +663,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &7268461075209389246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912142814594138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0748cb9ba9b8fb1498402835e4a05815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727442004262409377
 GameObject:
   m_ObjectHideFlags: 0

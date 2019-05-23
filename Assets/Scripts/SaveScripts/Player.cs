@@ -92,6 +92,20 @@ public class Player
         return questionAndAnswers;
     }
 
+    public override string ToString()
+    {
+        string playerAsString = DateTime.Now.ToString("dd/MM/yyyy - hh:mm") + " Jogador: " + nome + " Série: " + classroom + "\nPerguntas\n";
+
+        for (int i = 0; i < questionAndAnswers.Count; i++)
+        {
+            playerAsString = "Dificuldade: " + questionAndAnswers[i].GetDificultyLevel().ToString() +
+                " Pegunta selecionada: " + questionAndAnswers[i].GetQuestionNumber().ToString() + 
+                " Resposta selecionada: " + questionAndAnswers[i].GetAnswerSelected().ToString() + "\n";
+        }
+
+        return playerAsString;
+    }
+
     public void ShowAll()
     {
         Debug.Log(rankingPosition + " " + score + " " + nome + " " + classroom);

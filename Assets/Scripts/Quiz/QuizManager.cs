@@ -6,7 +6,7 @@ using TMPro;
 public class QuizManager : MonoBehaviour
 {
     [SerializeField] private int correctAnswers = 0;
-    [SerializeField] private int scoreIncrease = 50;
+    [SerializeField] private int[] scoreIncrease;
     [SerializeField] private int dificulty;
     [Tooltip("Quantidade total de perguntas que serão realizadas (máximo igual ao total de perguntas)")]
     [SerializeField] private int qtyQuestionsToDo;
@@ -97,6 +97,8 @@ public class QuizManager : MonoBehaviour
             questionSelected = RandomQuestionNumber();
             /// Salva qual a pergunta que será realizada
             questionAndAnswer[index].SetQuestionNumber(questionSelected);
+            /// Salva a data e hora que a pergunta foi selecionada
+            questionAndAnswer[index].SetTime();
 
             //Debug.Log("Questão selecionada foi: " + questionSelected);
 
@@ -188,8 +190,15 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void EndQuiz()
     {
-        SaveManager.instance.player.SetQnA(questionAndAnswer);
-        Debug.Log("Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "!");
+        int scoreTemp = CalculateScore();
+        if (scoreTemp >= SaveManager.instance.player.GetScore())
+        {
+            SaveManager.instance.player.SetQnA(questionAndAnswer);
+            SaveManager.instance.player.SetScore(scoreTemp);
+        }
+
+
+        string tempMsg = "Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "\n";
     }
 
     public static IEnumerator TimeOver()
@@ -198,6 +207,11 @@ public class QuizManager : MonoBehaviour
         Debug.Log("Informar de algum jeito SEM TEXTOS que o tempo acabou...");
         yield return new WaitForSeconds(5);
         instance.StartCoroutine(instance.VerifyAnswer(-1));
+    }
+
+    public int CalculateScore()
+    {
+        return correctAnswers * scoreIncrease[dificulty];
     }
 
     #region Funções Auxiliares
