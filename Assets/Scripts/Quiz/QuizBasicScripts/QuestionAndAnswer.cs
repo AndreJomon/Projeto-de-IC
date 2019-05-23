@@ -8,6 +8,7 @@ using UnityEngine;
 [System.Serializable]
 public class QuestionAndAnswer
 {
+    [SerializeField] private string time;
     [SerializeField] private int dificultyLevel = -1;
     [SerializeField] private int questionNumber = -1;
     [SerializeField] private int answerSelected = -1;
@@ -18,10 +19,20 @@ public class QuestionAndAnswer
     /// </summary>
     public QuestionAndAnswer() { }
 
+    public override string ToString()
+    {
+        return time + " " + dificultyLevel + " " + questionNumber + " " + answerSelected + "\n";
+    }
+
     #region Set/Get das variáveis
     public void SetDificultyLevel(int value)
     {
         dificultyLevel = value;
+    }
+
+    public int GetDificultyLevel()
+    {
+        return dificultyLevel;
     }
 
     public void SetQuestionNumber(int value)
@@ -39,10 +50,29 @@ public class QuestionAndAnswer
         answerSelected = value;
     }
 
+    public int GetAnswerSelected()
+    {
+        return answerSelected;
+    }
+
     public void SetIsCorrect(bool value)
     {
         isCorrect = value;
     }
 
+    public bool GetIsCorrect()
+    {
+        return isCorrect;
+    }
+
+    public void SetTime()
+    {
+        time = System.DateTime.Now.ToString("dd/MM/yyyy - hh:mm");
+    }
+
+    public string GetTime()
+    {
+        return time;
+    }
     #endregion
 }

@@ -11,17 +11,9 @@ public class ProfButtonController : ScriptableObject
 
     public void ResumoDeJogadores()
     {
-        DataManager.SelectProperFile();
+        DataManager.instance.PlayersSummary();
 
-        for (int i = 0; i < SaveManager.slotsListSize; i++)
-        {
-            if (!SaveManager.instance.list.slotsList.Contains(i))
-            {
-                playerTemp = SaveManager.instance.LoadPlayer(i);
-                DataManager.statisticsData.SetValues(playerTemp);
-                DataManager.SaveStatistics();
-            }
-        }
+        Debug.Log(playerTemp.ToString());
     }
 
     public void RemovePlayer(SavegameLoadButton buttonInfo)
@@ -40,10 +32,5 @@ public class ProfButtonController : ScriptableObject
     public void CancelDeletePlayer()
     {
         GameObject.Find("ConfirmPanel").SetActive(false);
-    }
-
-    public void PlayerInfo(SavegameLoadButton buttonInfo)
-    {
-        Debug.Log(buttonInfo.GetPlayer().GetSlot());
     }
 }
