@@ -42,7 +42,13 @@ public class SoundManager : MonoBehaviour
     public void PlayBackgroundMusic(AudioClip backgroundMusic)
     {
         backgroundAudioSource.clip = backgroundMusic;
-        backgroundAudioSource.Play();
+
+            if (backgroundAudioSource.clip != backgroundMusic) {
+                backgroundAudioSource.Play();
+            }else if (!backgroundAudioSource.isPlaying)
+            {
+                backgroundAudioSource.Play();
+            }        
     }
 
     /// <summary>
@@ -73,6 +79,11 @@ public class SoundManager : MonoBehaviour
         backgroundAudioSource.mute = true;
     }
 
+    public void UnMuteBackgroundMusic()
+    {
+        backgroundAudioSource.mute = false;
+    }
+
     /// <summary>
     /// Sets MUTE = true to all sfx.
     /// </summary>
@@ -80,6 +91,12 @@ public class SoundManager : MonoBehaviour
     {
         sfxAudioSource.mute = true;
         animalAudioSource.mute = true;
+    }
+
+    public void UnMuteSFX()
+    {
+        sfxAudioSource.mute = false;
+        animalAudioSource.mute = false;
     }
 
     /// <summary>
@@ -122,6 +139,18 @@ public class SoundManager : MonoBehaviour
     public bool IsBackgroundPlaying()
     {
         if (backgroundAudioSource.isPlaying)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool IsBackgroundMuted()
+    {
+        if (backgroundAudioSource.mute)
         {
             return true;
         }
