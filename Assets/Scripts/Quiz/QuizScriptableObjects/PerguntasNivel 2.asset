@@ -14,15 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizQuestions:
   - question:
-      text: 
+      text: "O que podemos dizer sobre a equa\xE7\xE3o de uma reta que nunca cruza
+        o eixo y?"
       video: {fileID: 0}
     alternative:
-    - text: 
+    - text: "N\xE3o possui coeficiente angular"
       video: {fileID: 0}
-    - text: 
+    - text: "O coeficiente linear \xE9 infinito"
       video: {fileID: 0}
-    - text: 
+    - text: "O coeficiente angular \xE9 indefinido"
       video: {fileID: 0}
-    - text: 
+    - text: Nenhuma das anteriores
+      video: {fileID: 0}
+    correctAnswer: 2
+  - question:
+      text: O que diz o Teorema do Resto?
+      video: {fileID: 0}
+    alternative:
+    - text: "O resto da divis\xE3o de P(x) por (x + a) \xE9 igual a P(a)"
+      video: {fileID: 0}
+    - text: "O resto de uma divis\xE3o de polin\xF4mios nunca \xE9 inteiro"
+      video: {fileID: 0}
+    - text: "Este teorema n\xE3o existe"
+      video: {fileID: 0}
+    - text: Nenhuma das anteriores
       video: {fileID: 0}
     correctAnswer: 0

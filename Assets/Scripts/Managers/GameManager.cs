@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void InitializeManagers()
     {
-        GameObject gameManager, saveManager, videoManager, soundManager;
+        GameObject gameManager, saveManager, videoManager, soundManager, animationManager;
 
         gameManager = Resources.Load("Prefabs/Managers/GameManager") as GameObject;
 
@@ -54,6 +54,13 @@ public class GameManager : MonoBehaviour {
         if (SoundManager.instance == null)
         {
             Instantiate(soundManager);
+        }
+
+        animationManager = Resources.Load("Prefabs/Managers/AnimationManager") as GameObject;
+
+        if (AnimationManager.instance == null)
+        {
+            Instantiate(animationManager);
         }
 
     }

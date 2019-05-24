@@ -14,15 +14,15 @@ public class TimerAnimation : MonoBehaviour
 
     private void Equation(float x)
     {
-        pos.x = posInicial.x + x * (posFinal.x - posInicial.x) / 8;
-        pos.y = posInicial.y + x * (posFinal.x - posInicial.x) / 8 * ((posFinal.y - posInicial.y) / (posFinal.x - posInicial.x)) +
-            Mathf.Sin(x * Mathf.PI / 4) * (posFinal.y - posInicial.y) / 2;
+        pos.x = posInicial.x + x * (posFinal.x - posInicial.x) / TimeManager.instance.repeatInstances;
+        pos.y = posInicial.y + x * (posFinal.x - posInicial.x) / TimeManager.instance.repeatInstances * ((posFinal.y - posInicial.y) / (posFinal.x - posInicial.x)) +
+            Mathf.Sin(x * Mathf.PI / (TimeManager.instance.repeatInstances / 2)) * (posFinal.y - posInicial.y) / (TimeManager.instance.repeatInstances / 4);
     }
 
     private IEnumerator Animation_MovingEletron()
     {
         Equation(count);
-        //Debug.Log(pos);
+        Debug.Log(pos);
         movingObject.transform.localPosition = new Vector3(pos.x, pos.y);
         count++;
         yield return new WaitForSeconds(0);
@@ -30,19 +30,19 @@ public class TimerAnimation : MonoBehaviour
 
     public IEnumerator Animation()
     {
-
-
         yield return new WaitForSeconds(0);
     }
 
     public void RestarAnimation()
     {
         count = 0;
-        StartCoroutine(Animation());
+        StartCoroutine(Animation_MovingEletron());
+        //StartCoroutine(Animation());
     }
 
     public void NextTransition()
     {
-        StartCoroutine(Animation());
+        StartCoroutine(Animation_MovingEletron());
+        //StartCoroutine(Animation());
     }
 }

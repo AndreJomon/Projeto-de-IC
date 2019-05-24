@@ -7,7 +7,7 @@ public class QuizManager : MonoBehaviour
 {
     [SerializeField] private int correctAnswers = 0;
     [SerializeField] private int[] scoreIncrease;
-    [SerializeField] private int dificulty;
+    [SerializeField] private int dificulty = 0;
     [Tooltip("Quantidade total de perguntas que serão realizadas (máximo igual ao total de perguntas)")]
     [SerializeField] private int qtyQuestionsToDo;
     [SerializeField] private int qtyQuestionsDone;
@@ -71,6 +71,8 @@ public class QuizManager : MonoBehaviour
 
         /// Reinicia a lista de valores que podem ser sorteados
         RestartNumberList();
+
+        SaveManager.instance.Load(3);// PARA TESTES
 
         /// Prepara uma nova pergunta para ser exibida
         PrepareNewQuestion();
@@ -197,8 +199,10 @@ public class QuizManager : MonoBehaviour
             SaveManager.instance.player.SetScore(scoreTemp);
         }
 
-
         string tempMsg = "Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "\n";
+
+        AddQuizResultsToFile();
+        
     }
 
     public static IEnumerator TimeOver()
@@ -260,5 +264,30 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    private void AddQuizResultsToFile()
+    {
+        string tempPath = Application.persistentDataPath + "/" + SaveManager.instance.player.GetNome() + ".xml";
+        FileManager.instance.SetPath(tempPath);
+
+        if (FileManager.instance.VerifyFile())
+        {
+            FileManager.instance.LoadFile();
+        }
+        else
+        {
+            FileManager.instance.CreateFile();
+
+            string tempMsg = "Data e Hora,Dificuldade,Pergunta Escolhida,Resposta Escolhida\n";
+
+            FileManager.instance.SetHeader(tempMsg);
+            FileManager.instance.AddHeaderToFile();
+        }
+
+        for (int i = 0; i < questionAndAnswer.Count; i++)
+        {
+            FileManager.instance.SetData(questionAndAnswer[i].ToString());
+            FileManager.instance.AddDataToFile();
+        }
+    }
     #endregion
 }

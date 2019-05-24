@@ -21,7 +21,7 @@ public class QuestionAndAnswer
 
     public override string ToString()
     {
-        return time + " " + dificultyLevel + " " + questionNumber + " " + answerSelected + "\n";
+        return time + "," + dificultyLevel + "," + questionNumber + "," + answerSelected + "\n";
     }
 
     #region Set/Get das variáveis

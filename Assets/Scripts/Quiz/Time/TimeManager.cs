@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    public TimeManager instance;
+    public static TimeManager instance;
     public float timeToWait;
-    public int repeatInstances;
-    private int count;
+    public float repeatInstances;
+    private float count;
 
     // Variável usada para armazenar uma referencia a corrotina (que deve ser interrompida caso necessário)
     private Coroutine timerCoroutineInstance = null;
@@ -33,7 +33,8 @@ public class TimeManager : MonoBehaviour
     {
         progressionBar.fillAmount = 1;
 
-        StartCoroutine(Timer());
+        //StartCoroutine(Timer());
+        StartTimer_MovingEletron();
     }
 
     public IEnumerator Timer()
@@ -59,7 +60,7 @@ public class TimeManager : MonoBehaviour
     
     public IEnumerator Timer_MovingEletron()
     {
-        //Debug.Log("Timer round " + repeatInstances + " " + Time.time);
+        Debug.Log("Timer round " + repeatInstances + " " + Time.time);
         if (count > 0)
         {
             yield return new WaitForSeconds(timeToWait);

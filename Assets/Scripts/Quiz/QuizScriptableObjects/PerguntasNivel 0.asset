@@ -14,28 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizQuestions:
   - question:
-      text: Batata
+      text: "Quanto \xE9 2 + 2"
       video: {fileID: 0}
     alternative:
-    - text: Frita
+    - text: 1
       video: {fileID: 0}
-    - text: Molho
+    - text: 2
       video: {fileID: 0}
-    - text: Arroz
+    - text: 3
       video: {fileID: 0}
-    - text: Alface
-      video: {fileID: 0}
-    correctAnswer: 0
-  - question:
-      text: Britz
-      video: {fileID: 0}
-    alternative:
-    - text: Fritz
-      video: {fileID: 0}
-    - text: Gritz
-      video: {fileID: 0}
-    - text: Dritz
-      video: {fileID: 0}
-    - text: Gons
+    - text: 4
       video: {fileID: 0}
     correctAnswer: 3
+  - question:
+      text: "Quanto \xE9 5 x 10"
+      video: {fileID: 0}
+    alternative:
+    - text: 5
+      video: {fileID: 0}
+    - text: 10
+      video: {fileID: 0}
+    - text: 50
+      video: {fileID: 0}
+    - text: 25
+      video: {fileID: 0}
+    correctAnswer: 2

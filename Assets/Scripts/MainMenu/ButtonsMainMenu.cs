@@ -46,6 +46,7 @@ public class ButtonsMainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExit
         }
         buttonAnimator.SetTrigger("selected");
         yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        StartCoroutine(AnimationManager.instance.Fade(sceneName));
+        //SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 }
