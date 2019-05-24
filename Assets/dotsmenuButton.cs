@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class dotsmenuButton : MonoBehaviour
 {
-
     private Animator animator;
 
     private void Awake()
@@ -16,5 +15,4 @@ public class dotsmenuButton : MonoBehaviour
     {
         animator.SetBool("menuOn", !animator.GetBool("menuOn"));
     }
-
 }
