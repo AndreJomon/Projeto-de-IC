@@ -32,6 +32,10 @@ public class ProfessorManager : MonoBehaviour
             professorArea.SetActive(true);
             changePassord.SetActive(false);
         }
+        else
+        {
+            StartCoroutine(ShowMessage("Senha Incorreta"));
+        }
     }
     
     public void ChangePasswordPanel()
