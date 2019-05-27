@@ -169,7 +169,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0ad4e3706c5f23347ba808c8c0f18148, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7b2ac2802e2e214d840f115ab8b49b0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -317,7 +317,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c5deb1cf648c1324db52cff4b1451654, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2b64a9b4675471448cb04c06559bf04, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -665,7 +665,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 750c51b85ea0d8b4588aa937e6c2f414, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2da6c9c8b3c27eb4c9278ea4c1a66d66, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1085,7 +1085,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e75ed3a4fb49b594b924be79bfdc0c76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c2735bca3ca9dc49b9e29eb24c13d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1627,7 +1627,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 750c51b85ea0d8b4588aa937e6c2f414, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2da6c9c8b3c27eb4c9278ea4c1a66d66, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1725,7 +1725,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ea9d6d797cecc7e4e8e833dd4c0e2d3d,
+      objectReference: {fileID: 21300000, guid: ea8fbef826021464984dbc1188172ad0,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f5709a0a746d9d48ba8ffae78644a2d, type: 3}
