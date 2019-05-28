@@ -9,6 +9,7 @@ public class LousaTextPageController : MonoBehaviour
     public TextLousa textLousa;
     public Button next;
     public Button back;
+    public LastTextButton lastTextButton;
     private int currentPage = 0;
     private int lastPage;
     
@@ -54,7 +55,7 @@ public class LousaTextPageController : MonoBehaviour
         else if (currentPage == lastPage)
         {
             next.gameObject.SetActive(false);
-            Debug.Log("Terceiro if");
+            lastTextButton.SetTrue();
         }
     }
 }

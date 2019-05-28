@@ -1,27 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonMute : MonoBehaviour
 {
     private SoundManager soundManager;
-    private SpriteRenderer soundOff;
+    private Image soundOff;
 
     private void Awake()
     {
         soundManager = SoundManager.instance;
-        soundOff = GetComponentInChildren<SpriteRenderer>();
+        soundOff = GameObject.Find("SoundOffImage").GetComponentInChildren<Image>();
+        soundOff.enabled = false;
     }
 
     public void Start()
     {
         if (soundManager.IsBackgroundPlaying() && !soundManager.IsBackgroundMuted())
         {
-            soundOff.sortingOrder = -16;
+            soundOff.enabled = false;
         }
         else
         {
-            soundOff.sortingOrder = 0;
+            soundOff.enabled = true;
         }
     }
 
@@ -31,13 +33,13 @@ public class ButtonMute : MonoBehaviour
         {
             soundManager.MuteBackgroundMusic();
             soundManager.MuteSFX();
-            soundOff.sortingOrder = 0;
+            soundOff.enabled = true;
         }
         else
         {
             soundManager.UnMuteBackgroundMusic();
             soundManager.UnMuteSFX();
-            soundOff.sortingOrder = -16;
+            soundOff.enabled = false;
         }
     }
 }
