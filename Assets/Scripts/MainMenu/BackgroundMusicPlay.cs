@@ -7,7 +7,7 @@ public class BackgroundMusicPlay : MonoBehaviour
     SoundManager soundManager;
     public AudioClip menuMusic;
 
-    void Start()
+    void Awake()
     {
             soundManager = SoundManager.instance;
             soundManager.PlayBackgroundMusic(menuMusic);
