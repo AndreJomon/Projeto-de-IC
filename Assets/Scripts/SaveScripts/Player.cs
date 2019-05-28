@@ -106,9 +106,9 @@ public class Player
         return playerAsString;
     }
 
-    public void ShowAll()
+    public string ShowAll()
     {
-        Debug.Log(rankingPosition + " " + score + " " + nome + " " + classroom);
+        return rankingPosition + " " + score + " " + nome + " " + classroom;
     }
     #endregion
 }
