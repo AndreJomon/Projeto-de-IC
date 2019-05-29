@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Classe que organiza as informações para armazenar em um arquivo
-/// </summary>
 public class StatisticsData
 {
     private string name;
@@ -14,10 +11,6 @@ public class StatisticsData
     private string lineSeparator = "\n";
     private string fieldSeparator = ",";
 
-    /// <summary>
-    /// Armazena os valores do player que devem ser armazenados
-    /// </summary>
-    /// <param name="player"></param>
     public void SetValues(Player player)
     {
         name = player.GetNome();

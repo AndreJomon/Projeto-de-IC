@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Classe que controla a área do professor, telas de acesso e senhas
-/// </summary>
 public class ProfessorManager : MonoBehaviour
 {
     /// <summary>
