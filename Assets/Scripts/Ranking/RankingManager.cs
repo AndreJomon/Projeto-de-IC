@@ -6,7 +6,6 @@ public class RankingManager : MonoBehaviour
 {
     public static RankingManager instance;
     public int rankingSize = 10;
-    public UnityEngine.UI.Text rankingText;
 
     public GameObject podiumCanvas;
     public GameObject rankingCanvas;
@@ -89,8 +88,6 @@ public class RankingManager : MonoBehaviour
 
     public void ShowRanking()
     {
-        rankingText.text = "Ranking\n";
-
         if (rankingSize > ranking.Count)
         {
             rankingSize = ranking.Count;
@@ -100,20 +97,16 @@ public class RankingManager : MonoBehaviour
         {
             GameObject temp = Instantiate(rankingPrefab, rankingContent.transform);
             temp.GetComponent<RankingPrefabUpdate>().UpdatePrefab(ranking[i]);
-
-            rankingText.text += ranking[i].ShowAll() + "\n";
         }
     }
 
     public void FullRanking()
     {
-        podiumCanvas.SetActive(false);
         rankingCanvas.SetActive(true);
     }
 
     public void BackToPodium()
     {
-        podiumCanvas.SetActive(true);
         rankingCanvas.SetActive(false);
     }
 }
