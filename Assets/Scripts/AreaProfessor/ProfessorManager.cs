@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe que controla a área do professor, telas de acesso e senhas
+/// </summary>
 public class ProfessorManager : MonoBehaviour
 {
     [SerializeField] private GameObject passwordPanel;
@@ -20,7 +23,7 @@ public class ProfessorManager : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("Senha"))
         {
-            PlayerPrefs.SetString("Senha", "SenhaPadrao");
+            PlayerPrefs.SetString("Senha", "1234");
         }
     }
 
