@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+/// <summary>
+/// Classe responsável por controlar as informações que serão salvas
+/// </summary>
 public class DataManager : MonoBehaviour
 {
     public StatisticsData sumaryData = new StatisticsData();
@@ -32,6 +35,9 @@ public class DataManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Função que cria um resumo dos jogadoresm em um arquivo
+    /// </summary>
     public void PlayersSummary()
     {
         FileManager.instance.SetHeader(sumaryHeader);
@@ -50,31 +56,5 @@ public class DataManager : MonoBehaviour
                 FileManager.instance.AddDataToFile();
             }
         }
-    }
-    
-    public void SaveQuizQuestionsToFile()
-    {
-        playerPath = Application.persistentDataPath + "/" + SaveManager.instance.player.GetNome() + ".csv";
-        FileManager.instance.SetPath(playerPath);
-
-        if (!FileManager.instance.VerifyFile())
-        {
-            FileManager.instance.CreateFile();
-        }
-
-        List<QuestionAndAnswer> qnA = SaveManager.instance.player.GetQnA();
-
-        for (int i = 0; i < qnA.Count; i++)
-        {
-            FileManager.instance.SetData(qnA[i].ToString());
-            FileManager.instance.AddDataToFile();
-        }
-    }
-
-    public string PlayerInfoToString(int index)
-    {
-        playerTemp = SaveManager.instance.LoadPlayer(index);
-
-        return playerTemp.GetNome() + "," + playerTemp.GetClassroom() + "," + playerTemp.GetQnA()[1].ToString();
     }
 }

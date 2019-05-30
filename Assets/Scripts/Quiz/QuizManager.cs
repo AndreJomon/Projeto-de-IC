@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Classe que gerencia o quiz
+/// </summary>
 public class QuizManager : MonoBehaviour
 {
     [SerializeField] private int correctAnswers = 0;
@@ -75,7 +78,7 @@ public class QuizManager : MonoBehaviour
         SaveManager.instance.Load(3);// PARA TESTES
 
         /// Prepara uma nova pergunta para ser exibida
-        PrepareNewQuestion();
+        //PrepareNewQuestion();
     }
 
     /// <summary>

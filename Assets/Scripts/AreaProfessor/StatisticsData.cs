@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe que armazena os dados que serão salvos em um arquivo. Deve possuir uma função ToString() que sobrescreve a original
+/// </summary>
 public class StatisticsData
 {
     private string name;
