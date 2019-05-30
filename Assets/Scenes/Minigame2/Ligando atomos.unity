@@ -251,6 +251,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 46f8f4f620923714699360b00fa0803f,
         type: 3}
+    - target: {fileID: 8838541749422324918, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a,
+        type: 3}
+    - target: {fileID: 120565095476357974, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
 --- !u!1 &178051757
@@ -400,8 +412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.999996, y: 26.999996}
-  m_SizeDelta: {x: 321, y: 283}
+  m_AnchoredPosition: {x: -1.47, y: 20.91}
+  m_SizeDelta: {x: 368.78, y: 289.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &188590771
 Animator:
@@ -752,7 +764,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 506c04adbee652d469ea23470bef79a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4c474bb98b00e54195bd4176ec145f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1189,12 +1201,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114031021367127596, guid: 195aac48e608b334d86761dc2c46e8fb,
-        type: 3}
-      propertyPath: video
-      value: 
-      objectReference: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
 --- !u!1001 &1098915255
@@ -1296,7 +1302,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ad9e40e5826677246905805bca54fecd,
         type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 8838541749422324918, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
+        type: 3}
+    - target: {fileID: 120565095476357974, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 8838541749422324918, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
 --- !u!1 &1101398421
 GameObject:
@@ -1573,6 +1592,7 @@ MonoBehaviour:
   - Br Br O
   - Br Br
   - He
+  - Br C H H H
   resposta: []
   errouString: "N\xE3o \xE9 poss\xEDvel montar essa mol\xE9cula para o bal\xE3o."
 --- !u!1001 &1598352030
@@ -1673,6 +1693,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0688308010d489942ada98afd1ba9ced,
+        type: 3}
+    - target: {fileID: 8838541749422324918, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
+        type: 3}
+    - target: {fileID: 120565095476357974, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
@@ -1821,7 +1853,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.070715964, y: 0.023104787}
+  m_Offset: {x: 0.08, y: -0.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1832,7 +1864,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1808424, y: 1.5857551}
+  m_Size: {x: 2.21, y: 1.55}
   m_EdgeRadius: 0
 --- !u!4 &1812175202
 Transform:
