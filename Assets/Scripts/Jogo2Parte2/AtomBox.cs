@@ -6,23 +6,10 @@ using UnityEngine;
 
 public class AtomBox : MonoBehaviour {
 
-    private VideoManager videoManager;
     public GameObject atomo;
     private GameObject newAtomo;
-    public VideoClip video;
     private int numAtomos;
     private int distance;
-
-    private void Start()
-    {
-        videoManager = VideoManager.instance;
-    }
-
-    private void OnMouseEnter()
-    {
-        RawImage tela = GameObject.Find("Tela").GetComponent<RawImage>();
-        StartCoroutine(videoManager.PlayVideo(tela, video));
-    }
 
     void OnMouseDown()
     {

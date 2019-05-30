@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 114031021367127596}
   - component: {fileID: 60549367847697368}
   - component: {fileID: 4290997585956763536}
+  - component: {fileID: 120565095476357974}
   m_Layer: 0
   m_Name: CaixaDeHidrogenio
   m_TagString: Untagged
@@ -193,7 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   atomo: {fileID: 1806831887719484, guid: fe819fac65ad99c4e84aed8f9b8db10c, type: 3}
-  video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
 --- !u!60 &60549367847697368
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -252,3 +252,16 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &120565095476357974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810240887117166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
