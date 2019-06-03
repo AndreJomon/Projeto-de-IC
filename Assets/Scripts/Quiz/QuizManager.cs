@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Video;
 
 /// <summary>
 /// Classe que gerencia o quiz
@@ -30,8 +31,16 @@ public class QuizManager : MonoBehaviour
     private int questionSelected;
     private int numberOfAnswers;
 
+    private Pergunta selectedQuestion;
+
     public GameObject correctFeedback;
     public GameObject wrongFeedback;
+
+    public GameObject tela1;
+    public GameObject tela2;
+
+    public VideoClip selecionarDificuldadeVideo;
+    public VideoClip instrucoesVideo;
 
     private TimeManager timeManager;
 
@@ -39,6 +48,11 @@ public class QuizManager : MonoBehaviour
     public void SetDificulty(int value)
     {
         dificulty = value;
+    }
+
+    public Pergunta GetSelectedQuestion()
+    {
+        return selectedQuestion;
     }
 
     #endregion
@@ -79,6 +93,11 @@ public class QuizManager : MonoBehaviour
 
         /// Prepara uma nova pergunta para ser exibida
         //PrepareNewQuestion();
+    }
+
+    private void Start()
+    {
+        StartCoroutine(VideoManager.instance.PlayVideo(selecionarDificuldadeVideo));
     }
 
     /// <summary>
@@ -122,18 +141,22 @@ public class QuizManager : MonoBehaviour
     public void ShowNewQuestion()
     {
         /// Pega a pergunta que deve ser exibida da lista de perguntas
-        Pergunta selectedQuestion = questionGroup[dificulty].GetQuestion(questionAndAnswer[index].GetQuestionNumber());
+        selectedQuestion = questionGroup[dificulty].GetQuestion(questionAndAnswer[index].GetQuestionNumber());
         /// Mostra a pergunta
         questionMeshText.text = selectedQuestion.GetQuestion().text;
+        questionMeshText.GetComponentInParent<PlayVideoOnMouseOver>().video = selectedQuestion.GetQuestion().video;
 
         /// Mostra todas as alternativas
         for (int i = 0; i < numberOfAnswers; i++)
         {
             answerMeshText[i].text = selectedQuestion.GetAlternative(i).text;
+            answerMeshText[i].GetComponentInParent<PlayVideoOnMouseOver>().video = selectedQuestion.GetAlternative(i).video;
         }
 
         UnblockButtons();
-        
+
+        StartCoroutine(VideoManager.instance.PlayVideo(selectedQuestion.GetQuestion().video));
+
         timeManager.StartTimer();
     }
 
@@ -219,6 +242,23 @@ public class QuizManager : MonoBehaviour
     public int CalculateScore()
     {
         return correctAnswers * scoreIncrease[dificulty];
+    }
+
+    public void TurnOnTela1()
+    {
+        tela1.SetActive(true);
+        tela2.SetActive(false);
+    }
+
+    public void TurnOnTela2()
+    {
+        tela1.SetActive(false);
+        tela2.SetActive(true);
+    }
+
+    public void PlayInstructionVideo()
+    {
+        StartCoroutine(VideoManager.instance.PlayVideo(instrucoesVideo));
     }
 
     #region Funções Auxiliares

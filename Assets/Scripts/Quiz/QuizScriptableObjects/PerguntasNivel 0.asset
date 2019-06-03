@@ -15,27 +15,27 @@ MonoBehaviour:
   quizQuestions:
   - question:
       text: "Quanto \xE9 2 + 2"
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
     alternative:
     - text: 1
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     - text: 2
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
     - text: 3
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
     - text: 4
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     correctAnswer: 3
   - question:
       text: "Quanto \xE9 5 x 10"
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
     alternative:
     - text: 5
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
     - text: 10
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     - text: 50
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
     - text: 25
-      video: {fileID: 0}
+      video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
     correctAnswer: 2
