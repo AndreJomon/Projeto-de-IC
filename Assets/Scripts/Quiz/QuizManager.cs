@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 /// <summary>
 /// Classe que gerencia o quiz
@@ -36,12 +37,18 @@ public class QuizManager : MonoBehaviour
     public GameObject correctFeedback;
     public GameObject wrongFeedback;
 
+    [Tooltip("Tela de video de seleção de dificuldade")]
     public GameObject tela1;
+    [Tooltip("Tela de video de instruções")]
     public GameObject tela2;
+    [Tooltip("Tela de video de feedback/fim do quiz")]
+    public GameObject tela3;
 
     public VideoClip selecionarDificuldadeVideo;
     public VideoClip instrucoesVideo;
+    public VideoClip textoFimDoQuiz;
 
+    public Text scoreText;
     private TimeManager timeManager;
 
     #region Set/Get das variáveis
@@ -218,6 +225,8 @@ public class QuizManager : MonoBehaviour
     /// </summary>
     public void EndQuiz()
     {
+        TurnOnTela3();
+
         int scoreTemp = CalculateScore();
         if (scoreTemp >= SaveManager.instance.player.GetScore())
         {
@@ -225,10 +234,12 @@ public class QuizManager : MonoBehaviour
             SaveManager.instance.player.SetScore(scoreTemp);
         }
 
-        string tempMsg = "Você acertou " + correctAnswers + " de " + qtyQuestionsToDo + "\n";
+        string tempMsg = correctAnswers + "/" + qtyQuestionsToDo;
+        scoreText.text = tempMsg;
 
         AddQuizResultsToFile();
-        
+        GameObject.Find("Canvas").GetComponent<Animator>().SetTrigger("EndQuiz");
+        StartCoroutine(VideoManager.instance.PlayVideo(textoFimDoQuiz));
     }
 
     public static IEnumerator TimeOver()
@@ -248,12 +259,21 @@ public class QuizManager : MonoBehaviour
     {
         tela1.SetActive(true);
         tela2.SetActive(false);
+        tela3.SetActive(false);
     }
 
     public void TurnOnTela2()
     {
         tela1.SetActive(false);
         tela2.SetActive(true);
+        tela3.SetActive(false);
+    }
+
+    public void TurnOnTela3()
+    {
+        tela1.SetActive(false);
+        tela2.SetActive(false);
+        tela3.SetActive(true);
     }
 
     public void PlayInstructionVideo()
