@@ -102,4 +102,9 @@ public class VideoManager : MonoBehaviour {
         Debug.Log("Video acabou");
         videoPlayer.loopPointReached -= EndReached;
     }
+
+    public void StopVideo()
+    {
+        videoPlayer.Stop();
+    }
 }

@@ -10,6 +10,7 @@ using UnityEngine.UI;
 /// </summary>
 public class QuizManager : MonoBehaviour
 {
+    #region Variáveis
     [SerializeField] private int correctAnswers = 0;
     [SerializeField] private int[] scoreIncrease;
     [SerializeField] private int dificulty = 0;
@@ -50,6 +51,7 @@ public class QuizManager : MonoBehaviour
 
     public Text scoreText;
     private TimeManager timeManager;
+    #endregion
 
     #region Set/Get das variáveis
     public void SetDificulty(int value)
@@ -95,11 +97,6 @@ public class QuizManager : MonoBehaviour
 
         /// Reinicia a lista de valores que podem ser sorteados
         RestartNumberList();
-
-        SaveManager.instance.Load(3);// PARA TESTES
-
-        /// Prepara uma nova pergunta para ser exibida
-        //PrepareNewQuestion();
     }
 
     private void Start()
@@ -242,6 +239,10 @@ public class QuizManager : MonoBehaviour
         StartCoroutine(VideoManager.instance.PlayVideo(textoFimDoQuiz));
     }
 
+    /// <summary>
+    /// Função que gerencia o que acontece quando o timer estoura
+    /// </summary>
+    /// <returns></returns>
     public static IEnumerator TimeOver()
     {
         instance.BlockButtons();
@@ -329,7 +330,7 @@ public class QuizManager : MonoBehaviour
 
     private void AddQuizResultsToFile()
     {
-        string tempPath = Application.persistentDataPath + "/" + SaveManager.instance.player.GetNome() + ".xml";
+        string tempPath = Application.persistentDataPath + "/" + SaveManager.instance.player.GetNome() + ".csv";
         FileManager.instance.SetPath(tempPath);
 
         if (FileManager.instance.VerifyFile())

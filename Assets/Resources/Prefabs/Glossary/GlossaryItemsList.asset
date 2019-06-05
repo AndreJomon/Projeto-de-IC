@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ed194dc1199694db8307c304e963d0, type: 3}
+  m_Name: GlossaryItemsList
+  m_EditorClassIdentifier: 
+  glossary:
+  - expression: "Liga\xE7\xF5es Qu\xEDmicas"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Uni\xE3o dos \xE1tomos para a forma\xE7\xE3o das mol\xE9culas"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: Gases Nobres
+    expressionVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    meaning: "Gases com baixa reatividade qu\xEDmica"
+    meaningVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  - expression: "\xC1tomo"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Sistema energ\xE9tico est\xE1vel, eletricamente neutro, que consiste
+      em um n\xFAcleo denso, positivamente carregado, envolvido por el\xE9trons"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "El\xE9tron"
+    expressionVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    meaning: "Part\xEDcula elementar negativa"
+    meaningVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  - expression: "\xCDon"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Esp\xE9cie at\xF4mica n\xE3o neutra"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
