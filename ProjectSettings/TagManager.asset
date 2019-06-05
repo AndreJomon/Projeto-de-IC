@@ -11,11 +11,10 @@ TagManager:
   - Mesa
   - Atomo
   - Molecula
-  - "Hidrog\xEAnio"
-  - Carbono
   - Panel
   - ButtonMenu
   - Lamp
+  - Particule
   layers:
   - Default
   - TransparentFX
