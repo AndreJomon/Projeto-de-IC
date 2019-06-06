@@ -18,18 +18,18 @@ MonoBehaviour:
     meaning: "Uni\xE3o dos \xE1tomos para a forma\xE7\xE3o das mol\xE9culas"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: Gases Nobres
-    expressionVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Gases com baixa reatividade qu\xEDmica"
-    meaningVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "\xC1tomo"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Sistema energ\xE9tico est\xE1vel, eletricamente neutro, que consiste
       em um n\xFAcleo denso, positivamente carregado, envolvido por el\xE9trons"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "El\xE9tron"
-    expressionVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "El\xE9trons"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Part\xEDcula elementar negativa"
-    meaningVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "\xCDon"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Esp\xE9cie at\xF4mica n\xE3o neutra"
