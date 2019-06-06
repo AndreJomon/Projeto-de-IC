@@ -26,56 +26,67 @@ public class GlossaryManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        for (int i = 0; i < glossaryList.glossary.Count; i++)
+        //for (int i = 0; i < glossaryList.glossary.Count; i++)
+        //{
+        //    GameObject temp = Instantiate(glossaryPrefab, glossaryWindow.transform);
+        //    temp.GetComponent<GlossaryPrefabSelfManager>().UpdatePrefabs(glossaryList.glossary[i]);
+        //    glossaryItems.Add(temp);
+        //}
+
+        UpdateGlossaryWindow(glossaryList.glossary);
+    }
+
+    public void UpdateGlossaryWindow(List<GlossaryElement> glossaryListToShow)
+    {
+        foreach(GameObject item in glossaryItems)
+        {
+            Destroy(item);
+        }
+
+        for (int i = 0; i < glossaryListToShow.Count; i++)
         {
             GameObject temp = Instantiate(glossaryPrefab, glossaryWindow.transform);
-            temp.GetComponent<GlossaryPrefabSelfManager>().UpdatePrefabs(glossaryList.glossary[i]);
+            temp.GetComponent<GlossaryPrefabSelfManager>().UpdatePrefabs(glossaryListToShow[i]);
             glossaryItems.Add(temp);
         }
     }
 
-    public void UpdateGlossaryWindow(GlossaryItems glossaryListToShow)
+    public List<GlossaryElement> SortGlossaryItemList(GlossaryItems listToSort)
     {
-        glossaryItems.Clear();
+        List<GlossaryElement> temp = new List<GlossaryElement>();
 
-        for (int i = 0; i < glossaryListToShow.glossary.Count; i++)
-        {
-            GameObject temp = Instantiate(glossaryPrefab, glossaryWindow.transform);
-            temp.GetComponent<GlossaryPrefabSelfManager>().UpdatePrefabs(glossaryList.glossary[i]);
-            glossaryItems.Add(temp);
-        }
-    }
-
-    public GlossaryItems SortGlossaryItemList(GlossaryItems listToSort)
-    {
-        listToSort.glossary.Sort(delegate (GlossaryElement a, GlossaryElement b)
+        temp = listToSort.glossary;
+        temp.Sort(delegate (GlossaryElement a, GlossaryElement b)
         {
             return a.expression.CompareTo(b.expression);
         });
 
-        return listToSort;
+        return temp;
     }
 
-    public GlossaryItems SearchExpression(GlossaryItems listToSearch, string expressionToFind)
+    public List<GlossaryElement> SearchExpression(GlossaryItems listToSearch, string expressionToFind)
     {
         List<GlossaryElement> temp = new List<GlossaryElement>();
-        temp = listToSearch.glossary.FindAll(delegate (GlossaryElement a)
+
+        temp = listToSearch.glossary;
+        temp = temp.FindAll(delegate (GlossaryElement a)
         {
             if (a.expression.ToUpper().Contains(expressionToFind.ToUpper())) return true;
             else return false;
         });
-        listToSearch.glossary = temp;
-        return listToSearch;
+
+        return temp;
     }
 
     public void TestSort()
     {
         Debug.Log(searchBarText.text);
-        foreach(GlossaryElement g in SearchExpression(glossaryList, searchBarText.text).glossary)
+        List<GlossaryElement> temp = SearchExpression(glossaryList, searchBarText.text);
+        foreach (GlossaryElement g in temp)
         {
             Debug.Log(g.expression);
         }
 
-        //UpdateGlossaryWindow(SearchExpression(glossaryList, searchBarText.text));
+        UpdateGlossaryWindow(SearchExpression(glossaryList, searchBarText.text));
     }
 }

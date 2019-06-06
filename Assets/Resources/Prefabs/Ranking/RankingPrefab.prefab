@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -11.464966, y: -12.924997}
-  m_SizeDelta: {x: 301.89, y: 38.49}
+  m_AnchoredPosition: {x: -20.7, y: -12.924997}
+  m_SizeDelta: {x: 541.6, y: 69.5}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1118416161
 CanvasRenderer:
@@ -69,7 +69,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
@@ -113,8 +113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -11.464966, y: 9.506996}
-  m_SizeDelta: {x: 301.89, y: 36.67}
+  m_AnchoredPosition: {x: -20.7, y: 20.1}
+  m_SizeDelta: {x: 541.7, y: 47.5}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &2140203500
 CanvasRenderer:
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -267,7 +267,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 14.149994, y: -12.924992}
-  m_SizeDelta: {x: 72.5, y: 77.57}
+  m_SizeDelta: {x: 123.5, y: 132.11}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6274010742314913950
 CanvasRenderer:
@@ -321,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8368929503982977156}
   - component: {fileID: 1135299622477269903}
+  - component: {fileID: 8350017970783528746}
   m_Layer: 5
   m_Name: RankingPrefab
   m_TagString: Untagged
@@ -349,7 +350,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 16.65, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135299622477269903
 MonoBehaviour:
@@ -366,3 +367,23 @@ MonoBehaviour:
   rankingPosition: {fileID: 870455025956404586}
   score: {fileID: 2140203499}
   info: {fileID: 1118416160}
+--- !u!114 &8350017970783528746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625265233064840861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 700
+  m_PreferredHeight: 150
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
