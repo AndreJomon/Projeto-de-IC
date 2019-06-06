@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Lousa2.unity
     guid: d090fdfa41ce9f042a1dcf45bc0b6bde
   - enabled: 1
-    path: Assets/Scenes/Minigame 0/MontarAtomo.unity
+    path: Assets/Scenes/Minigame 0/MontandoArcade.unity
     guid: ad35167bcf2e5b943aed0ed8422664eb
   - enabled: 1
     path: Assets/Scenes/QuadrinhoInicial.unity
