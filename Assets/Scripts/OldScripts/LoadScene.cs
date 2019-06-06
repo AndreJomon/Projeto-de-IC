@@ -22,4 +22,15 @@ public class LoadScene : MonoBehaviour {
     {
         SceneLoader(sceneName);
     }
+
+    public void SceneLoaderForGlossary(string sceneName)
+    {
+        GameManager.instance.lastSceneName = SceneManager.GetActiveScene().name;
+        SceneLoader(sceneName);
+    }
+
+    public void VoltarButtonInGlossary()
+    {
+        SceneLoader(GameManager.instance.lastSceneName);
+    }
 }

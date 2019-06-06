@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
+    public string lastSceneName;
     public GameObject ballonTips;
     /// <summary>
     /// Flag que controla se um texto já foi instanciado, ou seja, se já há um balão na tela.
