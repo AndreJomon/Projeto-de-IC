@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
+/// <summary>
+/// Classe básica para armazenar as informações de um elemento do glossário
+/// </summary>
 [System.Serializable]
 public class GlossaryElement
 {
