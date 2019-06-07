@@ -14,7 +14,9 @@ TagManager:
   - Panel
   - ButtonMenu
   - Lamp
-  - Particule
+  - Proton
+  - Eletron
+  - Neutron
   layers:
   - Default
   - TransparentFX
