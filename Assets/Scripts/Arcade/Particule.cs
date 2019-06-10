@@ -6,68 +6,47 @@ public class Particule : MonoBehaviour
 {
     public int carga;
     public int massa;
-    public bool destroy = true;
-    private float distance = 10;
-    public GameObject mesa;
-    private int numParticule;
+    public float speed = 2;
+    public Vector3 targetPosition;
+    protected int index = -1;
+    protected GameObject areaManager;
 
-    public void Awake()
+    public void SetTargetPosition(Vector3 targetPosition)
     {
-        mesa = GameObject.FindGameObjectWithTag("Mesa");
+        this.targetPosition = targetPosition;
     }
 
-    /// <summary>
-    /// Quando se clica no objeto
-    /// </summary>
-    public void OnMouseDown()
+    public Vector3 GetTargetPosition()
     {
-        OnMouseDrag();
+        return targetPosition;
     }
 
-    /// <summary>
-    /// Quando se arrasta o objeto
-    /// </summary>
-    public void OnMouseDrag()
+    public void SetIndex(int i)
     {
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        transform.position = objPosition;
+        index = i;
     }
 
-    /// <summary>
-    /// Quando o objeto entra na área apropriada.
-    /// </summary>
-    /// <param name="collision"></param>
-    public void OnTriggerEnter2D(Collider2D collision)
+    public int GetIndex()
     {
-        if (collision.CompareTag("Mesa"))
+        return index;
+    }
+
+    private void Update()
+    {
+        if (transform.position != targetPosition)
         {
-            collision.gameObject.GetComponent<MesaMontarAtomo>().AdicionandoParticula(carga, massa);
-            destroy = false;
-            ParticuleBox.AlterarQntdParticula(1, carga);
-            Debug.Log("Entrou");
+            float step = speed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
         }
     }
 
-    /// <summary>
-    /// Quando objeto sai da área apropriada.
-    /// </summary>
-    /// <param name="collision"></param>
-    public void OnTriggerExit2D(Collider2D collision)
+    public int GetCarga()
     {
-        if (collision.CompareTag("Mesa"))
-        {
-            collision.gameObject.GetComponent<MesaMontarAtomo>().RemovendoParticula(carga, massa);
-            destroy = true;
-            ParticuleBox.AlterarQntdParticula(-1, carga);
-        }
+        return carga;
     }
 
-    public void OnMouseUp()
+    public int GetMassa()
     {
-        if (destroy)
-        {
-            Destroy(gameObject);
-        }
+        return massa;
     }
 }
