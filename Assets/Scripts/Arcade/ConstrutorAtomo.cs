@@ -17,6 +17,16 @@ public class ConstrutorAtomo : MonoBehaviour
     {
         return numProtons;
     }
+
+    public int GetNumEletrons()
+    {
+        return numEletrons;
+    }
+
+    public int GetNumNeutrons()
+    {
+        return numNeutrons;
+    }
     
     public void AddParticula(int carga, int massa)
     {
@@ -38,6 +48,14 @@ public class ConstrutorAtomo : MonoBehaviour
         if (carga > 0)
         {
             numProtons++;
+        }
+        else if (carga == 0)
+        {
+            numNeutrons++;
+        }
+        else
+        {
+            numEletrons++;
         }
     }
 
