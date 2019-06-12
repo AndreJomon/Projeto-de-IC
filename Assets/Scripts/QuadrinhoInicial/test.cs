@@ -7,6 +7,7 @@ public class test : MonoBehaviour
     public GameObject[] white;
     public GameObject zoom;
     public GameObject bigLetter;
+    public Animator animator;
 
     public void ToggleScreen(int q)
     {
@@ -45,5 +46,10 @@ public class test : MonoBehaviour
     public void ToggleOn(GameObject item)
     {
         item.SetActive(true);
+    }
+    
+    public void SetToggle(string i)
+    {
+        animator.SetTrigger("toQ" + i);
     }
 }
