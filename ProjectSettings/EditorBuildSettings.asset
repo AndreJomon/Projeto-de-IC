@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Lousa2.unity
     guid: d090fdfa41ce9f042a1dcf45bc0b6bde
   - enabled: 1
-    path: Assets/Scenes/Minigame 0/MontandoArcade.unity
+    path: Assets/Scenes/Arcade/MontandoArcade.unity
     guid: ad35167bcf2e5b943aed0ed8422664eb
   - enabled: 1
     path: Assets/Scenes/QuadrinhoInicial.unity
@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ranking.unity
     guid: 589c1a37abf401b499ca124b4691859a
+  - enabled: 1
+    path: Assets/Scenes/Arcade/StartArcade.unity
+    guid: 74cb8a0c32a795644981de7afc7bfbee
   m_configObjects: {}

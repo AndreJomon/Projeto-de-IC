@@ -5,9 +5,47 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    [System.Serializable]
+    private class CorrectAtom
+    {
+        public string name;
+        public int nProtons;
+        public int nEletrons;
+        public int nNeutrons;
+
+        public bool Check(int protons, int eletrons, int neutrons)
+        {
+            if (protons == nProtons && eletrons == nEletrons && neutrons == nNeutrons)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+
     public static GameManager instance = null;
     public string lastSceneName;
     public GameObject ballonTips;
+
+    [SerializeField]
+    private List<CorrectAtom> atoms;
+    public int correctAtomNumber;
+
+    public string GetCorrectAtomName()
+    {
+        return atoms[correctAtomNumber].name;
+    }
+
+    public bool CheckAnswerArcade(int protons, int eletrons, int neutrons)
+    {
+        return atoms[correctAtomNumber].Check(protons, eletrons, neutrons);
+    }
+
+    public int GetNumberOfAtoms()
+    {
+        return atoms.Count;
+    }
+
     /// <summary>
     /// Flag que controla se um texto já foi instanciado, ou seja, se já há um balão na tela.
     /// </summary>

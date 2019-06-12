@@ -43,5 +43,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09fbe819ef64af40a6fcc895d95fcc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastSceneName: 
   ballonTips: {fileID: 8369872633649725431, guid: b85745435b916154292c05bc3e56c689,
     type: 3}
+  atoms:
+  - name: "Hidrog\xEAnio"
+    nProtons: 1
+    nEletrons: 1
+    nNeutrons: 0
+  - name: "H\xE9lio"
+    nProtons: 2
+    nEletrons: 2
+    nNeutrons: 2
+  - name: "L\xEDtio"
+    nProtons: 3
+    nEletrons: 3
+    nNeutrons: 4
+  - name: "Ber\xEDlio"
+    nProtons: 4
+    nEletrons: 4
+    nNeutrons: 5
+  - name: Boro
+    nProtons: 5
+    nEletrons: 5
+    nNeutrons: 6
+  - name: Carbono
+    nProtons: 6
+    nEletrons: 6
+    nNeutrons: 0
+  - name: "Nitrog\xEAnio"
+    nProtons: 7
+    nEletrons: 7
+    nNeutrons: 0
+  - name: "Oxig\xEAnio"
+    nProtons: 8
+    nEletrons: 8
+    nNeutrons: 0
+  - name: "Fl\xFAor"
+    nProtons: 9
+    nEletrons: 9
+    nNeutrons: 0
+  - name: "N\xE9on"
+    nProtons: 10
+    nEletrons: 10
+    nNeutrons: 0
+  correctAtomNumber: 0

@@ -22,8 +22,20 @@ public class Player
     [SerializeField]
     private int score = 0;
     private List<QuestionAndAnswer> questionAndAnswers = new List<QuestionAndAnswer>();
+    [SerializeField]
+    private bool[] beatedParts = new bool[4]; /*Cada espaço referente a uma parte, 0: Tutorial, 1: Arcade, 2: Balões e 3: Quiz*/
 
     #region Getter & Setters
+    public void SetBeatPartTrue(int part)
+    {
+        beatedParts[part] = true;
+    }
+
+    public bool GetBeatPartStatus(int part)
+    {
+        return beatedParts[part];
+    }
+
     public void SetNome(string nome)
     {
         this.nome = nome;
