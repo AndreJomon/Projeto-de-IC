@@ -26,7 +26,7 @@ public class ParticuleBox : MonoBehaviour
     {
         if (!GameObject.FindGameObjectWithTag("Particule"))
         {
-            newParticule.GetComponent<Particule>().OnMouseDrag();
+            //newParticule.GetComponent<Particule>().OnMouseDrag();
         }
     }
 

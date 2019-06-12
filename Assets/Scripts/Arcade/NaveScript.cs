@@ -9,12 +9,12 @@ public class NaveScript : MonoBehaviour
 
     private void Start()
     {
-        shootSpawnLocation = GetComponentInChildren<Transform>().position;
+        shootSpawnLocation = gameObject.transform.GetChild(0).GetComponent<Transform>().position;
     }
 
     private void Shoot(GameObject particule)
     {
-        Instantiate(particule, gameObject.transform.position, Quaternion.identity, transform);
+        Instantiate(particule, shootSpawnLocation, Quaternion.identity, transform);
     }
 
     public void ShootProton()

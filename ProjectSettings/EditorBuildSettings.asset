@@ -59,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ranking.unity
     guid: 589c1a37abf401b499ca124b4691859a
+  - enabled: 1
+    path: Assets/Scenes/Minigame 0/StartArcade.unity
+    guid: 74cb8a0c32a795644981de7afc7bfbee
+  - enabled: 1
+    path: Assets/Scenes/Minigame 0/MontandoAtomos.unity
+    guid: de21d85f30c412a44a34715e4bcb53ce
   m_configObjects: {}
