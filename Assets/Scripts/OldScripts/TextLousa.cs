@@ -30,6 +30,7 @@ public class TextLousa : MonoBehaviour
 
     public void InsertMainText(DeafText dT)
     {
+        dT.text = dT.text.Replace("\\n", "\n");
         tmpT.text = dT.text;
         SplitString();
         StartCoroutine(videoManager.PlayVideo(dT.video));
