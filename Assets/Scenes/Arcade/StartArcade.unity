@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textShowing: {fileID: 2059828091}
   text:
-  - text: "Pressione os bot\xF5es e adicione pr\xF3tons, el\xE9trous ou n\xEAutrons
+  - text: "Pressione os bot\xF5es e adicione pr\xF3tons, el\xE9trons ou n\xEAutrons
       no \xE1tomo."
     video: {fileID: 0}
   - text: "Tente montar um \xE1tomo de xxx."
