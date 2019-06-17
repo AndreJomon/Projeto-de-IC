@@ -27,7 +27,8 @@ public class GlossaryManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
+        SortGlossaryItemList(glossaryList);
         UpdateGlossaryWindow(glossaryList.glossary);
     }
 
