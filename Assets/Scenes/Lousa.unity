@@ -1802,7 +1802,7 @@ MonoBehaviour:
   textLousa: {fileID: 1978266391}
   next: {fileID: 2138461742}
   back: {fileID: 941045391}
-  lastTextButton: {fileID: 0}
+  lastTextButton: {fileID: 1434961445}
 --- !u!1 &2138461740
 GameObject:
   m_ObjectHideFlags: 0
