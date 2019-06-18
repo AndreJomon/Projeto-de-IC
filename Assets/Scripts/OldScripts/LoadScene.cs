@@ -33,4 +33,9 @@ public class LoadScene : MonoBehaviour {
     {
         SceneLoader(GameManager.instance.lastSceneName);
     }
+
+    public void SaveBeforeLoad()
+    {
+        SaveManager.instance.Save();
+    }
 }
