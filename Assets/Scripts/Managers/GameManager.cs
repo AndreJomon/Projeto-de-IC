@@ -137,6 +137,9 @@ public class GameManager : MonoBehaviour {
         return tempBallonTips;
     }
 
+    public GameObject instantiatedDotsBalloon;
+    public GameObject instantiatedMessageBalloon;
+
     private void Awake()
     {
         if (instance == null)
