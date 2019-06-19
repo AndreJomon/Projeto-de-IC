@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 12458534}
   - component: {fileID: 12458536}
-  - component: {fileID: 12458535}
   m_Layer: 0
   m_Name: Particula (10)
   m_TagString: Untagged
@@ -149,35 +148,6 @@ RectTransform:
   m_AnchoredPosition: {x: 8.8, y: 2.5}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &12458535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12458533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &12458536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -270,7 +240,6 @@ GameObject:
   m_Component:
   - component: {fileID: 82939051}
   - component: {fileID: 82939053}
-  - component: {fileID: 82939052}
   m_Layer: 0
   m_Name: Particula (5)
   m_TagString: Untagged
@@ -297,35 +266,6 @@ RectTransform:
   m_AnchoredPosition: {x: 36, y: -87.4}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &82939052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82939050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &82939053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -399,7 +339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 130025111}
   - component: {fileID: 130025113}
-  - component: {fileID: 130025112}
   m_Layer: 0
   m_Name: Particula (21)
   m_TagString: Untagged
@@ -426,35 +365,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.5, y: -9.8}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &130025112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130025110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &130025113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -473,7 +383,6 @@ GameObject:
   m_Component:
   - component: {fileID: 140573957}
   - component: {fileID: 140573959}
-  - component: {fileID: 140573958}
   m_Layer: 0
   m_Name: Particula (19)
   m_TagString: Untagged
@@ -500,35 +409,6 @@ RectTransform:
   m_AnchoredPosition: {x: 10.6, y: -0.3}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &140573958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140573956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &140573959
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -594,7 +474,6 @@ GameObject:
   m_Component:
   - component: {fileID: 155651581}
   - component: {fileID: 155651583}
-  - component: {fileID: 155651582}
   m_Layer: 0
   m_Name: Particula (3)
   m_TagString: Untagged
@@ -621,35 +500,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4.86, y: -4.69}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &155651582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155651580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &155651583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -668,7 +518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 212155938}
   - component: {fileID: 212155940}
-  - component: {fileID: 212155939}
   m_Layer: 0
   m_Name: Particula
   m_TagString: Untagged
@@ -695,35 +544,6 @@ RectTransform:
   m_AnchoredPosition: {x: -73, y: 0}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &212155939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212155937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &212155940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -902,7 +722,6 @@ GameObject:
   m_Component:
   - component: {fileID: 242776438}
   - component: {fileID: 242776440}
-  - component: {fileID: 242776439}
   m_Layer: 0
   m_Name: Particula (2)
   m_TagString: Untagged
@@ -929,35 +748,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4.86, y: 4.69}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &242776439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242776437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &242776440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -976,7 +766,6 @@ GameObject:
   m_Component:
   - component: {fileID: 254006730}
   - component: {fileID: 254006732}
-  - component: {fileID: 254006731}
   m_Layer: 0
   m_Name: Particula (4)
   m_TagString: Untagged
@@ -1003,35 +792,6 @@ RectTransform:
   m_AnchoredPosition: {x: 96.3, y: -46.2}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &254006731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254006729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &254006732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1143,7 +903,6 @@ GameObject:
   m_Component:
   - component: {fileID: 312015620}
   - component: {fileID: 312015622}
-  - component: {fileID: 312015621}
   m_Layer: 0
   m_Name: Particula (11)
   m_TagString: Untagged
@@ -1170,35 +929,6 @@ RectTransform:
   m_AnchoredPosition: {x: 8.899998, y: -3.9000068}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &312015621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312015619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &312015622
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1217,7 +947,6 @@ GameObject:
   m_Component:
   - component: {fileID: 358035409}
   - component: {fileID: 358035411}
-  - component: {fileID: 358035410}
   m_Layer: 0
   m_Name: Particula (3)
   m_TagString: Untagged
@@ -1244,35 +973,6 @@ RectTransform:
   m_AnchoredPosition: {x: 98.3, y: 41.6}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &358035410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358035408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &358035411
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1291,7 +991,6 @@ GameObject:
   m_Component:
   - component: {fileID: 359234134}
   - component: {fileID: 359234136}
-  - component: {fileID: 359234135}
   m_Layer: 0
   m_Name: Particula (5)
   m_TagString: Untagged
@@ -1318,35 +1017,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6.71, y: 0}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &359234135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359234133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &359234136
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1397,7 +1067,6 @@ GameObject:
   m_Component:
   - component: {fileID: 392466324}
   - component: {fileID: 392466326}
-  - component: {fileID: 392466325}
   m_Layer: 0
   m_Name: Particula (2)
   m_TagString: Untagged
@@ -1424,35 +1093,6 @@ RectTransform:
   m_AnchoredPosition: {x: 32.2, y: 88.5}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &392466325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392466323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &392466326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1571,7 +1211,6 @@ GameObject:
   m_Component:
   - component: {fileID: 418482667}
   - component: {fileID: 418482669}
-  - component: {fileID: 418482668}
   m_Layer: 0
   m_Name: Particula (15)
   m_TagString: Untagged
@@ -1598,35 +1237,6 @@ RectTransform:
   m_AnchoredPosition: {x: -8.5, y: 2.7}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &418482668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418482666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &418482669
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1839,7 +1449,6 @@ GameObject:
   m_Component:
   - component: {fileID: 626782137}
   - component: {fileID: 626782139}
-  - component: {fileID: 626782138}
   m_Layer: 0
   m_Name: Particula (7)
   m_TagString: Untagged
@@ -1866,35 +1475,6 @@ RectTransform:
   m_AnchoredPosition: {x: -96.3, y: -46.2}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &626782138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626782136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &626782139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1913,7 +1493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 643747599}
   - component: {fileID: 643747601}
-  - component: {fileID: 643747600}
   m_Layer: 0
   m_Name: Particula (6)
   m_TagString: Untagged
@@ -1940,35 +1519,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6.71, y: 0}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &643747600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643747598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &643747601
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1987,7 +1537,6 @@ GameObject:
   m_Component:
   - component: {fileID: 660582486}
   - component: {fileID: 660582488}
-  - component: {fileID: 660582487}
   m_Layer: 0
   m_Name: Particula (20)
   m_TagString: Untagged
@@ -2014,35 +1563,6 @@ RectTransform:
   m_AnchoredPosition: {x: 7.4, y: -6.4}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &660582487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660582485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &660582488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2288,7 +1808,6 @@ GameObject:
   m_Component:
   - component: {fileID: 722541650}
   - component: {fileID: 722541652}
-  - component: {fileID: 722541651}
   m_Layer: 0
   m_Name: Particula (24)
   m_TagString: Untagged
@@ -2315,35 +1834,6 @@ RectTransform:
   m_AnchoredPosition: {x: -7.3, y: 5.7}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &722541651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722541649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &722541652
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2441,7 +1931,6 @@ GameObject:
   m_Component:
   - component: {fileID: 747059761}
   - component: {fileID: 747059763}
-  - component: {fileID: 747059762}
   m_Layer: 0
   m_Name: Particula (7)
   m_TagString: Untagged
@@ -2468,35 +1957,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -6.71}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &747059762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747059760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &747059763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2515,7 +1975,6 @@ GameObject:
   m_Component:
   - component: {fileID: 757799062}
   - component: {fileID: 757799064}
-  - component: {fileID: 757799063}
   m_Layer: 0
   m_Name: Particula (16)
   m_TagString: Untagged
@@ -2542,35 +2001,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: 8}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &757799063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757799061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &757799064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2589,7 +2019,6 @@ GameObject:
   m_Component:
   - component: {fileID: 861924101}
   - component: {fileID: 861924103}
-  - component: {fileID: 861924102}
   m_Layer: 0
   m_Name: Particula (14)
   m_TagString: Untagged
@@ -2616,35 +2045,6 @@ RectTransform:
   m_AnchoredPosition: {x: -8.8, y: -4.3}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &861924102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861924100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &861924103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2931,7 +2331,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1092590226}
   - component: {fileID: 1092590228}
-  - component: {fileID: 1092590227}
   m_Layer: 0
   m_Name: Particula (8)
   m_TagString: Untagged
@@ -2958,35 +2357,6 @@ RectTransform:
   m_AnchoredPosition: {x: -98.3, y: 41.6}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1092590227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1092590225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1092590228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3210,7 +2580,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1231852956}
   - component: {fileID: 1231852958}
-  - component: {fileID: 1231852957}
   m_Layer: 0
   m_Name: Particula (17)
   m_TagString: Untagged
@@ -3237,35 +2606,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 8.9}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1231852957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231852955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1231852958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3284,7 +2624,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1268930408}
   - component: {fileID: 1268930410}
-  - component: {fileID: 1268930409}
   m_Layer: 0
   m_Name: Particula (9)
   m_TagString: Untagged
@@ -3311,35 +2650,6 @@ RectTransform:
   m_AnchoredPosition: {x: -32.2, y: 88.5}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1268930409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268930407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1268930410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3469,7 +2779,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1413760679}
   - component: {fileID: 1413760681}
-  - component: {fileID: 1413760680}
   m_Layer: 0
   m_Name: Particula (8)
   m_TagString: Untagged
@@ -3496,35 +2805,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 6.71}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1413760680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413760678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1413760681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3543,7 +2823,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1417389255}
   - component: {fileID: 1417389257}
-  - component: {fileID: 1417389256}
   m_Layer: 0
   m_Name: Particula (23)
   m_TagString: Untagged
@@ -3570,35 +2849,6 @@ RectTransform:
   m_AnchoredPosition: {x: -9.7, y: -1.1}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1417389256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417389254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1417389257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3617,7 +2867,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1419524437}
   - component: {fileID: 1419524439}
-  - component: {fileID: 1419524438}
   m_Layer: 0
   m_Name: Particula (18)
   m_TagString: Untagged
@@ -3644,35 +2893,6 @@ RectTransform:
   m_AnchoredPosition: {x: 7.2, y: 6}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1419524438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1419524436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1419524439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3691,7 +2911,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1428878275}
   - component: {fileID: 1428878277}
-  - component: {fileID: 1428878276}
   m_Layer: 0
   m_Name: Particula (12)
   m_TagString: Untagged
@@ -3718,35 +2937,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.3, y: -8.1}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1428878276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428878274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1428878277
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4078,7 +3268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1579627906}
   - component: {fileID: 1579627908}
-  - component: {fileID: 1579627907}
   m_Layer: 0
   m_Name: Particula (6)
   m_TagString: Untagged
@@ -4105,35 +3294,6 @@ RectTransform:
   m_AnchoredPosition: {x: -36, y: -87.4}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1579627907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579627905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1579627908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4362,7 +3522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1612474240}
   - component: {fileID: 1612474242}
-  - component: {fileID: 1612474241}
   m_Layer: 0
   m_Name: Particula (4)
   m_TagString: Untagged
@@ -4389,35 +3548,6 @@ RectTransform:
   m_AnchoredPosition: {x: 4.86, y: -4.69}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1612474241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612474239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1612474242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4530,7 +3660,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1694045334}
   - component: {fileID: 1694045336}
-  - component: {fileID: 1694045335}
   m_Layer: 0
   m_Name: Particula (9)
   m_TagString: Untagged
@@ -4557,35 +3686,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.5, y: 7.9}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1694045335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694045333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1694045336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4822,7 +3922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1914073739}
   - component: {fileID: 1914073741}
-  - component: {fileID: 1914073740}
   m_Layer: 0
   m_Name: Particula (22)
   m_TagString: Untagged
@@ -4849,35 +3948,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6, y: -7.6}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1914073740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914073738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1914073741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5016,7 +4086,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1923638378}
   - component: {fileID: 1923638380}
-  - component: {fileID: 1923638379}
   m_Layer: 0
   m_Name: Particula (13)
   m_TagString: Untagged
@@ -5043,35 +4112,6 @@ RectTransform:
   m_AnchoredPosition: {x: -3.2, y: -8.5}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1923638379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923638377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1923638380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5090,7 +4130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1941129560}
   - component: {fileID: 1941129562}
-  - component: {fileID: 1941129561}
   m_Layer: 0
   m_Name: Particula
   m_TagString: Untagged
@@ -5117,35 +4156,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1941129561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941129559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1941129562
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5164,7 +4174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1980363581}
   - component: {fileID: 1980363583}
-  - component: {fileID: 1980363582}
   m_Layer: 0
   m_Name: Particula (1)
   m_TagString: Untagged
@@ -5191,35 +4200,6 @@ RectTransform:
   m_AnchoredPosition: {x: 4.86, y: 4.69}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1980363582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980363580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &1980363583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5350,7 +4330,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2110584491}
   - component: {fileID: 2110584493}
-  - component: {fileID: 2110584492}
   m_Layer: 0
   m_Name: Particula (1)
   m_TagString: Untagged
@@ -5377,35 +4356,6 @@ RectTransform:
   m_AnchoredPosition: {x: 73, y: 0}
   m_SizeDelta: {x: 7.48, y: 8.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2110584492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110584490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 46ac518041984134aae873cb6b7f9c66, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &2110584493
 CanvasRenderer:
   m_ObjectHideFlags: 0

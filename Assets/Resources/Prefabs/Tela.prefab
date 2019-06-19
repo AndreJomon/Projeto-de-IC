@@ -113,5 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClip: {fileID: 0}
-  pauseScreen: {fileID: 2800000, guid: ba0d25f4cd6485149be9c6971f011e19, type: 3}
-  replayScreen: {fileID: 2800000, guid: ab566defa1a6f524c862dfde886daaf7, type: 3}
+  pauseScreen: {fileID: 2800000, guid: 09a4dc23be2118746a5e1d7c6ad11db0, type: 3}
+  replayScreen: {fileID: 2800000, guid: 9193d380a38d420459c65e3cb223570f, type: 3}
