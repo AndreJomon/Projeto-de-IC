@@ -121,6 +121,7 @@ public class GameManager : MonoBehaviour {
             Vector2 positionModifier = ballonTips.GetComponent<BallonTips>().GetPositionModifier();
 
             tempBallonTips = Instantiate(ballonTips, GameObject.Find("Lampada").transform);
+            //tempBallonTips.transform.localScale = new Vector3(3, 3, 3);
             tempBallonTips.transform.localPosition += new Vector3(positionModifier.x, positionModifier.y, 0);
 
             tempBallonTips.GetComponent<BallonTips>().PutInfo(text);
