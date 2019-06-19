@@ -448,6 +448,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 116574564}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &75368161
@@ -619,6 +630,8 @@ GameObject:
   m_Component:
   - component: {fileID: 116574563}
   - component: {fileID: 116574562}
+  - component: {fileID: 116574564}
+  - component: {fileID: 116574565}
   m_Layer: 0
   m_Name: "npc aleat\xF3rio 2"
   m_TagString: Untagged
@@ -688,6 +701,41 @@ Transform:
   m_Father: {fileID: 739230205}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &116574564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116574561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2506737f1ee9ddc4d9d978f45f5e64ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsBalloon: {fileID: 2178314018079053373, guid: 9b749ab3af2029e4a9bdefc16557c6bd,
+    type: 3}
+  messageBalloon: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
+    type: 3}
+  balloonMessage:
+    text: Caraiiiii....?!?!
+    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+--- !u!70 &116574565
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116574561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.24739414, y: 0.096009836}
+  m_Size: {x: 1.724049, y: 5.9020195}
+  m_Direction: 0
 --- !u!1 &119231969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1160,8 @@ GameObject:
   - component: {fileID: 246194904}
   - component: {fileID: 246194906}
   - component: {fileID: 246194905}
+  - component: {fileID: 246194908}
+  - component: {fileID: 246194907}
   m_Layer: 5
   m_Name: NPC
   m_TagString: Untagged
@@ -1175,6 +1225,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246194903}
   m_CullTransparentMesh: 0
+--- !u!114 &246194907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246194903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2506737f1ee9ddc4d9d978f45f5e64ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsBalloon: {fileID: 2178314018079053373, guid: 9b749ab3af2029e4a9bdefc16557c6bd,
+    type: 3}
+  messageBalloon: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
+    type: 3}
+  balloonMessage:
+    text: "Ei, \xF3 o aue a\xED!"
+    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+--- !u!70 &246194908
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246194903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.024339, y: 27.446241}
+  m_Size: {x: 45.123558, y: 77.577644}
+  m_Direction: 0
 --- !u!1 &268438934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1635,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 554253874}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2115,6 +2211,8 @@ GameObject:
   - component: {fileID: 440498054}
   - component: {fileID: 440498056}
   - component: {fileID: 440498055}
+  - component: {fileID: 440498058}
+  - component: {fileID: 440498057}
   m_Layer: 0
   m_Name: npc
   m_TagString: Untagged
@@ -2178,6 +2276,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440498053}
   m_CullTransparentMesh: 0
+--- !u!70 &440498057
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440498053}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 16.058876, y: -12.35298}
+  m_Size: {x: 81.106995, y: 225.00526}
+  m_Direction: 0
+--- !u!114 &440498058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440498053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2506737f1ee9ddc4d9d978f45f5e64ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsBalloon: {fileID: 2178314018079053373, guid: 9b749ab3af2029e4a9bdefc16557c6bd,
+    type: 3}
+  messageBalloon: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
+    type: 3}
+  balloonMessage:
+    text: Kkkkkkkk
+    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
 --- !u!1 &450162723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,6 +2426,8 @@ GameObject:
   - component: {fileID: 554253871}
   - component: {fileID: 554253873}
   - component: {fileID: 554253872}
+  - component: {fileID: 554253874}
+  - component: {fileID: 554253875}
   m_Layer: 0
   m_Name: npc
   m_TagString: Untagged
@@ -2356,6 +2491,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554253870}
   m_CullTransparentMesh: 0
+--- !u!114 &554253874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554253870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2506737f1ee9ddc4d9d978f45f5e64ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsBalloon: {fileID: 2178314018079053373, guid: 9b749ab3af2029e4a9bdefc16557c6bd,
+    type: 3}
+  messageBalloon: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
+    type: 3}
+  balloonMessage:
+    text: Vish....
+    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+--- !u!70 &554253875
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554253870}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.088245, y: 5.5588984}
+  m_Size: {x: 68.17663, y: 186.76544}
+  m_Direction: 0
 --- !u!1 &576309761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2978,8 @@ GameObject:
   m_Component:
   - component: {fileID: 783246071}
   - component: {fileID: 783246072}
+  - component: {fileID: 783246073}
+  - component: {fileID: 783246074}
   m_Layer: 0
   m_Name: "npc aleat\xF3rio 3"
   m_TagString: Untagged
@@ -2877,6 +3049,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &783246073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783246070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2506737f1ee9ddc4d9d978f45f5e64ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsBalloon: {fileID: 2178314018079053373, guid: 9b749ab3af2029e4a9bdefc16557c6bd,
+    type: 3}
+  messageBalloon: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
+    type: 3}
+  balloonMessage:
+    text: Arriba! Arriba!
+    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+--- !u!70 &783246074
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783246070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.14168844, y: 2.293982}
+  m_Size: {x: 9.509327, y: 13.09881}
+  m_Direction: 0
 --- !u!1 &786144454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,6 +3664,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246194907}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4577,6 +4795,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 116574564}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5864,6 +6093,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 783246073}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1844425929
@@ -6064,6 +6304,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246194907}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6504,6 +6755,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 783246073}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1968871083
@@ -6661,6 +6923,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 554253874}
+        m_MethodName: DestroyBalloon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
