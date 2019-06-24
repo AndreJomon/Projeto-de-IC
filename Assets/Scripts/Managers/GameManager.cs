@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject instantiatedDotsBalloon;
     public GameObject instantiatedMessageBalloon;
+    public bool messageBalloonOn = false;
 
     private void Awake()
     {
