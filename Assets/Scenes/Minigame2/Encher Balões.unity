@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 199110964}
   - component: {fileID: 199110963}
   - component: {fileID: 199110966}
+  - component: {fileID: 199110967}
   m_Layer: 5
   m_Name: Ballon0
   m_TagString: Untagged
@@ -224,7 +225,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 00f9c8554a8673144a12abeef169fc48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3542b7f9b504794bb2b1792d59b04b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -254,6 +255,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potNumber: 0
+--- !u!95 &199110967
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199110961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 772568f9f1dc25b4494ab72e61075d0b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &308590768
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +399,7 @@ GameObject:
   - component: {fileID: 790949153}
   - component: {fileID: 790949152}
   - component: {fileID: 790949155}
+  - component: {fileID: 790949156}
   m_Layer: 5
   m_Name: Ballon2
   m_TagString: Untagged
@@ -478,7 +499,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6fa2c3910ef23f54da1cf9728eaf178d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ffb6346877febf4194cfa490a334973, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -508,6 +529,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potNumber: 2
+--- !u!95 &790949156
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790949150}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4120250281d3f104eaf06ed57eca8297, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &829184830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +1081,7 @@ GameObject:
   - component: {fileID: 1505292643}
   - component: {fileID: 1505292642}
   - component: {fileID: 1505292645}
+  - component: {fileID: 1505292646}
   m_Layer: 5
   m_Name: Ballon1
   m_TagString: Untagged
@@ -1140,7 +1181,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a4cf7ccae7578854994273a1e1553757, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f74e37a99886dfe489fe6a8fc9da40cb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1170,6 +1211,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potNumber: 1
+--- !u!95 &1505292646
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505292640}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f59d2e7b1a1007409c59b349f9c8e17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1516421748
 GameObject:
   m_ObjectHideFlags: 0
