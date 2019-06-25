@@ -25,4 +25,9 @@ public class HQManager : MonoBehaviour
     {
         StartCoroutine(VideoManager.instance.PlayVideo(videoContainer.GetComponent<PlayVideoOnMouseOver>().video));
     }
+
+    public void RestartVideo()
+    {
+        VideoManager.instance.ReplayVideo();
+    }
 }

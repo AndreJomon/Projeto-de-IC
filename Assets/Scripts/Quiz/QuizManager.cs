@@ -234,6 +234,8 @@ public class QuizManager : MonoBehaviour
         string tempMsg = correctAnswers + "/" + qtyQuestionsToDo;
         scoreText.text = tempMsg;
 
+        SaveManager.instance.player.SetBeatPartTrue(3);
+
         AddQuizResultsToFile();
         GameObject.Find("Canvas").GetComponent<Animator>().SetTrigger("EndQuiz");
         StartCoroutine(VideoManager.instance.PlayVideo(textoFimDoQuiz));
