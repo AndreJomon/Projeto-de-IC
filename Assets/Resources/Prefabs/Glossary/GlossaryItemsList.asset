@@ -13,38 +13,68 @@ MonoBehaviour:
   m_Name: GlossaryItemsList
   m_EditorClassIdentifier: 
   glossary:
-  - expression: "Liga\xE7\xF5es Qu\xEDmicas"
+  - expression: Ametais
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Uni\xE3o dos \xE1tomos para a forma\xE7\xE3o das mol\xE9culas"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: Gases Nobres
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Gases com baixa reatividade qu\xEDmica"
+    meaning: "Elemento qu\xEDmico eletronegativo, mau condutor de calor e eletricidade;
+      n\xE3o metal"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "\xC1tomo"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Sistema energ\xE9tico est\xE1vel, eletricamente neutro, que consiste
       em um n\xFAcleo denso, positivamente carregado, envolvido por el\xE9trons"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "El\xE9trons"
+  - expression: "Camada de Val\xEAncia"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Part\xEDcula elementar negativa"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "\xCDon"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Esp\xE9cie at\xF4mica n\xE3o neutra"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Pr\xF3tons"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Part\xEDcula elementar positiva"
+    meaning: "Camada eletr\xF4nica mais energ\xE9tica"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "Camada Eletr\xF4nica"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Espa\xE7o onde orbita os el\xE9trons"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Camada de Val\xEAncia"
+  - expression: "Condutor El\xE9trico"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Camada eletr\xF4nica mais energ\xE9tica"
+    meaning: "Material n\xE3o isolante, o qual possui a capacidade de conduzir eletricidade
+      facilmente"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "Condutor T\xE9rmico"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: Material que possui a propriedade de conduzir temperatura facilmente
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: Densidade
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: Quantidade de massa por unidade de volume do material
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "D\xFActil"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Propriedade que define o grau de deforma\xE7\xE3o do material de acordo
+      com a for\xE7a \xE0 qual ele \xE9 submetido sem quebrar"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "Ebuli\xE7\xE3o"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Processo no qual dada subst\xE2ncia ou mistura passa da fase l\xEDquida
+      para a fase gasosa"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "El\xE9trons"
+    expressionVideo: {fileID: 32900000, guid: 84aa4dcbecc98bc4cbebba3783dbccc3, type: 3}
+    meaning: "Part\xEDcula elementar negativa"
+    meaningVideo: {fileID: 32900000, guid: 4383bd3c172ad804d942398317250b87, type: 3}
+  - expression: "For\xE7as Eletrost\xE1ticas"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Atra\xE7\xE3o entre el\xE9tron e n\xFAcleo. Essa atra\xE7\xE3o pode
+      ser tanto interat\xF4mica quanto intrat\xF4mica"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "Fus\xE3o"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Temperatura na qual uma subst\xE2ncia ou uma mistura passa da fase s\xF3lida
+      para a fase l\xEDquida"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: Gases Nobres
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Gases com baixa reatividade qu\xEDmica"
+    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  - expression: "\xCDon"
+    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    meaning: "Esp\xE9cie at\xF4mica n\xE3o neutra"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "Liga\xE7\xF5es Covalentes"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
@@ -58,52 +88,22 @@ MonoBehaviour:
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: "Liga\xE7\xE3o entre dois metais"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: Metais
+  - expression: "Liga\xE7\xF5es Qu\xEDmicas"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Conjunto de elementos com caracter\xEDsticas espec\xEDficas, como brilho,
-      condu\xE7\xE3o el\xE9trica, s\xF3lidos \xE0 temperatura ambiente e estrutura
-      cristalina"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: Ametais
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Elemento qu\xEDmico eletronegativo, mau condutor de calor e eletricidade;
-      n\xE3o metal"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "D\xFActil"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Propriedade que define o grau de deforma\xE7\xE3o do material de acordo
-      com a for\xE7a \xE0 qual ele \xE9 submetido sem quebrar"
+    meaning: "Uni\xE3o dos \xE1tomos para a forma\xE7\xE3o das mol\xE9culas"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   - expression: "Male\xE1vel"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
     meaning: Material que possui a propriedade de se moldar ou se flexibilizar de
       acordo com o meio no qual ele se encontra
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Condutor T\xE9rmico"
+  - expression: Metais
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: Material que possui a propriedade de conduzir temperatura facilmente
+    meaning: "Conjunto de elementos com caracter\xEDsticas espec\xEDficas, como brilho,
+      condu\xE7\xE3o el\xE9trica, s\xF3lidos \xE0 temperatura ambiente e estrutura
+      cristalina"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Condutor El\xE9trico"
+  - expression: "Pr\xF3tons"
     expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Material n\xE3o isolante, o qual possui a capacidade de conduzir eletricidade
-      facilmente"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Fus\xE3o"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Temperatura na qual uma subst\xE2ncia ou uma mistura passa da fase s\xF3lida
-      para a fase l\xEDquida"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "Ebuli\xE7\xE3o"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Processo no qual dada subst\xE2ncia ou mistura passa da fase l\xEDquida
-      para a fase gasosa"
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: Densidade
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: Quantidade de massa por unidade de volume do material
-    meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - expression: "For\xE7as Eletrost\xE1ticas"
-    expressionVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-    meaning: "Atra\xE7\xE3o entre el\xE9tron e n\xFAcleo. Essa atra\xE7\xE3o pode
-      ser tanto interat\xF4mica quanto intrat\xF4mica"
+    meaning: "Part\xEDcula elementar positiva"
     meaningVideo: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}

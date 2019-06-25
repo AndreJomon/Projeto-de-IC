@@ -20,7 +20,7 @@ public class Player
     private int rankingPosition = -1;
     [Tooltip("Pontuação total do aluno")]
     [SerializeField]
-    private int score = 0;
+    private int[] score = {0, 0, 0}; //Minigame de acordo com o índice 0: Arcade, 1: Encher balões, 2: Quiz
     private List<QuestionAndAnswer> questionAndAnswers = new List<QuestionAndAnswer>();
     [SerializeField]
     private bool[] beatedParts = new bool[4]; /*Cada espaço referente a uma parte, 0: Tutorial, 1: Arcade, 2: Balões e 3: Quiz*/
@@ -76,22 +76,24 @@ public class Player
         return rankingPosition;
     }
 
-    public void SetScore(int score)
+    public void SetScore(int i, int score)
     {
-        this.score = score;
+        this.score[i] = score;
+    }
+
+    public int GetScore(int i)
+    {
+        return score[i];
     }
 
     public int GetScore()
     {
-        return score;
-    }
-
-    public void SetAll(int slot, string nome, string classroom, int score)
-    {
-        SetSlot(slot);
-        SetNome(nome);
-        SetClassroom(classroom);
-        SetScore(score);
+        int soma = 0;
+        foreach (int scoreValor in score)
+        {
+            soma += scoreValor;
+        }
+        return soma;
     }
 
     public void SetQnA(List<QuestionAndAnswer> list)
