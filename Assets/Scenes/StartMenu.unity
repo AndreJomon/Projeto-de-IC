@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
+  video: {fileID: 32900000, guid: 93bea2e65a0c6824681bef189a9e4307, type: 3}
 --- !u!1 &255121050
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  video: {fileID: 32900000, guid: 475372a91f9874143ae3bffd89207240, type: 3}
 --- !u!61 &302142137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
+  video: {fileID: 32900000, guid: 9ba4a5b299f24904b891f74f8326ca0e, type: 3}
 --- !u!61 &408781926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  video: {fileID: 32900000, guid: 1b8f8ba2fada33f438ac9e6192146605, type: 3}
 --- !u!61 &1282502560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3304,7 +3304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  video: {fileID: 32900000, guid: 24883f5cd531cbd449f08931655005bc, type: 3}
 --- !u!61 &1807682853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3907,6 +3907,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2083327085}
+  - component: {fileID: 2083327087}
+  - component: {fileID: 2083327086}
   m_Layer: 5
   m_Name: Logo
   m_TagString: Untagged
@@ -3936,6 +3938,45 @@ RectTransform:
   m_AnchoredPosition: {x: 15, y: 89}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &2083327086
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083327084}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 29.177185, y: 228.60864}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 621.1846, y: 447.6134}
+  m_EdgeRadius: 0
+--- !u!114 &2083327087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083327084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 28de981ff03be184494b76183b434caf, type: 3}
 --- !u!1 &2104103419
 GameObject:
   m_ObjectHideFlags: 0

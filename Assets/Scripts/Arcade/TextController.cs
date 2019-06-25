@@ -57,6 +57,7 @@ public class TextController : MonoBehaviour
         }
         if (currentPage == lastPage)
         {
+            Debug.Log("Entrou no ultimo");
             lastTextButton.SetTrue();
             nextPage.gameObject.SetActive(false);
         }

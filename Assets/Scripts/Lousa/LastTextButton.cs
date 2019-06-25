@@ -15,6 +15,7 @@ public class LastTextButton : LoadScene
 
     private void ActiveObject()
     {
+        gameObject.SetActive(true);
         GetComponent<Animator>().Play("PlacaDescendo");
     }
 

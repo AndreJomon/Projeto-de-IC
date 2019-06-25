@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: de7496f9c0d95eb4b9a6a1cc79275850, type: 3}
 --- !u!114 &224231308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,9 +848,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome:
   - text: Nenhum
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 3bff8c5d3dd97d7488b49de44d447b33, type: 3}
   - text: "Hidrog\xEAnio"
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 00f850dc76b42264785ae12551ccc01c, type: 3}
   - text: "H\xE9lio"
     video: {fileID: 0}
   - text: "L\xEDtio"
@@ -877,6 +877,7 @@ MonoBehaviour:
   nomeText: {fileID: 1919871801}
   cargaText: {fileID: 723480806}
   massaText: {fileID: 2110992507}
+  playVideoOnMouseOver: {fileID: 1919871800}
 --- !u!58 &256709382
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1323,6 +1324,8 @@ GameObject:
   - component: {fileID: 625861660}
   - component: {fileID: 625861659}
   - component: {fileID: 625861658}
+  - component: {fileID: 625861662}
+  - component: {fileID: 625861661}
   m_Layer: 0
   m_Name: "El\xE9tronsButton"
   m_TagString: Untagged
@@ -1439,6 +1442,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625861656}
   m_CullTransparentMesh: 0
+--- !u!114 &625861661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625861656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 84aa4dcbecc98bc4cbebba3783dbccc3, type: 3}
+--- !u!61 &625861662
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625861656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08363342, y: -0.50081205}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 112.377106, y: 29.721046}
+  m_EdgeRadius: 0
 --- !u!1 &626782136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: 0b748815ebfecfc4eb45d575743abe90, type: 3}
 --- !u!114 &676588964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2104,7 +2146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: 77d79f7975906a943a770dca514cbe0b, type: 3}
 --- !u!61 &865097577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2957,6 +2999,8 @@ GameObject:
   - component: {fileID: 1489505023}
   - component: {fileID: 1489505022}
   - component: {fileID: 1489505021}
+  - component: {fileID: 1489505025}
+  - component: {fileID: 1489505024}
   m_Layer: 0
   m_Name: "N\xEAutronsButton"
   m_TagString: Untagged
@@ -3073,6 +3117,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489505019}
   m_CullTransparentMesh: 0
+--- !u!114 &1489505024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489505019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: acf707b1fcda6c44e9f6736479b88245, type: 3}
+--- !u!61 &1489505025
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489505019}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.041114807, y: -0.28794003}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 113.748856, y: 30.406641}
+  m_EdgeRadius: 0
 --- !u!1 &1494005933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,6 +3397,8 @@ GameObject:
   - component: {fileID: 1579893833}
   - component: {fileID: 1579893832}
   - component: {fileID: 1579893831}
+  - component: {fileID: 1579893835}
+  - component: {fileID: 1579893834}
   m_Layer: 0
   m_Name: "Pr\xF3tonsButton"
   m_TagString: Untagged
@@ -3430,6 +3515,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579893829}
   m_CullTransparentMesh: 0
+--- !u!114 &1579893834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579893829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 1c6c36261223e234da16d7a0aea37de7, type: 3}
+--- !u!61 &1579893835
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579893829}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.115522385, y: 0.09917545}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 112.96513, y: 29.113008}
+  m_EdgeRadius: 0
 --- !u!1 &1583291912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,7 +4157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: 3bff8c5d3dd97d7488b49de44d447b33, type: 3}
 --- !u!114 &1919871801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4577,7 +4701,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e205027156e2e5242973e58299237f80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 559977b372060954699a9f5fb8b1ee2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4636,8 +4760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClip: {fileID: 0}
-  pauseScreen: {fileID: 2800000, guid: ba0d25f4cd6485149be9c6971f011e19, type: 3}
-  replayScreen: {fileID: 2800000, guid: ab566defa1a6f524c862dfde886daaf7, type: 3}
+  pauseScreen: {fileID: 2800000, guid: 8197e2eaf10717d4db5b34d79a72a62d, type: 3}
+  replayScreen: {fileID: 2800000, guid: d602dfb5c3675434dabe65a1cc00cc35, type: 3}
 --- !u!61 &7633844553745775658
 BoxCollider2D:
   m_ObjectHideFlags: 0
