@@ -1040,8 +1040,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139.24, y: -9.34}
-  m_SizeDelta: {x: 75.05, y: 120.47}
+  m_AnchoredPosition: {x: 138.99, y: -9.73}
+  m_SizeDelta: {x: 77.98, y: 121.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420761690
 MonoBehaviour:
@@ -1056,8 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClip: {fileID: 0}
-  pauseScreen: {fileID: 2800000, guid: ba0d25f4cd6485149be9c6971f011e19, type: 3}
-  replayScreen: {fileID: 2800000, guid: ab566defa1a6f524c862dfde886daaf7, type: 3}
+  pauseScreen: {fileID: 2800000, guid: 8197e2eaf10717d4db5b34d79a72a62d, type: 3}
+  replayScreen: {fileID: 2800000, guid: d602dfb5c3675434dabe65a1cc00cc35, type: 3}
 --- !u!61 &1420761691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1130,6 +1130,7 @@ GameObject:
   - component: {fileID: 1583291915}
   - component: {fileID: 1583291914}
   - component: {fileID: 1583291913}
+  - component: {fileID: 1583291916}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1201,6 +1202,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1583291916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583291912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1c8e6b9133bd54f8c0400eb46f0cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: ce83b559dc1194a44b30df981df1e826, type: 3}
+  tela: {fileID: 0}
 --- !u!1 &1632561064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1367,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e205027156e2e5242973e58299237f80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 559977b372060954699a9f5fb8b1ee2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

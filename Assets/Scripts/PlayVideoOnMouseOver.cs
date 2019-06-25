@@ -15,6 +15,9 @@ public class PlayVideoOnMouseOver : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        StartCoroutine(videoManager.PlayVideo(video));
+        if (video != null)
+        {
+            StartCoroutine(videoManager.PlayVideo(video));
+        }
     }
 }

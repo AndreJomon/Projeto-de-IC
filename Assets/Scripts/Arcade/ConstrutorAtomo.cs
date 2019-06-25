@@ -12,6 +12,7 @@ public class ConstrutorAtomo : MonoBehaviour
     public int numEletrons = 0;
     public int numNeutrons = 0;
     public Text nomeText, cargaText, massaText;
+    public PlayVideoOnMouseOver playVideoOnMouseOver;
 
     public int GetNumProtons()
     {
@@ -91,6 +92,7 @@ public class ConstrutorAtomo : MonoBehaviour
     {
         nomeText.text = nome[numProtons].text;
         nomeText.gameObject.GetComponent<PlayVideoOnMouseOver>().video = nome[numProtons].video;
+        playVideoOnMouseOver.video = nome[numProtons].video;
         cargaText.text = cargaTotal.ToString();
         massaText.text = massaTotal.ToString();
     }
