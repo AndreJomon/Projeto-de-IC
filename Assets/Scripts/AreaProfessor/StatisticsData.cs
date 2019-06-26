@@ -18,7 +18,7 @@ public class StatisticsData
     {
         name = player.GetNome();
         classroom = player.GetClassroom();
-        score = player.GetScore();
+        score = player.GetTotalScore();
     }
 
     /// <summary>

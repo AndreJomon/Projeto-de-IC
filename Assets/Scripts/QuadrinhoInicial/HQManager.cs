@@ -35,4 +35,9 @@ public class HQManager : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public void DisableGrandFather()
+    {
+        gameObject.transform.parent.transform.parent.gameObject.SetActive(false);
+    }
 }

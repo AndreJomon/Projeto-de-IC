@@ -53,7 +53,7 @@ public class RankingManager : MonoBehaviour
         ranking.Sort(delegate (Player a, Player b)
         {
             int pos;
-            if (a.GetScore() > b.GetScore())
+            if (a.GetTotalScore() > b.GetTotalScore())
             {
                 pos = -1;
             }

@@ -225,7 +225,7 @@ public class QuizManager : MonoBehaviour
         TurnOnTela3();
 
         int scoreTemp = CalculateScore();
-        if (scoreTemp >= SaveManager.instance.player.GetScore())
+        if (scoreTemp >= SaveManager.instance.player.GetScore(2))
         {
             SaveManager.instance.player.SetQnA(questionAndAnswer);
             SaveManager.instance.player.SetScore(2, scoreTemp);
