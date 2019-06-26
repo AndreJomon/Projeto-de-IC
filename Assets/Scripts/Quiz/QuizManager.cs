@@ -228,7 +228,7 @@ public class QuizManager : MonoBehaviour
         if (scoreTemp >= SaveManager.instance.player.GetScore())
         {
             SaveManager.instance.player.SetQnA(questionAndAnswer);
-            SaveManager.instance.player.SetScore(scoreTemp);
+            SaveManager.instance.player.SetScore(2, scoreTemp);
         }
 
         string tempMsg = correctAnswers + "/" + qtyQuestionsToDo;

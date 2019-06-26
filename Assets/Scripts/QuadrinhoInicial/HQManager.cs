@@ -30,4 +30,9 @@ public class HQManager : MonoBehaviour
     {
         VideoManager.instance.ReplayVideo();
     }
+
+    public void DisableSelf()
+    {
+        gameObject.SetActive(false);
+    }
 }
