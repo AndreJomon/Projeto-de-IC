@@ -13,13 +13,26 @@ public class GameManager : MonoBehaviour {
         public int nEletrons;
         public int nNeutrons;
 
-        public bool Check(int protons, int eletrons, int neutrons)
+        public bool [] Check(int protons, int eletrons, int neutrons)
         {
-            if (protons == nProtons && eletrons == nEletrons && neutrons == nNeutrons)
+            bool[] correctAnswer = new bool[3]; //Ordem, proton, eletron, neutron
+
+            if (protons == nProtons)
             {
-                return true;
+                correctAnswer[0] = true;
+                
+                if (eletrons == nEletrons)
+                {
+                    correctAnswer[1] = true;
+                }
+
+                if (neutrons == nEletrons)
+                {
+                    correctAnswer[2] = true;
+                }
             }
-            return false;
+
+            return correctAnswer;
         }
     }
 
@@ -36,7 +49,7 @@ public class GameManager : MonoBehaviour {
         return atoms[correctAtomNumber].name;
     }
 
-    public bool CheckAnswerArcade(int protons, int eletrons, int neutrons)
+    public bool [] CheckAnswerArcade(int protons, int eletrons, int neutrons)
     {
         return atoms[correctAtomNumber].Check(protons, eletrons, neutrons);
     }

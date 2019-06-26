@@ -20,7 +20,8 @@ public class Player
     private int rankingPosition = -1;
     [Tooltip("Pontuação total do aluno")]
     [SerializeField]
-    private int[] score = {0, 0, 0};
+    private int[] score = new int[] { 0, 0, 0 };
+
     private List<QuestionAndAnswer> questionAndAnswers = new List<QuestionAndAnswer>();
     [SerializeField]
     private bool[] beatedParts = new bool[4]; /*Cada espaço referente a uma parte, 0: Tutorial, 1: Arcade, 2: Balões e 3: Quiz*/
@@ -75,10 +76,13 @@ public class Player
     {
         return rankingPosition;
     }
-
+    
     public void SetScore(int i, int score)
     {
-        this.score[i] = score;
+        if (score > this.score[i])
+        {
+            this.score[i] = score;
+        }
     }
 
     public int GetScore(int i)
@@ -135,10 +139,10 @@ public class Player
 
         return playerAsString;
     }
-
+    
     public string ShowAll()
     {
-        return rankingPosition + " " + score + " " + nome + " " + classroom;
+       return rankingPosition + " " + score + " " + nome + " " + classroom;
     }
     #endregion
 }

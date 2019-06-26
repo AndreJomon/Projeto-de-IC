@@ -37,7 +37,6 @@ public class Atomo : MonoBehaviour {
         {
             destroy = false;
             mesa.GetComponent<MesaScript>().resposta.Add(nome);
-            Debug.Log(mesa.GetComponent<MesaScript>().resposta.Count);
         }
     }
 
