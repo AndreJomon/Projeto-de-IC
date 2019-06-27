@@ -1,15 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MiniGame2StartWarning : MonoBehaviour
 {
     private List<GameObject> potContent;
+    public PlayVideoOnMouseOver playVideoOnMouseOver;
+    public Text text; 
+    public DeafText normalWarning;
+    public DeafText passed;
+    public DeafText failed;
 
     private void Start()
     {
         potContent = Pot.GetPots();
+        PutVideoAndText(normalWarning);
+        ActiveWarning();
     }
+
+    public void Feedback(string s)
+    {
+        s = s.ToUpper();
+        if (s.Equals("PASSED"))
+        {
+            PutVideoAndText(passed);
+            gameObject.SetActive(true);
+        }
+        else if (s.Equals("FAILED"))
+        {
+            PutVideoAndText(failed);
+            gameObject.SetActive(true);
+        }
+    }
+
 
     private void ActiveWarning()
     {
@@ -20,5 +44,30 @@ public class MiniGame2StartWarning : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+    }
+
+    private void PutVideoAndText(DeafText deafText)
+    {
+        playVideoOnMouseOver.video = deafText.video;
+        text.text = deafText.text;
+    }
+
+    public void Warning(DeafText deafText)
+    {
+        text.text = deafText.text;
+        playVideoOnMouseOver.video = deafText.video;
+        gameObject.SetActive(true);
+        StartCoroutine(SetOff());
+    }
+
+    private IEnumerator SetOff()
+    {
+        yield return new WaitForSeconds(5);
+        GetComponent<Animator>().SetTrigger("Desaparecer");
+    }
+
+    public void DesactiveGameObject()
+    {
+        gameObject.SetActive(false);
     }
 }

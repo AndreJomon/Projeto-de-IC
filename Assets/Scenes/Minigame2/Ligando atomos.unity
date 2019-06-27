@@ -363,12 +363,12 @@ RectTransform:
   - {fileID: 390991132}
   - {fileID: 1479115565}
   - {fileID: 188590770}
-  - {fileID: 1749290942}
   - {fileID: 1101398422}
   - {fileID: 210866446}
   - {fileID: 653111263}
   - {fileID: 1076646755}
   - {fileID: 665088938}
+  - {fileID: 2023571731}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -413,8 +413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.47, y: 27.17}
-  m_SizeDelta: {x: 368.78, y: 305.91}
+  m_AnchoredPosition: {x: -1.3, y: 26.9}
+  m_SizeDelta: {x: 367.4, y: 303.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &188590771
 Animator:
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.9489485, b: 0.050418302, a: 0}
+  m_Color: {r: 0.9932481, g: 1, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -523,7 +523,7 @@ RectTransform:
   m_Children:
   - {fileID: 1281539157}
   m_Father: {fileID: 178051761}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -838,7 +838,7 @@ PrefabInstance:
     - target: {fileID: 843038343612956945, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 843038343612956945, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
         type: 3}
@@ -1044,7 +1044,7 @@ RectTransform:
   m_Children:
   - {fileID: 461134005}
   m_Father: {fileID: 178051761}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1191,7 +1191,7 @@ PrefabInstance:
     - target: {fileID: 6167913483085095448, guid: 71edd295c96d0254db21a67a6d6359b8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6167913483085095448, guid: 71edd295c96d0254db21a67a6d6359b8,
         type: 3}
@@ -1537,7 +1537,7 @@ RectTransform:
   m_Children:
   - {fileID: 1800871498}
   m_Father: {fileID: 178051761}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1782,7 +1782,10 @@ MonoBehaviour:
   - He
   - Br C H H H
   resposta: []
-  errouString: "N\xE3o \xE9 poss\xEDvel montar essa mol\xE9cula para o bal\xE3o."
+  errouString:
+    text: "N\xE3o \xE9 poss\xEDvel montar essa mol\xE9cula para o bal\xE3o."
+    video: {fileID: 0}
+  warning: {fileID: 2023571735}
 --- !u!1001 &1598352030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,7 +1840,7 @@ PrefabInstance:
     - target: {fileID: 114761001641383924, guid: 195aac48e608b334d86761dc2c46e8fb,
         type: 3}
       propertyPath: m_Text
-      value: "Br\xF4mio"
+      value: Bromo
       objectReference: {fileID: 0}
     - target: {fileID: 114761001641383924, guid: 195aac48e608b334d86761dc2c46e8fb,
         type: 3}
@@ -1896,7 +1899,7 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
---- !u!1 &1749290941
+--- !u!1 &1771604416
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1904,33 +1907,78 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1749290942}
+  - component: {fileID: 1771604417}
+  - component: {fileID: 1771604419}
+  - component: {fileID: 1771604418}
   m_Layer: 5
-  m_Name: PontoParaAviso
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1749290942
+--- !u!224 &1771604417
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749290941}
+  m_GameObject: {fileID: 1771604416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 178051761}
-  m_RootOrder: 8
+  m_Father: {fileID: 2023571731}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.999996, y: 168}
-  m_SizeDelta: {x: 4621, y: 4526}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 225.73, y: 57.15}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1771604418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771604416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.02745098}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 56c4ae3fc5dc1a6459231f494ac7a786, type: 3}
+    m_FontSize: 17
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Voc\xEA conseguiu alguns bal\xF5es, mas n\xE3o foi o suficiente, tente
+    de novo!"
+--- !u!222 &1771604419
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771604416}
+  m_CullTransparentMesh: 0
 --- !u!1 &1800871497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,6 +2217,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893091604}
   m_CullTransparentMesh: 0
+--- !u!1 &1956646020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956646021}
+  - component: {fileID: 1956646023}
+  - component: {fileID: 1956646022}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1956646021
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956646020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2023571731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 259.9, y: 70.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1956646022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956646020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: f0a68490529218343b271188c6ba936c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1956646023
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956646020}
+  m_CullTransparentMesh: 0
 --- !u!1 &1992104446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2357,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023571730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023571731}
+  - component: {fileID: 2023571735}
+  - component: {fileID: 2023571734}
+  - component: {fileID: 2023571733}
+  - component: {fileID: 2023571732}
+  m_Layer: 5
+  m_Name: Warning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2023571731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023571730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9998151, y: 0.9998151, z: 0.9998151}
+  m_Children:
+  - {fileID: 1956646021}
+  - {fileID: 1771604417}
+  m_Father: {fileID: 178051761}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1, y: 189}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &2023571732
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023571730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 273e03f8f1d8d464099d2031477bc8bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &2023571733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023571730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.8686066, y: 1.7308636}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 233.33047, y: 63.53718}
+  m_EdgeRadius: 0
+--- !u!114 &2023571734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023571730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 0}
+--- !u!114 &2023571735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023571730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a68f0a399e3f0941a1f128f2a16b7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playVideoOnMouseOver: {fileID: 2023571734}
+  text: {fileID: 1771604418}
+  normalWarning:
+    text: "Clique em algum bal\xE3o para o encher."
+    video: {fileID: 0}
+  passed:
+    text: "Parab\xE9ns! Voc\xEA conseguiu encher bexigas o suficiente para continuar
+      a festa!"
+    video: {fileID: 0}
+  failed:
+    text: "Que pena! Voc\xEA n\xE3o conseguiu enhcer bexigas o suficiente, tente novamente
+      mais tarde!"
+    video: {fileID: 0}
 --- !u!1001 &2080727460
 PrefabInstance:
   m_ObjectHideFlags: 0

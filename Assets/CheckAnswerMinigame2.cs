@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class CheckAnswerMinigame2 : MonoBehaviour
 {
     public float time;
     private List<GameObject> potContent;
-    private List<string> listOfMolecules; ///Serve para saber se alguma molécula já foi contada
+    private List<string> listOfMolecules = new List<string>(); ///Serve para saber se alguma molécula já foi contada
+    public List<Animator> animators;
+    public MiniGame2StartWarning warning;
 
     private void Start()
     {
@@ -15,9 +18,12 @@ public class CheckAnswerMinigame2 : MonoBehaviour
         ActiveButton();
     }
 
-    private void OnClick()
+    public void OnClick()
     {
-        int numberOfMolecules = 0;
+        Pot.SetVisualizable(false);
+        int numberOfMolecules = 0; //Número de moléculas que são válidas
+        int totalPoints = 0; //Pontuação total das moléculas validadas.
+
         for (int i = 0; i < potContent.Count; i++) {
             if (potContent[i] != null)
             {
@@ -27,18 +33,29 @@ public class CheckAnswerMinigame2 : MonoBehaviour
                 {
                     listOfMolecules.Add(moleculaInfo.name);
                     numberOfMolecules++;
-                    /// moleculaInfo.points; Dar em algum lugar essa pontuação.
-                    /// Toca animação do bagulho
+                    totalPoints += moleculaInfo.points;
+                    animators[i].SetBool("Encher", true);
+                    if (moleculaInfo.flyable)
+                    {
+                        animators[i].SetBool("Voar", true);
+                    }
                 }
             }
         }
 
+        ///Resultado da partida: Ganha uma pontuação e descobre se o jogador foi bem o suciente para considerar a parte como "passada".
+
+        SaveManager.instance.player.SetScore(1, totalPoints); //Dá a pontuação mesmo se ele não considerar que terminou a parte
+
         if (numberOfMolecules > 2)
         {
             SaveManager.instance.player.SetBeatPartTrue(2);
+            warning.Feedback("Passed");
         }
-        ///Instancia um feedback talvez
-        ///
+        else
+        {
+            warning.Feedback("Failed");
+        }
         StartCoroutine(WaitTime());
     }
 

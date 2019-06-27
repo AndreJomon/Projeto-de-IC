@@ -52,6 +52,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: CO2
+  points: 100
+  flyable: 1
 --- !u!1001 &15080377266892668
 PrefabInstance:
   m_ObjectHideFlags: 0

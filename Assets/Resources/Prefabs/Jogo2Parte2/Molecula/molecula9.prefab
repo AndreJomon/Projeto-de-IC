@@ -49,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: BrCH3
+  points: 100
+  flyable: 1
 --- !u!1001 &173487285023924727
 PrefabInstance:
   m_ObjectHideFlags: 0

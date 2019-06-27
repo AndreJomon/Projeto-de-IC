@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: H2O
+  points: 50
+  flyable: 0
 --- !u!1001 &1128483765088544346
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -41,7 +41,8 @@ public class MesaScript : MonoBehaviour {
     [Tooltip("Moleculas a serem colocadas, os atomos devem ser separados em ' '")]
     public List<string> moleculaCertaTemp; //String colocada no inspector, que serão utilizadas para montar a lista moleculaCerta
     public List<string> resposta = new List<string>(); //Lista que é montada a cada novo átomo que o usuário adiciona
-    public string errouString; //Mensagem de erro ao não conseguir montar uma molécula válida e clicar em "Montar molécula"
+    public DeafText errouString; //Mensagem de erro ao não conseguir montar uma molécula válida e clicar em "Montar molécula"
+    public MiniGame2StartWarning warning;
     private GameObject moleculaAtual; //molecula que está montada na mesa
     private List<Molecula> moleculaCerta; //Lista de moléculas corretas
     private Animator brilho; //Animator da animação de brilho ao concluir níveis
@@ -77,7 +78,7 @@ public class MesaScript : MonoBehaviour {
         }
         else //Errou a resposta
         {
-           TextBox.CreateTextBox(errouString, GameObject.Find("PontoParaAviso").transform.position); //Cria um aviso de erro*/
+            warning.Warning(errouString);
         }
     }
 

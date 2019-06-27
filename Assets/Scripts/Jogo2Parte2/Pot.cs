@@ -6,6 +6,18 @@ public class Pot : MonoBehaviour {
     public int potNumber;
     public static int currentPot = -1;
     private static List<GameObject> potContent = new List<GameObject>();
+    public GameObject conteudo;
+    private static bool visualizable = true; //Saber se pode instanciar ou não o que há dentro do balão. 
+
+    public static void SetVisualizable(bool valor)
+    {
+        visualizable = valor;
+    }
+
+    public static bool GetVisualizable()
+    {
+        return visualizable;
+    }
 
     private void Awake()
     {
@@ -21,15 +33,42 @@ public class Pot : MonoBehaviour {
     {
         if (potContent[potNumber] != null)
         {
-            ShowPotContent();
+            InstatiateContent();
         }
     }
 
+    private void InstatiateContent()
+    {
+        GameObject potContentTemp = Instantiate(potContent[potNumber], conteudo.transform);
+        potContentTemp.transform.localScale = new Vector3(14f, 14f, 1);
+        Vector3 transformTemp = potContentTemp.transform.localPosition;
+        potContentTemp.transform.localPosition = new Vector3(transformTemp.x, transformTemp.y+6, transformTemp.z);
+    }
+
+    private void OnMouseEnter()
+    {
+        ShowPotContent();
+    }
+
+    private void OnMouseExit()
+    {
+        HidePotContent();
+    }
+
     private void ShowPotContent()
-    {/*
-        GameObject potContentTemp = Instantiate(potContent[potNumber], gameObject.transform);
-        potContentTemp.transform.position = this.transform.position;
-        potContentTemp.transform.localScale = new Vector3(0.5f, 0.5f, 1);*/
+    {
+        if (visualizable)
+        {
+            conteudo.SetActive(true);
+        }
+    }
+
+    private void HidePotContent()
+    {
+        if (visualizable)
+        {
+            conteudo.SetActive(false);
+        }
     }
 
     public static void PutOnPot(GameObject content, int potNumber)

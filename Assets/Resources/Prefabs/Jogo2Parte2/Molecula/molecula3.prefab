@@ -51,6 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: BrH
+  points: 50
+  flyable: 0
 --- !u!1001 &6820780904089025262
 PrefabInstance:
   m_ObjectHideFlags: 0
