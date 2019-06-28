@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LoadScene : MonoBehaviour {
 
-    VideoManager videoManager;
+    private VideoManager videoManager;
 
     private void Awake()
     {
