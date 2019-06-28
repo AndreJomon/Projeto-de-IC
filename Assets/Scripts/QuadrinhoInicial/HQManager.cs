@@ -35,9 +35,14 @@ public class HQManager : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
-    public void DisableGrandFather()
+    
+    public void DisableChild()
     {
-        gameObject.transform.parent.transform.parent.gameObject.SetActive(false);
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
+    public void FimQuadrinho()
+    {
+        LoadScene.SceneLoader("Lousa");
     }
 }

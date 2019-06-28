@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2178314018079053373, guid: 62f7134e9cd778940a344fe3aefeca7e,
         type: 3}
       propertyPath: m_Name
-      value: BalaoFalaRebelde
+      value: BalaoFalaRebelde Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1205185425972686973, guid: 62f7134e9cd778940a344fe3aefeca7e,
         type: 3}
@@ -67,16 +67,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6215694024924336840, guid: 62f7134e9cd778940a344fe3aefeca7e,
-        type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 6268666478394715076}
-    - target: {fileID: 6215694024924336840, guid: 62f7134e9cd778940a344fe3aefeca7e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5303077791766593132}
     - target: {fileID: 1720745859, guid: 62f7134e9cd778940a344fe3aefeca7e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -48.4
@@ -93,6 +83,21 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 93.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1720745860, guid: 62f7134e9cd778940a344fe3aefeca7e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 83dfd4b34c1cc794ea0a7fb60ec6ca45,
+        type: 3}
+    - target: {fileID: 6215694024924336840, guid: 62f7134e9cd778940a344fe3aefeca7e,
+        type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 6268666478394715076}
+    - target: {fileID: 6215694024924336840, guid: 62f7134e9cd778940a344fe3aefeca7e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5303077791766593132}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62f7134e9cd778940a344fe3aefeca7e, type: 3}
 --- !u!114 &5303077791766593132 stripped
