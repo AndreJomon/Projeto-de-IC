@@ -15,7 +15,6 @@ public class MiniGame2StartWarning : MonoBehaviour
     private void Start()
     {
         potContent = Pot.GetPots();
-        PutVideoAndText(normalWarning);
         ActiveWarning();
     }
 

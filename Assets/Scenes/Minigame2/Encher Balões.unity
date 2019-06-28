@@ -1971,8 +1971,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Voc\xEA conseguiu alguns bal\xF5es, mas n\xE3o foi o suficiente, tente
-    de novo!"
+  m_Text: "Clique em algum bal\xE3o para o encher."
 --- !u!222 &1568953866
 CanvasRenderer:
   m_ObjectHideFlags: 0
