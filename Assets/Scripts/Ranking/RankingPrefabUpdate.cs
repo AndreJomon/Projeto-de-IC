@@ -11,7 +11,7 @@ public class RankingPrefabUpdate : MonoBehaviour
     public void UpdatePrefab(Player player)
     {
         rankingPosition.text = player.GetRankingPosition().ToString();
-        score.text = player.GetScore().ToString();
+        score.text = player.GetTotalScore().ToString();
         info.text = player.GetNome() + " - " + player.GetClassroom();
     }
 }
