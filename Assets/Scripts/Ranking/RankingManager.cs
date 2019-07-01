@@ -82,7 +82,7 @@ public class RankingManager : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            podiumText[i].text = ranking[i].GetScore() + "\n" + ranking[i].GetNome() + "\n" + ranking[i].GetClassroom();
+            podiumText[i].text = ranking[i].GetTotalScore() + "\n" + ranking[i].GetNome() + "\n" + ranking[i].GetClassroom();
         }
     }
 

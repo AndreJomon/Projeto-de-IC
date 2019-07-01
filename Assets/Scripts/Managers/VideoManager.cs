@@ -99,7 +99,6 @@ public class VideoManager : MonoBehaviour {
     void EndReached(UnityEngine.Video.VideoPlayer vp)
     {
         videoEnded = true;
-        Debug.Log("Video acabou");
         videoPlayer.loopPointReached -= EndReached;
     }
 

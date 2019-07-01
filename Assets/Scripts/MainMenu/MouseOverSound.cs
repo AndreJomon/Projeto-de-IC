@@ -15,11 +15,11 @@ public class MouseOverSound : MonoBehaviour, IPointerEnterHandler
         clickSound = (AudioClip)Resources.Load("Sounds/sfx/clickSound");
         botao = GetComponent<UnityEngine.UI.Button>();
 
-        botao.onClick.AddListener(delegate () { SoundManager.instance.PlaySFX(clickSound); });
+        botao.onClick.AddListener(delegate () { StartCoroutine(SoundManager.instance.PlaySFX(clickSound)); });
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        SoundManager.instance.PlaySFX(mouseOverSound);
+        StartCoroutine(SoundManager.instance.PlaySFX(mouseOverSound));
     }
 }

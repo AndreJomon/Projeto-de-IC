@@ -55,8 +55,12 @@ public class SoundManager : MonoBehaviour
     /// Plays a Sound Effect.
     /// </summary>
     /// <param name="sfx">AudioClip to be reproduced.</param>
-    public void PlaySFX(AudioClip sfx)
+    public IEnumerator PlaySFX(AudioClip sfx)
     {
+        if (sfxAudioSource.isPlaying)
+        {
+            yield return new WaitUntil (()=> !sfxAudioSource.isPlaying);
+        }
         sfxAudioSource.clip = sfx;
         sfxAudioSource.Play();
     }

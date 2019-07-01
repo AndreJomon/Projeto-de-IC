@@ -7531,8 +7531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatedPart: 1
-  ifBeated: Lousa
-  ifNotBeated: StartArcade
+  ifBeated: StartArcade
+  ifNotBeated: Lousa
 --- !u!222 &8976181883340988950
 CanvasRenderer:
   m_ObjectHideFlags: 0

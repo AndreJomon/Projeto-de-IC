@@ -27,6 +27,12 @@ public class Player
     private bool[] beatedParts = new bool[4]; /*Cada espaço referente a uma parte, 0: Tutorial, 1: Arcade, 2: Balões e 3: Quiz*/
 
     #region Getter & Setters
+
+    public bool[] GetBeatedParts()
+    {
+        return beatedParts;
+    }
+
     public void SetBeatPartTrue(int part)
     {
         beatedParts[part] = true;
@@ -105,14 +111,19 @@ public class Player
         return soma;
     }
 
-    public void SetAll(int slot, string nome, string classroom, int[] score)
+    public void SetAll(int slot, string nome, string classroom, int[] score, bool[] beatedParts)
     {
         SetSlot(slot);
         SetNome(nome);
         SetClassroom(classroom);
+        this.score = new int[] { 0, 0, 0};
         for (int i = 0; i<score.Length; i++)
         {
             this.score[i] = score[i];
+        }
+        for (int i = 0; i < beatedParts.Length; i++)
+        {
+            this.beatedParts[i] = beatedParts[i];
         }
     }
 

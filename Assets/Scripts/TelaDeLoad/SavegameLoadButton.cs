@@ -22,7 +22,7 @@ public class SavegameLoadButton : MonoBehaviour
 
     public void GetClicked()
     {
-        SaveManager.instance.player.SetAll(playerTemp.GetSlot(), playerTemp.GetNome(), playerTemp.GetClassroom(), playerTemp.GetScore());
+        SaveManager.instance.player.SetAll(playerTemp.GetSlot(), playerTemp.GetNome(), playerTemp.GetClassroom(), playerTemp.GetScore(), playerTemp.GetBeatedParts());
     }
 
     public Player GetPlayer()
