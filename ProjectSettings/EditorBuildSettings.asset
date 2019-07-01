@@ -29,12 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arcade/MontandoArcade.unity
     guid: ad35167bcf2e5b943aed0ed8422664eb
-  - enabled: 1
-    path: Assets/Scenes/QuadrinhoInicial.unity
-    guid: df096f5f658883d4abb945241f0be2bd
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/TelaNovoJogo.unity
     guid: 2209a9c85b17d0a43ac203dfe15c64be
+  - enabled: 1
+    path: Assets/Scenes/LousaQuiz.unity
+    guid: 65d5cf6c8cb24cf4190ac878d9f72b58
+  - enabled: 1
+    path: Assets/Scenes/LousaBalao.unity
+    guid: 171d6d77e2a32a2439d254ffc3eb77a4
   - enabled: 1
     path: Assets/Scenes/Glossario.unity
     guid: 97daf4902f7528b4c883eb6979ac118d
@@ -62,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arcade/StartArcade.unity
     guid: 74cb8a0c32a795644981de7afc7bfbee
+  - enabled: 1
+    path: Assets/Scenes/QuadrinhoInicial.unity
+    guid: a083d24769bfcaf479e8b1a814831cd1
   m_configObjects: {}
