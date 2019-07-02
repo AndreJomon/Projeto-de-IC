@@ -46,6 +46,8 @@ MonoBehaviour:
   lastSceneName: 
   ballonTips: {fileID: 8369872633649725431, guid: b85745435b916154292c05bc3e56c689,
     type: 3}
+  screenBlocker: {fileID: 4827981813552929802, guid: 4ad5d4eba73acb349a2f769fe15d602f,
+    type: 3}
   atoms:
   - name: "Hidrog\xEAnio"
     nProtons: 1
@@ -84,3 +86,6 @@ MonoBehaviour:
     nEletrons: 1
     nNeutrons: 5
   correctAtomNumber: 0
+  instantiatedDotsBalloon: {fileID: 0}
+  instantiatedMessageBalloon: {fileID: 0}
+  messageBalloonOn: 0

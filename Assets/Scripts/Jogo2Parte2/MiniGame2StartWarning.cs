@@ -11,6 +11,7 @@ public class MiniGame2StartWarning : MonoBehaviour
     public DeafText normalWarning;
     public DeafText passed;
     public DeafText failed;
+    public DeafText tryBetter;
 
     private void Start()
     {
@@ -24,13 +25,17 @@ public class MiniGame2StartWarning : MonoBehaviour
         if (s.Equals("PASSED"))
         {
             PutVideoAndText(passed);
-            gameObject.SetActive(true);
+        }
+        else if (s.Equals("TRYBETTER"))
+        {
+            PutVideoAndText(tryBetter);
         }
         else if (s.Equals("FAILED"))
         {
             PutVideoAndText(failed);
-            gameObject.SetActive(true);
         }
+
+        gameObject.SetActive(true);
     }
 
 

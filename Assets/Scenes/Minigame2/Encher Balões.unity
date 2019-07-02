@@ -1187,8 +1187,12 @@ MonoBehaviour:
       a festa!"
     video: {fileID: 0}
   failed:
-    text: "Que pena! Voc\xEA n\xE3o conseguiu enhcer bexigas o suficiente, tente novamente
-      mais tarde!"
+    text: "N\xE3o foi dessa vez... Tente encher todas as bexigas com mol\xE9culas
+      diferentes."
+    video: {fileID: 0}
+  tryBetter:
+    text: "Parab\xE9ns! Mas pode melhorar preenchendo com mol\xE9culas que s\xE3o
+      gases em condi\xE7\xF5es ambiente!"
     video: {fileID: 0}
 --- !u!61 &1095842030
 BoxCollider2D:

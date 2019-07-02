@@ -21,6 +21,7 @@ public class CheckAnswerMinigame2 : MonoBehaviour
     public void OnClick()
     {
         Pot.SetVisualizable(false);
+        GameManager.instance.BlockScreen();
         int numberOfMolecules = 0; //Número de moléculas que são válidas
         int totalPoints = 0; //Pontuação total das moléculas validadas.
 
@@ -29,16 +30,18 @@ public class CheckAnswerMinigame2 : MonoBehaviour
             {
                 MoleculaMinigame2 moleculaInfo = potContent[i].GetComponent<MoleculaMinigame2>();
 
+                animators[i].SetBool("Encher", true);
+                if (moleculaInfo.flyable)
+                {
+                    animators[i].SetBool("Voar", true);
+                }
+
+                ///Moléculas repetentes não adicionam em nada na pontuação
                 if (!listOfMolecules.Contains(moleculaInfo.name))
                 {
                     listOfMolecules.Add(moleculaInfo.name);
                     numberOfMolecules++;
                     totalPoints += moleculaInfo.points;
-                    animators[i].SetBool("Encher", true);
-                    if (moleculaInfo.flyable)
-                    {
-                        animators[i].SetBool("Voar", true);
-                    }
                 }
             }
         }
@@ -47,10 +50,16 @@ public class CheckAnswerMinigame2 : MonoBehaviour
 
         SaveManager.instance.player.SetScore(1, totalPoints); //Dá a pontuação mesmo se ele não considerar que terminou a parte
 
+        ///Etapa de passar o feedback:
         if (numberOfMolecules > 2)
         {
             SaveManager.instance.player.SetBeatPartTrue(2);
             warning.Feedback("Passed");
+
+            if (totalPoints < 300)
+            {
+                warning.Feedback("TryBetter");
+            }
         }
         else
         {

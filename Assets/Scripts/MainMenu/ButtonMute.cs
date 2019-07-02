@@ -17,7 +17,7 @@ public class ButtonMute : MonoBehaviour
 
     public void Start()
     {
-        if (soundManager.IsBackgroundPlaying() && !soundManager.IsBackgroundMuted())
+        if (/*soundManager.IsBackgroundPlaying() &&*/ !soundManager.IsBackgroundMuted())
         {
             soundOff.enabled = false;
         }

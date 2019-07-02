@@ -21,6 +21,7 @@ public class CheckerAnswerArcade : MonoBehaviour
     {
         SaveManager saveManager = SaveManager.instance;
         button.GetComponent<Button>().interactable = false;
+        GameManager.instance.BlockScreen();
 
         bool [] result = gameManager.CheckAnswerArcade(construtorAtomo.GetNumProtons(), construtorAtomo.GetNumEletrons(), construtorAtomo.GetNumNeutrons());
 

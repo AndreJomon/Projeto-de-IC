@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     public string lastSceneName;
     public GameObject ballonTips;
+    public GameObject screenBlocker;
 
     [SerializeField]
     private List<CorrectAtom> atoms;
@@ -170,5 +171,10 @@ public class GameManager : MonoBehaviour {
     public void OnApplicationQuit()
     {
         SaveManager.instance.Save();
+    }
+
+    public void BlockScreen()
+    {
+        Instantiate(screenBlocker, GameObject.Find("Canvas").transform);
     }
 }
