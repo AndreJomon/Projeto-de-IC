@@ -2937,13 +2937,13 @@ MonoBehaviour:
     video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
   - text: boro
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-  - text: "\xEDon hidrog\xEAnio"
+  - text: "\xEDon de hidrog\xEAnio"
     video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - text: "\xEDon l\xEDtio"
+  - text: "\xEDon de l\xEDtio"
     video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
-  - text: "\xEDon ber\xEDlio"
+  - text: "\xEDon de ber\xEDlio"
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-  - text: "\xEDon boro"
+  - text: "\xEDon de boro"
     video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   corAcerto:
     serializedVersion: 2
@@ -2955,7 +2955,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190847
   feedbackMeioAcerto:
-    text: Quase certp! Tente outra vez para ganhar mais pontos!
+    text: Quase certo! Tente outra vez para ganhar mais pontos!
     video: {fileID: 0}
   text: {fileID: 1016585958}
 --- !u!1 &1398386429

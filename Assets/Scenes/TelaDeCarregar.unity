@@ -501,7 +501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: -0.00015258789}
+  m_AnchoredPosition: {x: -0.000030517578, y: -0.00018310547}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &657802349
@@ -1076,10 +1076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83eab083935584845953255f9a8a6873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollBar: {fileID: 1286315524}
-  changeValor: 0.1
 --- !u!1 &998008213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1275,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 636727802}
   m_HandleRect: {fileID: 636727801}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1465,10 +1461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83eab083935584845953255f9a8a6873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollBar: {fileID: 1286315524}
-  changeValor: -0.1
 --- !u!1 &1543896074
 GameObject:
   m_ObjectHideFlags: 0

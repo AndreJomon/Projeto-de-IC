@@ -40,7 +40,7 @@ public class AvisoArcade: MonoBehaviour
                 break;
 
             case 1:
-                feedbackAcerto[gameManager.correctAtomNumber].text = "Parabéns você montou o átomo de " + gameManager.GetCorrectAtomName();
+                feedbackAcerto[gameManager.correctAtomNumber].text = "Parabéns você montou o " + gameManager.GetCorrectAtomName();
                 ChangeText(feedbackAcerto[gameManager.correctAtomNumber], corAcerto);
                 break;
         }

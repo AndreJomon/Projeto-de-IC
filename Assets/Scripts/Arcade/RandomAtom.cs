@@ -25,4 +25,6 @@ public class RandomAtom : MonoBehaviour
     {
         textController.text[1].text = "Tente montar um átomo de " + correctAtomName.ToUpper() + ".";
     }
+
+    ///Fazer função para mandar o vídeo aleatório.
 }

@@ -1672,7 +1672,8 @@ MonoBehaviour:
       afastadas umas das outras, de forma veloz, livre e desordenada."
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   - text: "Na nossa temperatura ambiente (25\xBAC e 1atm), existem algumas subst\xE2ncias
-      que s\xE3o encontradas na natureza em estado gasoso como o O2, CO2 e o CH4. "
+      que s\xE3o encontradas na natureza em estado gasoso como o oxig\xEAnio e o g\xE1s
+      carb\xF4nico."
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   - text: "Agora fa\xE7a um jogo de perguntas e respostas com o conhecimento adquirido!"
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
