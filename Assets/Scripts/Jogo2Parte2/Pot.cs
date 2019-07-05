@@ -92,4 +92,9 @@ public class Pot : MonoBehaviour {
         LoadScene.SceneLoader("Ligando atomos");
     }
 
+    private void OnDestroy()
+    {
+        SetVisualizable(true);
+    }
+
 }
