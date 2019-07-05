@@ -1656,24 +1656,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - text: "Agora que voc\xEA sabe um pouco mais sobre liga\xE7\xF5es qu\xEDmicas,
-      antes de iniciar a tarefa voc\xEA precisa entender mais um conceito: OS GASES"
+  - text: "Os metais s\xE3o a maioria dos elementos da tabela peri\xF3dica. Possuem
+      brilho, s\xE3o d\xFActeis, male\xE1veis...   "
     video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - text: "A qu\xEDmica \xE9 o ramo da ci\xEAncia que estuda a mat\xE9ria. Mat\xE9ria
-      \xE9 tudo o que ocupa lugar no espa\xE7o e tem massa."
+  - text: "\u2026 bons condutores t\xE9rmicos e el\xE9tricos, tem densidade elevada,
+      altos pontos de fus\xE3o e ebuli\xE7\xE3o e s\xE3o resistentes.   "
     video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
-  - text: "Os tr\xEAs principais estados f\xEDsicos da mat\xE9ria s\xE3o: s\xF3lido,
-      l\xEDquido e gasoso. Todas as subst\xE2ncias podem ser encontradas em qualquer
-      estado f\xEDsico da mat\xE9ria dependendo de sua temperatura e press\xE3o."
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-  - text: "Podemos listar tr\xEAs principais caracter\xEDsticas das subst\xE2ncias
-      que se encontram em estado gasoso: elas possuem volume vari\xE1vel, forma vari\xE1vel
-      e est\xE3o em constante movimento, pois suas mol\xE9culas/\xE1tomos ficam bem
-      afastadas umas das outras, de forma veloz, livre e desordenada."
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
-  - text: "Na nossa temperatura ambiente (25\xBAC e 1atm), existem algumas subst\xE2ncias
-      que s\xE3o encontradas na natureza em estado gasoso como o oxig\xEAnio e o g\xE1s
-      carb\xF4nico."
+  - text: "Os ametais tem caracter\xEDsticas inversas a dos metais. Ou seja: N\xE3o
+      s\xE3o bons condutores de calor e eletricidade, e n\xE3o podem ser moldados
+      pois se fragmentam com facilidade "
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   - text: "Agora fa\xE7a um jogo de perguntas e respostas com o conhecimento adquirido!"
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
