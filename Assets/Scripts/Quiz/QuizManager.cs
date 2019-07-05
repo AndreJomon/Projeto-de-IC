@@ -311,7 +311,7 @@ public class QuizManager : MonoBehaviour
     public int RandomQuestionNumber()
     {
         /// Seleciona o número aleatório
-        int numberSelected = numbersList[Random.Range(0, numbersList.Count)];
+        int numberSelected = numbersList[Random.Range(0, numbersList.Count-1)];
         /// Remove da lisata para não ser selecionado novamente
         numbersList.Remove(numberSelected);
         /// Retorna o valor selecionado
