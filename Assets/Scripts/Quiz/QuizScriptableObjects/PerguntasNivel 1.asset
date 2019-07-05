@@ -14,29 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizQuestions:
   - question:
-      text: "Quanto vale (aproximadamente) a hipotenusa de um tri\xE2ngulo ret\xE2ngulo
-        de catetos 3 e 4?"
+      text: "Os metais, de uma maneira geral, apresentam como caracter\xEDsticas a
+        condu\xE7\xE3o de corrente el\xE9trica, a condu\xE7\xE3o de calor e o fato
+        de serem s\xF3lidos em temperatura ambiente. Existe um \xFAnico metal que
+        n\xE3o \xE9 s\xF3lido em temperatura ambiente, sendo encontrado no estado
+        l\xEDquido. Que elemento qu\xEDmico \xE9 esse? "
       video: {fileID: 0}
     alternative:
-    - text: 5
+    - text: "Pot\xE1ssio"
       video: {fileID: 0}
-    - text: 6
+    - text: "Merc\xFArio"
       video: {fileID: 0}
-    - text: 4
+    - text: Ferro
       video: {fileID: 0}
-    - text: 4,6
+    - text: Bromo
       video: {fileID: 0}
-    correctAnswer: 0
-  - question:
-      text: "Qual dos \xE2ngulos abaixo possui o valor do seno igual ao cosseno?"
-      video: {fileID: 0}
-    alternative:
-    - text: PI/2
-      video: {fileID: 0}
-    - text: PI/4
-      video: {fileID: 0}
-    - text: PI/3
-      video: {fileID: 0}
-    - text: PI
-      video: {fileID: 0}
-    correctAnswer: 1
+    correctAnswer: 10

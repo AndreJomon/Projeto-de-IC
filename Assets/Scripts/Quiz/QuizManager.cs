@@ -51,6 +51,9 @@ public class QuizManager : MonoBehaviour
 
     public Text scoreText;
     private TimeManager timeManager;
+
+    [SerializeField] private DeafText[] endOfQuizText;
+    public Text endOfQuizBalloon;
     #endregion
 
     #region Set/Get das variáveis
@@ -231,6 +234,22 @@ public class QuizManager : MonoBehaviour
             SaveManager.instance.player.SetScore(2, scoreTemp);
         }
 
+        int indexOfText;
+
+        if (correctAnswers == 0)
+        {
+            indexOfText = 0;
+        } else if (correctAnswers == qtyQuestionsDone)
+        {
+            indexOfText = 1;
+        }
+        else
+        {
+            indexOfText = 2;
+        }
+
+        endOfQuizBalloon.text = endOfQuizText[indexOfText].text;
+
         string tempMsg = correctAnswers + "/" + qtyQuestionsToDo;
         scoreText.text = tempMsg;
 
@@ -238,7 +257,7 @@ public class QuizManager : MonoBehaviour
 
         AddQuizResultsToFile();
         GameObject.Find("Canvas").GetComponent<Animator>().SetTrigger("EndQuiz");
-        StartCoroutine(VideoManager.instance.PlayVideo(textoFimDoQuiz));
+        StartCoroutine(VideoManager.instance.PlayVideo(endOfQuizText[indexOfText].video));
     }
 
     /// <summary>

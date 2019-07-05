@@ -14,29 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizQuestions:
   - question:
-      text: "O que podemos dizer sobre a equa\xE7\xE3o de uma reta que nunca cruza
-        o eixo y?"
+      text: "Os n\xE3o metais s\xE3o elementos eletronegativos porque: "
       video: {fileID: 0}
     alternative:
-    - text: "N\xE3o possui coeficiente angular"
+    - text: "T\xEAm a capacidade de receber el\xE9trons. "
       video: {fileID: 0}
-    - text: "O coeficiente linear \xE9 infinito"
+    - text: "T\xEAm a capacidade de doar el\xE9trons. "
       video: {fileID: 0}
-    - text: "O coeficiente angular \xE9 indefinido"
+    - text: "T\xEAm a capacidade de doar e receber el\xE9trons ao mesmo tempo. "
       video: {fileID: 0}
-    - text: Nenhuma das anteriores
-      video: {fileID: 0}
-    correctAnswer: 2
-  - question:
-      text: O que diz o Teorema do Resto?
-      video: {fileID: 0}
-    alternative:
-    - text: "O resto da divis\xE3o de P(x) por (x + a) \xE9 igual a P(a)"
-      video: {fileID: 0}
-    - text: "O resto de uma divis\xE3o de polin\xF4mios nunca \xE9 inteiro"
-      video: {fileID: 0}
-    - text: "Este teorema n\xE3o existe"
-      video: {fileID: 0}
-    - text: Nenhuma das anteriores
+    - text: "Possuem apenas um el\xE9tron no \xFAltimo n\xEDvel energ\xE9tico. "
       video: {fileID: 0}
     correctAnswer: 0
+  - question:
+      text: "Considerando-se as propriedades dos elementos qu\xEDmicos e a tabela
+        peri\xF3dica, marque a alternativa incorreta: "
+      video: {fileID: 0}
+    alternative:
+    - text: "Um ametal, ao ganhar el\xE9trons, torna-se um \xEDon denominado \xE2nion. "
+      video: {fileID: 0}
+    - text: "Um ametal \xE9 uma subst\xE2ncia que n\xE3o conduz corrente el\xE9trica,
+        n\xE3o \xE9 d\xFActil e nem male\xE1vel."
+      video: {fileID: 0}
+    - text: "Um ametal tem a tend\xEAncia de receber el\xE9trons. "
+      video: {fileID: 0}
+    - text: "A maioria dos elementos qu\xEDmicos \xE9 constitu\xEDda de ametais. "
+      video: {fileID: 0}
+    correctAnswer: 3

@@ -2715,6 +2715,14 @@ MonoBehaviour:
   instrucoesVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   textoFimDoQuiz: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   scoreText: {fileID: 523590765}
+  endOfQuizText:
+  - text: "Vamos come\xE7ar de novo? Volte \xE0s explica\xE7\xF5es."
+    video: {fileID: 0}
+  - text: "Uau! T\xE1 manjando de verdade, hein?! "
+    video: {fileID: 0}
+  - text: "Poxa! Tente refazer o quiz. Voc\xEA com certeza vai acertar mais quest\xF5es. "
+    video: {fileID: 0}
+  endOfQuizBalloon: {fileID: 1350317297}
 --- !u!4 &844414301
 Transform:
   m_ObjectHideFlags: 0
