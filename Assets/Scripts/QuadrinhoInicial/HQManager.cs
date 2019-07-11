@@ -5,6 +5,7 @@ using UnityEngine;
 public class HQManager : MonoBehaviour
 {
     public Animator animator;
+    private bool holdAnimation = true;
 
     public void ToggleOff(GameObject item)
     {
@@ -44,5 +45,23 @@ public class HQManager : MonoBehaviour
     public void FimQuadrinho()
     {
         LoadScene.SceneLoader("Lousa");
+    }
+
+    public void PlayDelayedVideo(GameObject videoContainer)
+    {
+        StartCoroutine(PlayAfterDelay(videoContainer));
+    }
+
+    public IEnumerator PlayAfterDelay(GameObject videoContainer)
+    {
+        yield return new WaitUntil(() => !holdAnimation);
+        PlayVideo(videoContainer);
+        RestartVideo();
+        holdAnimation = true;
+    }
+
+    public void HoldAnimation()
+    {
+        holdAnimation = false;
     }
 }
