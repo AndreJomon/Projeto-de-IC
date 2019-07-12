@@ -48,7 +48,6 @@ public class TextLousa : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Ativou");
         lampScript.NotoriousWordAppearOnClick(text[wordIndex]);
     }
 
@@ -61,7 +60,6 @@ public class TextLousa : MonoBehaviour
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3 (0, offset, 0);
             wordIndex = currentWordIndex;
             lampScript.NotoriousWordAppear(text[wordIndex]);
-            Debug.Log(text[wordIndex]);
         }
     }
 

@@ -44,13 +44,11 @@ public class LousaTextPageController : MonoBehaviour
         if (currentPage == 0)
         {
             back.gameObject.SetActive(false);
-            Debug.Log("Primeiro if");
         }
         else if (currentPage > 0 && currentPage < lastPage)
         {
             back.gameObject.SetActive(true);
             next.gameObject.SetActive(true);
-            Debug.Log("Segundo if");
         }
         else if (currentPage == lastPage)
         {
