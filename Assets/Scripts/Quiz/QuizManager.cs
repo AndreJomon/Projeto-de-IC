@@ -85,13 +85,6 @@ public class QuizManager : MonoBehaviour
         /// Cria uma lista de perguntas realizadas e respostas dadas pelo player
         questionAndAnswer = new List<QuestionAndAnswer>();
 
-        /// Verifica se o número de perguntas a serem feitas é menor que o numero de perguntas existentes
-        /// Caso seja maior, iguala ao total de perguntas
-        if (qtyQuestionsToDo > questionGroup[dificulty].GetLenght())
-        {
-            qtyQuestionsToDo = questionGroup[dificulty].GetLenght();
-        }
-
         /// Inicia a quantidade de questões feitas em zero
         qtyQuestionsDone = 0;
 
@@ -301,6 +294,11 @@ public class QuizManager : MonoBehaviour
     public void PlayInstructionVideo()
     {
         StartCoroutine(VideoManager.instance.PlayVideo(instrucoesVideo));
+    }
+
+    public void SetQuestionsToDo()
+    {
+        qtyQuestionsToDo = questionGroup[dificulty].GetLenght();
     }
 
     #region Funções Auxiliares

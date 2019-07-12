@@ -26,6 +26,7 @@ public class InitialButtonsQuiz : MonoBehaviour
     {
         QuizManager.instance.TurnOnTela1();
         canvasAnimator.SetTrigger("comecar");
+        QuizManager.instance.SetQuestionsToDo();
         QuizManager.instance.PrepareNewQuestion();
     }
 }
