@@ -145,4 +145,9 @@ public class ProfessorManager : MonoBehaviour
     {
         confirmPanel.SetActive(true);
     }
+
+    public void ShowConfirmationMessage(string message)
+    {
+        StartCoroutine(ShowMessage(message));
+    }
 }
