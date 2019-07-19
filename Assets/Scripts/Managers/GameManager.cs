@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
                     correctAnswer[1] = true;
                 }
 
-                if (neutrons == nEletrons)
+                if (neutrons == nNeutrons)
                 {
                     correctAnswer[2] = true;
                 }

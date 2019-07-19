@@ -732,7 +732,7 @@ MonoBehaviour:
   messageBalloon: {fileID: 1844782861761719456, guid: 44fd7ba3500501e42a5b332c3d95dd1a,
     type: 3}
   balloonMessage:
-    text: Caraiiiii....?!?!
+    text: "\xC9 s\xF3 apertar os bot\xF5es deste arcade para come\xE7ar o jogo!"
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   posXAjust: -50
   posYAjust: 0
@@ -2120,7 +2120,7 @@ MonoBehaviour:
   messageBalloon: {fileID: 2959044758486211181, guid: 5e270a853578d3349872afaf0e8fcac0,
     type: 3}
   balloonMessage:
-    text: Kkkkkkkk
+    text: "Se eu clicar nesta lousa vou encarar o quiz! Ser\xE1 que consigo?"
     video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   posXAjust: -45
   posYAjust: -35
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   messageBalloon: {fileID: 4697452683207522313, guid: 6a7a06f69a0d73e459b6c2312a74775a,
     type: 3}
   balloonMessage:
-    text: Vish....
+    text: "Ser\xE1 que eu consigo responder este quiz?"
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   posXAjust: -50
   posYAjust: -10
@@ -2975,7 +2975,7 @@ MonoBehaviour:
   messageBalloon: {fileID: 6240408475413667568, guid: d31623ff90c60034284c3b7a8aea4c60,
     type: 3}
   balloonMessage:
-    text: Arriba! Arriba!
+    text: Clique na mesa para me ajudar a preenhcer as bexigas!
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   posXAjust: -100
   posYAjust: -20

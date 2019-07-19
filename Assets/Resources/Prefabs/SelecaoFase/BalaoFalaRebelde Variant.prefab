@@ -98,6 +98,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5303077791766593132}
+    - target: {fileID: 7015603055999471123, guid: 62f7134e9cd778940a344fe3aefeca7e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7015603055999471123, guid: 62f7134e9cd778940a344fe3aefeca7e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62f7134e9cd778940a344fe3aefeca7e, type: 3}
 --- !u!114 &5303077791766593132 stripped
