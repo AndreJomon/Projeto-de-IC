@@ -1681,16 +1681,16 @@ MonoBehaviour:
       at\xE9 l\xE1!  \\n\\nAtrav\xE9s da liga\xE7\xE3o qu\xEDmica, os \xE1tomos podem
       \u201Creceber\u201D, \u201Cdoar\u201D ou \u201Ccompartilhar\u201D os el\xE9trons,
       completando assim sua <#FF4346>camada</color> <#FF4346>de</color> <#FF4346>val\xEAncia.</color>"
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 4d874e564e5a20047a74d23eff4f6cb5, type: 3}
   - text: "As liga\xE7\xF5es qu\xEDmicas s\xE3o classificadas como liga\xE7\xF5es
       <#FF4346>covalentes</color>, liga\xE7\xF5es <#FF4346>i\xF4nicas</color> e liga\xE7\xF5es
       <#FF4346>met\xE1licas</color>."
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 4c4763aad33e43542bb87520258f31bb, type: 3}
   - text: "Percebeu que esses termos est\xE3o todos entre aspas?? Isso porque esses
       termos s\xE3o caracter\xEDsticas humanas que n\xE3o devem ser aplicadas para
       os \xE1tomos, pois eles s\xE3o inanimados. N\xE3o possuem vontades como seres,
       n\xE3o doam nada, n\xE3o recebem nada e nem compartilham nada."
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    video: {fileID: 32900000, guid: f2fc37e467f9fe14d95581a6b58f9d8e, type: 3}
   - text: "As liga\xE7\xF5es qu\xEDmicas s\xE3o apenas intera\xE7\xF5es eletrost\xE1ticas. "
     video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
   textLousa: {fileID: 1978266391}

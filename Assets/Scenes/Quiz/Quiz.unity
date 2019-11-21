@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
+  video: {fileID: 32900000, guid: c9eb261dafb5eee4d9dc11c5bf5c1a4e, type: 3}
 --- !u!1 &168156159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  video: {fileID: 32900000, guid: 61a701310226ed4409bb73de8d93ab76, type: 3}
 --- !u!1 &468817491
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  video: {fileID: 32900000, guid: 91235583554b627499084bf3f2800f85, type: 3}
 --- !u!61 &468817496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2709,18 +2709,18 @@ MonoBehaviour:
   tela1: {fileID: 1266116343}
   tela2: {fileID: 1683889273}
   tela3: {fileID: 438584143}
-  selecionarDificuldadeVideo: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2,
+  selecionarDificuldadeVideo: {fileID: 32900000, guid: 3554debe1d397dc42bfbf577611baea2,
     type: 3}
-  instrucoesVideo: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  instrucoesVideo: {fileID: 32900000, guid: 91235583554b627499084bf3f2800f85, type: 3}
   textoFimDoQuiz: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
   scoreText: {fileID: 523590765}
   endOfQuizText:
   - text: "Vamos come\xE7ar de novo? Volte \xE0s explica\xE7\xF5es."
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 936b3e86d67533e468a4ab05f1d69263, type: 3}
   - text: "Uau! T\xE1 manjando de verdade, hein?! "
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: d7c6872528a28744eaaf97e1cb1becba, type: 3}
   - text: "Poxa! Tente refazer o quiz. Voc\xEA com certeza vai acertar mais quest\xF5es. "
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 9636f8aa2b0dc1447b63625c58537ad6, type: 3}
   endOfQuizBalloon: {fileID: 1350317297}
 --- !u!4 &844414301
 Transform:
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: cc3b5adb006b13d45839aece046ee5e2, type: 3}
+  video: {fileID: 32900000, guid: 3554debe1d397dc42bfbf577611baea2, type: 3}
 --- !u!1 &850130770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,7 +3296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+  video: {fileID: 32900000, guid: 78b807c9a8e50be409bea1ee4baa3ee9, type: 3}
 --- !u!1 &864982583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,7 +4954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+  video: {fileID: 32900000, guid: 4fd7812dba6a2b4468bb1ea08b5e11ca, type: 3}
 --- !u!1 &1330554071
 GameObject:
   m_ObjectHideFlags: 0

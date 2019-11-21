@@ -733,7 +733,7 @@ MonoBehaviour:
     type: 3}
   balloonMessage:
     text: "\xC9 s\xF3 apertar os bot\xF5es deste arcade para come\xE7ar o jogo!"
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    video: {fileID: 32900000, guid: 66085cc38aeaaa54db67271dded837f2, type: 3}
   posXAjust: -50
   posYAjust: 0
 --- !u!70 &116574565
@@ -2121,7 +2121,7 @@ MonoBehaviour:
     type: 3}
   balloonMessage:
     text: "Se eu clicar nesta lousa vou encarar o quiz! Ser\xE1 que consigo?"
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: b60034f82c4067c45bd5abc9859e3291, type: 3}
   posXAjust: -45
   posYAjust: -35
 --- !u!1 &450162723

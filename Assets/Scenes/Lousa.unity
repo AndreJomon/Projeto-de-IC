@@ -1541,26 +1541,26 @@ MonoBehaviour:
   text:
   - text: "Liga\xE7\xE3o qu\xEDmica \\n\\nCom exce\xE7\xE3o dos  gases nobres, os
       elementos qu\xEDmicos n\xE3o aparecem de forma isolada na natureza... "
-    video: {fileID: 32900000, guid: b74d84a01b19b8240afbf01bf03c623f, type: 3}
+    video: {fileID: 32900000, guid: 8649794514d0fa440bf7466cec9b98a6, type: 3}
   - text: "...Eles se ligam uns nos outros!! Isso ocorre pela necessidade dos <#FF4346>\xE1tomos</color>
       em ter, em sua \xFAltima <#FF4346>camada</color> <#FF4346>eletr\xF4nica</color>,
       oito <#FF4346>el\xE9trons</color>."
-    video: {fileID: 32900000, guid: 700c6e7c39054d64688d351662c3d6e1, type: 3}
+    video: {fileID: 32900000, guid: 0ff0b9ab848ec1245a28612d3a319807, type: 3}
   - text: "As liga\xE7\xF5es qu\xEDmicas ocorrem a partir da jun\xE7\xE3o de dois
       ou mais \xE1tomos. Voc\xEA se lembra o que \xE9 um \xE1tomo?"
-    video: {fileID: 32900000, guid: d3c1e196e60db56429141fc874bd9b5f, type: 3}
+    video: {fileID: 32900000, guid: 111a65eec0f30c045a0c153e56dbbd56, type: 3}
   - text: "O \xE1tomo \xE9 a menor part\xEDcula que comp\xF5e a mat\xE9ria. Ele \xE9
       formado por um n\xFAcleo e uma eletrosfera que fica ao redor do n\xFAcleo."
-    video: {fileID: 32900000, guid: d8b42159586011849bcacedfb49f1bc7, type: 3}
+    video: {fileID: 32900000, guid: a8ae7b979f659fa49ae68562e8c71b99, type: 3}
   - text: "As part\xEDculas positivas se chamam pr\xF3tons, as negativas de el\xE9trons
       e as neutras, n\xEAutrons."
-    video: {fileID: 32900000, guid: d8b42159586011849bcacedfb49f1bc7, type: 3}
+    video: {fileID: 32900000, guid: 49901901496cce34089d8fe4f502f0f9, type: 3}
   - text: "O n\xFAcleo tem part\xEDculas positivas e neutras. Na eletrosfera ficam
       as part\xEDculas negativas."
-    video: {fileID: 32900000, guid: d8b42159586011849bcacedfb49f1bc7, type: 3}
+    video: {fileID: 32900000, guid: 1a87c307fa1e44d438bb066ce27f2662, type: 3}
   - text: "Agora que voc\xEA j\xE1 sabe o que \xE9 um \xE1tomo, vamos testar esse
       conhecimento?"
-    video: {fileID: 32900000, guid: d8b42159586011849bcacedfb49f1bc7, type: 3}
+    video: {fileID: 32900000, guid: e49a33eca76654a4e8af0a1eecb1277d, type: 3}
   textLousa: {fileID: 1978266391}
   next: {fileID: 2138461742}
   back: {fileID: 941045391}

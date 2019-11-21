@@ -1658,13 +1658,13 @@ MonoBehaviour:
   - text: "Para enfeitar uma festa de anivers\xE1rio, n\xE3o podem faltar bexigas.
       Sua tarefa agora \xE9 utilizar o conhecimento sobre liga\xE7\xF5es covalentes
       para encher as bexigas. "
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 7e96c1abbadaa9c4fbea75ab7a8b516c, type: 3}
   - text: "Para isso voc\xEA vai precisar viajar  pelo mundo submicrosc\xF3pico e
       montar mol\xE9culas!  "
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 4ea1a2e6e093a0648a03f5cb82cd5b6f, type: 3}
   - text: "Depois, \xE9 s\xF3 voltar ao jardim e arrastar cada um dos seus \xE1tomos
       ou mol\xE9culas para uma bexiga!"
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    video: {fileID: 32900000, guid: 1d8128f301d19a04387d904af6eced1f, type: 3}
   textLousa: {fileID: 1978266391}
   next: {fileID: 2138461742}
   back: {fileID: 941045391}

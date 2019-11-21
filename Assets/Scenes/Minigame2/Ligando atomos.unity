@@ -261,7 +261,7 @@ PrefabInstance:
         type: 3}
       propertyPath: video
       value: 
-      objectReference: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a,
+      objectReference: {fileID: 32900000, guid: 21cb81c51ee82664096ba3de56845fa0,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
@@ -920,17 +920,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 843038343897430682, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 843038344758262367, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: aed22811333063b4aa508e29a6875cb9,
         type: 3}
-    - target: {fileID: 843038343897430682, guid: 8f5709a0a746d9d48ba8ffae78644a2d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f5709a0a746d9d48ba8ffae78644a2d, type: 3}
 --- !u!1 &461134004
@@ -944,6 +944,8 @@ GameObject:
   - component: {fileID: 461134005}
   - component: {fileID: 461134007}
   - component: {fileID: 461134006}
+  - component: {fileID: 461134009}
+  - component: {fileID: 461134008}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1012,6 +1014,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461134004}
   m_CullTransparentMesh: 0
+--- !u!60 &461134008
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461134004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.6713867, y: 9.056671}
+      - {x: -63.256424, y: 8.56636}
+      - {x: -69.83684, y: -7.7526703}
+      - {x: 63.026886, y: -7.9704895}
+      - {x: 66.075714, y: 8.589478}
+--- !u!114 &461134009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461134004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 5aacc743f6d780c4784b7abfdb6c1d86, type: 3}
 --- !u!1 &653111262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1434,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 120565095476357974, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 05510f144a8ea504fbf6ca3968291756,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
 --- !u!1001 &1098915255
@@ -1500,7 +1551,7 @@ PrefabInstance:
         type: 3}
       propertyPath: video
       value: 
-      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
+      objectReference: {fileID: 32900000, guid: b94aff8421f9cba4192a8a5257d3d1be,
         type: 3}
     m_RemovedComponents:
     - {fileID: 8838541749422324918, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
@@ -1651,6 +1702,8 @@ GameObject:
   - component: {fileID: 1281539157}
   - component: {fileID: 1281539159}
   - component: {fileID: 1281539158}
+  - component: {fileID: 1281539161}
+  - component: {fileID: 1281539160}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1719,6 +1772,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281539156}
   m_CullTransparentMesh: 0
+--- !u!114 &1281539160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281539156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 98ceef6b37f24a947a4b6c87fcbfa6c1, type: 3}
+--- !u!60 &1281539161
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281539156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 8.653107, y: 9.208267}
+      - {x: -63.836834, y: 9.430771}
+      - {x: -71.26809, y: -8.01181}
+      - {x: 62.099648, y: -8.378952}
+      - {x: 66.1134, y: 9.327408}
 --- !u!4 &1366464645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4844059294696798, guid: 195aac48e608b334d86761dc2c46e8fb,
@@ -1784,7 +1880,7 @@ MonoBehaviour:
   resposta: []
   errouString:
     text: "N\xE3o \xE9 poss\xEDvel montar essa mol\xE9cula para o bal\xE3o."
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 9c4a453e4e199ca43af4a74935ee1a5b, type: 3}
   warning: {fileID: 2023571735}
 --- !u!1001 &1598352030
 PrefabInstance:
@@ -1895,7 +1991,7 @@ PrefabInstance:
         type: 3}
       propertyPath: video
       value: 
-      objectReference: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7,
+      objectReference: {fileID: 32900000, guid: ef811ca3493677045b1215a72353e871,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}
@@ -1990,6 +2086,8 @@ GameObject:
   - component: {fileID: 1800871498}
   - component: {fileID: 1800871500}
   - component: {fileID: 1800871499}
+  - component: {fileID: 1800871502}
+  - component: {fileID: 1800871501}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2058,6 +2156,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800871497}
   m_CullTransparentMesh: 0
+--- !u!60 &1800871501
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800871497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.56204224, y: 8.400055}
+      - {x: -7.057541, y: 8.404907}
+      - {x: -9.954918, y: 8.370819}
+      - {x: -16.000832, y: 8.199066}
+      - {x: -64.09599, y: 9.643997}
+      - {x: -67.21202, y: -9.016342}
+      - {x: 59.87261, y: -10.260117}
+      - {x: 67.03825, y: 9.1957245}
+--- !u!114 &1800871502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800871497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video: {fileID: 32900000, guid: 37095c39f21706840bebd4036fd43469, type: 3}
 --- !u!1 &1812175199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: 592bbca995f3edf4a988a57608d5a49e, type: 3}
 --- !u!114 &2023571735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2472,14 +2616,17 @@ MonoBehaviour:
   text: {fileID: 1771604418}
   normalWarning:
     text: "Clique em algum bal\xE3o para o encher."
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 216cc347a7701e44091a119f396e360b, type: 3}
   passed:
     text: "Parab\xE9ns! Voc\xEA conseguiu encher bexigas o suficiente para continuar
       a festa!"
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: 592bbca995f3edf4a988a57608d5a49e, type: 3}
   failed:
     text: "Que pena! Voc\xEA n\xE3o conseguiu enhcer bexigas o suficiente, tente novamente
       mais tarde!"
+    video: {fileID: 32900000, guid: f06f7132b1b430e439477ca64d3bc168, type: 3}
+  tryBetter:
+    text: 
     video: {fileID: 0}
 --- !u!1001 &2080727460
 PrefabInstance:
@@ -2579,6 +2726,12 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 5b39c6e8a808d274490684e71c4eafa9,
+        type: 3}
+    - target: {fileID: 120565095476357974, guid: 195aac48e608b334d86761dc2c46e8fb,
+        type: 3}
+      propertyPath: video
+      value: 
+      objectReference: {fileID: 32900000, guid: 59bda6e2f13d8044eb95722381a133ff,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195aac48e608b334d86761dc2c46e8fb, type: 3}

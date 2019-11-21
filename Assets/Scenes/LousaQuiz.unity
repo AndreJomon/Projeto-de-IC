@@ -1658,16 +1658,16 @@ MonoBehaviour:
   text:
   - text: "Os metais s\xE3o a maioria dos elementos da tabela peri\xF3dica. Possuem
       brilho, s\xE3o d\xFActeis, male\xE1veis...   "
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 9a14bd9c149f63947ae151805b85bb92, type: 3}
   - text: "\u2026 bons condutores t\xE9rmicos e el\xE9tricos, tem densidade elevada,
       altos pontos de fus\xE3o e ebuli\xE7\xE3o e s\xE3o resistentes.   "
-    video: {fileID: 32900000, guid: 74d8ae6701162c94cbb627a47e82b5c7, type: 3}
+    video: {fileID: 32900000, guid: 92f833be55a96e446b3323f9310b98c3, type: 3}
   - text: "Os ametais tem caracter\xEDsticas inversas a dos metais. Ou seja: N\xE3o
       s\xE3o bons condutores de calor e eletricidade, e n\xE3o podem ser moldados
       pois se fragmentam com facilidade "
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    video: {fileID: 32900000, guid: 3ee81b7b68955e240990c3b2faa8c0b5, type: 3}
   - text: "Agora fa\xE7a um jogo de perguntas e respostas com o conhecimento adquirido!"
-    video: {fileID: 32900000, guid: c12c2814f25080c4d9d0a1ccc8d9982a, type: 3}
+    video: {fileID: 32900000, guid: 81cba6129ac39944faca5b86486870db, type: 3}
   textLousa: {fileID: 1978266391}
   next: {fileID: 2138461742}
   back: {fileID: 941045391}

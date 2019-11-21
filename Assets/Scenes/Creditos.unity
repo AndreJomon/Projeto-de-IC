@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: 592630f0bec1e10479d571ee917310b4, type: 3}
 --- !u!61 &267596375
 BoxCollider2D:
   m_ObjectHideFlags: 0

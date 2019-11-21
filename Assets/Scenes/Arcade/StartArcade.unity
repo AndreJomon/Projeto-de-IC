@@ -1670,7 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535eb0ffb6412d04281877a0f6538d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  video: {fileID: 0}
+  video: {fileID: 32900000, guid: f507ba753672faf44b3224c82698b672, type: 3}
 --- !u!61 &1717597908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1922,7 +1922,7 @@ MonoBehaviour:
   text:
   - text: "Pressione os bot\xF5es e adicione pr\xF3tons, el\xE9trons ou n\xEAutrons
       no \xE1tomo."
-    video: {fileID: 0}
+    video: {fileID: 32900000, guid: f507ba753672faf44b3224c82698b672, type: 3}
   - text: "Tente montar um \xE1tomo de xxx."
     video: {fileID: 0}
   nextPage: {fileID: 1265280315}
